@@ -1,0 +1,31 @@
+{
+  "name": "rxjs-operator-documentation",
+  "version": "1.0.0",
+  "description": "> **Comprehensive, formal specifications for RxJS operators using an eight-policy framework**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev .vitepress",
+    "docs:build": "vitepress build .vitepress",
+    "docs:preview": "vitepress preview .vitepress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hansschenker/rxjs-operator-documentation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hansschenker/rxjs-operator-documentation/issues"
+  },
+  "homepage": "https://github.com/hansschenker/rxjs-operator-documentation#readme",
+  "dependencies": {
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
