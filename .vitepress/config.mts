@@ -126,6 +126,7 @@ export default defineConfig({
             { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
             { text: 'combineLatestAll (advanced)', link: '/operators-claude/higher-order/combineLatestAll-advanced' },
             { text: 'zipAll', link: '/operators-claude/higher-order/zipAll' },
+            { text: 'zipAll (advanced)', link: '/operators-claude/higher-order/zipAll-advanced' },
           ]
         },
         {
@@ -169,6 +170,7 @@ export default defineConfig({
             { text: 'fromFetch (advanced)', link: '/operators-claude/creation/fromFetch-advanced' },
             { text: 'webSocket (advanced)', link: '/operators-claude/creation/webSocket-advanced' },
             { text: 'animationFrames (advanced)', link: '/operators-claude/creation/animationFrames-advanced' },
+            { text: 'generate / using (advanced)', link: '/operators-claude/creation/generate-using-advanced' },
           ]
         },
         {
