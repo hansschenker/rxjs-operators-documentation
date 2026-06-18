@@ -45,6 +45,7 @@ export default defineConfig({
             { text: 'switchMap (advanced)', link: '/operators-claude/transformation/switchMap-advanced' },
             { text: 'mergeMap (advanced)', link: '/operators-claude/transformation/mergeMap-advanced' },
             { text: 'expand (advanced)', link: '/operators-claude/transformation/expand-advanced' },
+            { text: 'windowTime (advanced)', link: '/operators-claude/transformation/windowTime-advanced' },
           ]
         },
         {
@@ -135,6 +136,7 @@ export default defineConfig({
             { text: 'fromFetch', link: '/operators-claude/creation/fromFetch' },
             { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
             { text: 'animationFrames', link: '/operators-claude/creation/animationFrames' },
+            { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
           ]
         },
         {
@@ -251,6 +253,7 @@ export default defineConfig({
             { text: 'RxJS in React', link: '/docs/operator-trees/rxjs-react-patterns' },
             { text: 'Debugging Guide', link: '/docs/operator-trees/debugging-guide' },
             { text: 'Pipeline Architecture', link: '/docs/operator-trees/pipeline-architecture-guide' },
+            { text: 'Concurrency Patterns', link: '/docs/operator-trees/concurrency-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
