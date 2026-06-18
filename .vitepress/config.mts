@@ -54,6 +54,7 @@ export default defineConfig({
             { text: 'throttleTime', link: '/operators-claude/filtering/throttleTime' },
             { text: 'first / last', link: '/operators-claude/filtering/first-last' },
             { text: 'takeWhile', link: '/operators-claude/filtering/takeWhile' },
+            { text: 'skipUntil / skipWhile', link: '/operators-claude/filtering/skipUntil-skipWhile' },
           ]
         },
         {
@@ -81,6 +82,7 @@ export default defineConfig({
             { text: 'EMPTY / NEVER', link: '/operators-claude/creation/EMPTY-NEVER' },
             { text: 'partition', link: '/operators-claude/creation/partition' },
             { text: 'iif', link: '/operators-claude/creation/iif' },
+            { text: 'throwError', link: '/operators-claude/creation/throwError' },
           ]
         },
         {
@@ -104,6 +106,7 @@ export default defineConfig({
           text: 'Multicasting',
           items: [
             { text: 'shareReplay', link: '/operators-claude/multicasting/shareReplay' },
+            { text: 'share', link: '/operators-claude/multicasting/share' },
           ]
         },
         {
