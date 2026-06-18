@@ -90,6 +90,7 @@ export default defineConfig({
             { text: 'distinctUntilKeyChanged', link: '/operators-claude/filtering/distinctUntilKeyChanged' },
             { text: 'distinctUntilKeyChanged (advanced)', link: '/operators-claude/filtering/distinctUntilKeyChanged-advanced' },
             { text: 'find / findIndex', link: '/operators-claude/filtering/find-findIndex' },
+            { text: 'find / findIndex (advanced)', link: '/operators-claude/filtering/find-findIndex-advanced' },
             { text: 'distinct', link: '/operators-claude/filtering/distinct' },
             { text: 'skip / takeLast / elementAt', link: '/operators-claude/filtering/skip-takeLast-elementAt' },
             { text: 'debounceTime (advanced)', link: '/operators-claude/filtering/debounceTime-advanced' },
@@ -246,6 +247,7 @@ export default defineConfig({
           text: 'Connectable Observable',
           items: [
             { text: 'connectable / connect', link: '/operators-claude/connectable/connectable-connect' },
+            { text: 'connectable / connect (advanced)', link: '/operators-claude/connectable/connectable-connect-advanced' },
           ]
         },
         {
@@ -292,6 +294,7 @@ export default defineConfig({
             { text: 'RxJS Best Practices', link: '/docs/operator-trees/rxjs-best-practices' },
             { text: 'Angular Signals + RxJS', link: '/docs/operator-trees/angular-signals-rxjs' },
             { text: 'TypeScript + RxJS Guide', link: '/docs/operator-trees/typescript-rxjs-guide' },
+            { text: 'TypeScript Type Guards', link: '/docs/operator-trees/rxjs-typescript-type-guards' },
             { text: 'Real-Time Data Guide', link: '/docs/operator-trees/realtime-data-guide' },
             { text: 'Form Validation Guide', link: '/docs/operator-trees/form-validation-guide' },
             { text: 'RxJS in React', link: '/docs/operator-trees/rxjs-react-patterns' },
