@@ -110,7 +110,9 @@ export default defineConfig({
             { text: 'partition', link: '/operators-claude/creation/partition' },
             { text: 'iif', link: '/operators-claude/creation/iif' },
             { text: 'throwError', link: '/operators-claude/creation/throwError' },
+            { text: 'range', link: '/operators-claude/creation/range' },
             { text: 'generate', link: '/operators-claude/creation/generate' },
+            { text: 'scheduled', link: '/operators-claude/creation/scheduled' },
             { text: 'bindCallback / bindNodeCallback', link: '/operators-claude/creation/bindCallback-bindNodeCallback' },
             { text: 'fromEventPattern', link: '/operators-claude/creation/fromEventPattern' },
             { text: 'using', link: '/operators-claude/creation/using' },
@@ -149,6 +151,7 @@ export default defineConfig({
           text: 'Utility (Advanced)',
           items: [
             { text: 'tap / finalize (advanced)', link: '/operators-claude/utility/tap-finalize-advanced' },
+            { text: 'Deprecated Operators', link: '/operators-claude/utility/deprecated-operators' },
           ]
         },
         {
