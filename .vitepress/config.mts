@@ -150,6 +150,7 @@ export default defineConfig({
             { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
             { text: 'interval / timer (advanced)', link: '/operators-claude/creation/interval-timer-advanced' },
             { text: 'fromEvent (advanced)', link: '/operators-claude/creation/fromEvent-advanced' },
+            { text: 'webSocket (advanced)', link: '/operators-claude/creation/webSocket-advanced' },
           ]
         },
         {
@@ -157,6 +158,7 @@ export default defineConfig({
           items: [
             { text: 'Subject', link: '/operators-claude/subject/Subject' },
             { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
+            { text: 'BehaviorSubject (advanced)', link: '/operators-claude/subject/BehaviorSubject-advanced' },
             { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
             { text: 'AsyncSubject', link: '/operators-claude/subject/AsyncSubject' },
           ]
@@ -281,6 +283,7 @@ export default defineConfig({
             { text: 'Search & Autocomplete', link: '/docs/operator-trees/rxjs-search-autocomplete-patterns' },
             { text: 'Drag, Drop & Animation', link: '/docs/operator-trees/rxjs-drag-drop-animation' },
             { text: 'Notification & Toast Patterns', link: '/docs/operator-trees/rxjs-notification-toast-patterns' },
+            { text: 'Optimistic UI Patterns', link: '/docs/operator-trees/rxjs-optimistic-ui-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
