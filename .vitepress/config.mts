@@ -39,6 +39,7 @@ export default defineConfig({
             { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
             { text: 'switchScan', link: '/operators-claude/transformation/switchScan' },
             { text: 'switchScan (advanced)', link: '/operators-claude/transformation/switchScan-advanced' },
+            { text: 'mergeScan (advanced)', link: '/operators-claude/transformation/mergeScan-advanced' },
             { text: 'mergeScan', link: '/operators-claude/transformation/mergeScan' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
@@ -125,6 +126,7 @@ export default defineConfig({
             { text: 'sample / audit', link: '/operators-claude/rate-limiting/sample-audit' },
             { text: 'throttle / debounce', link: '/operators-claude/rate-limiting/throttle-debounce' },
             { text: 'throttle / debounce (advanced)', link: '/operators-claude/rate-limiting/throttle-debounce-advanced' },
+            { text: 'auditTime / sampleTime (advanced)', link: '/operators-claude/rate-limiting/auditTime-sampleTime-advanced' },
           ]
         },
         {
@@ -302,6 +304,7 @@ export default defineConfig({
             { text: 'Multi-Tab Patterns', link: '/docs/operator-trees/rxjs-multi-tab-patterns' },
             { text: 'Marble Testing (Advanced)', link: '/docs/operator-trees/rxjs-marble-testing-advanced' },
             { text: 'Custom Operators (Advanced)', link: '/docs/operator-trees/rxjs-custom-operators-advanced' },
+            { text: 'Web Worker Patterns', link: '/docs/operator-trees/rxjs-web-worker-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
