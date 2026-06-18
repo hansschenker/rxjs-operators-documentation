@@ -117,6 +117,7 @@ export default defineConfig({
             { text: 'ajax', link: '/operators-claude/creation/ajax' },
             { text: 'fromFetch', link: '/operators-claude/creation/fromFetch' },
             { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
+            { text: 'animationFrames', link: '/operators-claude/creation/animationFrames' },
           ]
         },
         {
@@ -142,6 +143,12 @@ export default defineConfig({
           items: [
             { text: 'shareReplay', link: '/operators-claude/multicasting/shareReplay' },
             { text: 'share', link: '/operators-claude/multicasting/share' },
+          ]
+        },
+        {
+          text: 'Utility (Advanced)',
+          items: [
+            { text: 'tap / finalize (advanced)', link: '/operators-claude/utility/tap-finalize-advanced' },
           ]
         },
         {
@@ -189,6 +196,7 @@ export default defineConfig({
             { text: 'Flattening Strategy Guide', link: '/docs/operator-trees/flattening-strategy-guide' },
             { text: 'Subject Decision Guide', link: '/docs/operator-trees/subject-decision-guide' },
             { text: 'Error Handling Patterns', link: '/docs/operator-trees/error-handling-patterns' },
+            { text: 'Multicasting Guide', link: '/docs/operator-trees/multicasting-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
