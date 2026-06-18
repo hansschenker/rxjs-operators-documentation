@@ -188,6 +188,8 @@ export default defineConfig({
             { text: 'forkJoin (advanced)', link: '/operators-claude/combination/forkJoin-advanced' },
             { text: 'combineLatest (advanced)', link: '/operators-claude/combination/combineLatest-advanced' },
             { text: 'zip (advanced)', link: '/operators-claude/combination/zip-advanced' },
+            { text: 'startWith (advanced)', link: '/operators-claude/combination/startWith-advanced' },
+            { text: 'race (advanced)', link: '/operators-claude/combination/race-advanced' },
           ]
         },
       ],
@@ -248,6 +250,7 @@ export default defineConfig({
             { text: 'Form Validation Guide', link: '/docs/operator-trees/form-validation-guide' },
             { text: 'RxJS in React', link: '/docs/operator-trees/rxjs-react-patterns' },
             { text: 'Debugging Guide', link: '/docs/operator-trees/debugging-guide' },
+            { text: 'Pipeline Architecture', link: '/docs/operator-trees/pipeline-architecture-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
