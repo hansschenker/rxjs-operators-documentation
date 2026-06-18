@@ -103,6 +103,7 @@ export default defineConfig({
             { text: 'partition', link: '/operators-claude/creation/partition' },
             { text: 'iif', link: '/operators-claude/creation/iif' },
             { text: 'throwError', link: '/operators-claude/creation/throwError' },
+            { text: 'generate', link: '/operators-claude/creation/generate' },
             { text: 'ajax', link: '/operators-claude/creation/ajax' },
             { text: 'fromFetch', link: '/operators-claude/creation/fromFetch' },
             { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
