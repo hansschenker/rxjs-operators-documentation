@@ -88,6 +88,8 @@ export default defineConfig({
             { text: 'retry', link: '/operators-claude/error-handling/retry' },
             { text: 'timeout', link: '/operators-claude/error-handling/timeout' },
             { text: 'onErrorResumeNext', link: '/operators-claude/error-handling/onErrorResumeNext' },
+            { text: 'catchError (advanced)', link: '/operators-claude/error-handling/catchError-advanced' },
+            { text: 'retry (advanced)', link: '/operators-claude/error-handling/retry-advanced' },
           ]
         },
         {
@@ -236,6 +238,7 @@ export default defineConfig({
             { text: 'RxJS Best Practices', link: '/docs/operator-trees/rxjs-best-practices' },
             { text: 'Angular Signals + RxJS', link: '/docs/operator-trees/angular-signals-rxjs' },
             { text: 'TypeScript + RxJS Guide', link: '/docs/operator-trees/typescript-rxjs-guide' },
+            { text: 'Real-Time Data Guide', link: '/docs/operator-trees/realtime-data-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
