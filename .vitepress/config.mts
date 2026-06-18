@@ -47,6 +47,7 @@ export default defineConfig({
             { text: 'repeat', link: '/operators-claude/utility/repeat' },
             { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
+            { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
           ]
         },
         {
@@ -89,6 +90,7 @@ export default defineConfig({
           items: [
             { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
             { text: 'sample / audit', link: '/operators-claude/rate-limiting/sample-audit' },
+            { text: 'throttle / debounce', link: '/operators-claude/rate-limiting/throttle-debounce' },
           ]
         },
         {
@@ -177,6 +179,7 @@ export default defineConfig({
           text: 'Operator Trees',
           items: [
             { text: 'Overview', link: '/docs/operator-trees/overview' },
+            { text: 'Flattening Strategy Guide', link: '/docs/operator-trees/flattening-strategy-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
