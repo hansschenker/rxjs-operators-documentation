@@ -81,6 +81,7 @@ export default defineConfig({
             { text: 'distinct', link: '/operators-claude/filtering/distinct' },
             { text: 'skip / takeLast / elementAt', link: '/operators-claude/filtering/skip-takeLast-elementAt' },
             { text: 'debounceTime (advanced)', link: '/operators-claude/filtering/debounceTime-advanced' },
+            { text: 'throttleTime (advanced)', link: '/operators-claude/filtering/throttleTime-advanced' },
             { text: 'distinctUntilChanged (advanced)', link: '/operators-claude/filtering/distinctUntilChanged-advanced' },
             { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
           ]
@@ -137,6 +138,7 @@ export default defineConfig({
             { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
             { text: 'animationFrames', link: '/operators-claude/creation/animationFrames' },
             { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
+            { text: 'interval / timer (advanced)', link: '/operators-claude/creation/interval-timer-advanced' },
           ]
         },
         {
@@ -257,6 +259,7 @@ export default defineConfig({
             { text: 'Concurrency Patterns', link: '/docs/operator-trees/concurrency-guide' },
             { text: 'Operator Selection Guide', link: '/docs/operator-trees/operator-selection-guide' },
             { text: 'RxJS in Vue', link: '/docs/operator-trees/rxjs-vue-patterns' },
+            { text: 'RxJS in Svelte', link: '/docs/operator-trees/rxjs-svelte-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
