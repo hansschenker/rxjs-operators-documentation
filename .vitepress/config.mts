@@ -153,6 +153,7 @@ export default defineConfig({
             { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
             { text: 'interval / timer (advanced)', link: '/operators-claude/creation/interval-timer-advanced' },
             { text: 'fromEvent (advanced)', link: '/operators-claude/creation/fromEvent-advanced' },
+            { text: 'ajax (advanced)', link: '/operators-claude/creation/ajax-advanced' },
             { text: 'fromFetch (advanced)', link: '/operators-claude/creation/fromFetch-advanced' },
             { text: 'webSocket (advanced)', link: '/operators-claude/creation/webSocket-advanced' },
           ]
@@ -166,6 +167,7 @@ export default defineConfig({
             { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
             { text: 'ReplaySubject (advanced)', link: '/operators-claude/subject/ReplaySubject-advanced' },
             { text: 'AsyncSubject', link: '/operators-claude/subject/AsyncSubject' },
+            { text: 'AsyncSubject (advanced)', link: '/operators-claude/subject/AsyncSubject-advanced' },
           ]
         },
         {
@@ -299,6 +301,7 @@ export default defineConfig({
             { text: 'Data Synchronization', link: '/docs/operator-trees/rxjs-data-synchronization-patterns' },
             { text: 'Multi-Tab Patterns', link: '/docs/operator-trees/rxjs-multi-tab-patterns' },
             { text: 'Marble Testing (Advanced)', link: '/docs/operator-trees/rxjs-marble-testing-advanced' },
+            { text: 'Custom Operators (Advanced)', link: '/docs/operator-trees/rxjs-custom-operators-advanced' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
