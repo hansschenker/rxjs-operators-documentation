@@ -197,6 +197,7 @@ export default defineConfig({
             { text: 'Subject Decision Guide', link: '/docs/operator-trees/subject-decision-guide' },
             { text: 'Error Handling Patterns', link: '/docs/operator-trees/error-handling-patterns' },
             { text: 'Multicasting Guide', link: '/docs/operator-trees/multicasting-guide' },
+            { text: 'Rate-Limiting Guide', link: '/docs/operator-trees/rate-limiting-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
