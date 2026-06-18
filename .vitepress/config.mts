@@ -47,6 +47,7 @@ export default defineConfig({
             { text: 'takeUntil', link: '/operators-claude/filtering/takeUntil' },
             { text: 'throttleTime', link: '/operators-claude/filtering/throttleTime' },
             { text: 'first / last', link: '/operators-claude/filtering/first-last' },
+            { text: 'takeWhile', link: '/operators-claude/filtering/takeWhile' },
           ]
         },
         {
@@ -72,6 +73,7 @@ export default defineConfig({
             { text: 'Subject', link: '/operators-claude/subject/Subject' },
             { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
             { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
+            { text: 'AsyncSubject', link: '/operators-claude/subject/AsyncSubject' },
           ]
         },
         {
@@ -96,6 +98,7 @@ export default defineConfig({
             { text: 'merge', link: '/operators-claude/combination/merge' },
             { text: 'concat', link: '/operators-claude/combination/concat' },
             { text: 'withLatestFrom', link: '/operators-claude/combination/withLatestFrom' },
+            { text: 'zip', link: '/operators-claude/combination/zip' },
           ]
         },
       ],
