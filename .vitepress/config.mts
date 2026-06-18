@@ -41,6 +41,7 @@ export default defineConfig({
             { text: 'tap', link: '/operators-claude/utility/tap' },
             { text: 'finalize', link: '/operators-claude/utility/finalize' },
             { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
+            { text: 'repeat', link: '/operators-claude/utility/repeat' },
           ]
         },
         {
@@ -66,6 +67,12 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Higher-Order',
+          items: [
+            { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
+          ]
+        },
+        {
           text: 'Rate Limiting',
           items: [
             { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
@@ -79,6 +86,7 @@ export default defineConfig({
             { text: 'defer', link: '/operators-claude/creation/defer' },
             { text: 'interval', link: '/operators-claude/creation/interval' },
             { text: 'timer', link: '/operators-claude/creation/timer' },
+            { text: 'fromEvent', link: '/operators-claude/creation/fromEvent' },
             { text: 'EMPTY / NEVER', link: '/operators-claude/creation/EMPTY-NEVER' },
             { text: 'partition', link: '/operators-claude/creation/partition' },
             { text: 'iif', link: '/operators-claude/creation/iif' },
