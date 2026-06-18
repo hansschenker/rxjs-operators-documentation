@@ -57,6 +57,14 @@ export default defineConfig({
           text: 'Creation',
           items: [
             { text: 'interval', link: '/operators-claude/creation/interval' },
+            { text: 'timer', link: '/operators-claude/creation/timer' },
+            { text: 'from', link: '/operators-claude/creation/from' },
+          ]
+        },
+        {
+          text: 'Subject',
+          items: [
+            { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
           ]
         },
         {
