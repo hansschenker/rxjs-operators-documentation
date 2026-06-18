@@ -32,6 +32,7 @@ export default defineConfig({
             { text: 'groupBy', link: '/operators-claude/transformation/groupBy' },
             { text: 'bufferTime', link: '/operators-claude/transformation/bufferTime' },
             { text: 'bufferCount', link: '/operators-claude/transformation/bufferCount' },
+            { text: 'buffer / window', link: '/operators-claude/transformation/buffer-window' },
             { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
@@ -124,6 +125,7 @@ export default defineConfig({
             { text: 'scan', link: '/operators-claude/mathematical-aggregate/scan' },
             { text: 'reduce', link: '/operators-claude/mathematical-aggregate/reduce' },
             { text: 'toArray / count', link: '/operators-claude/mathematical-aggregate/toArray-count' },
+            { text: 'min / max', link: '/operators-claude/mathematical-aggregate/min-max' },
           ]
         },
         {
@@ -149,6 +151,12 @@ export default defineConfig({
         },
       ],
 
+        {
+          text: 'Conditional',
+          items: [
+            { text: 'defaultIfEmpty / isEmpty / every / sequenceEqual', link: '/operators-claude/conditional/conditional-operators' },
+          ]
+        },
         {
           text: 'Connectable Observable',
           items: [
