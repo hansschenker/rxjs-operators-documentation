@@ -52,6 +52,18 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Mathematical / Aggregate',
+          items: [
+            { text: 'scan', link: '/operators-claude/mathematical-aggregate/scan' },
+          ]
+        },
+        {
+          text: 'Multicasting',
+          items: [
+            { text: 'shareReplay', link: '/operators-claude/multicasting/shareReplay' },
+          ]
+        },
+        {
           text: 'Combination',
           items: [
             { text: 'combineLatest', link: '/operators-claude/combination/combineLatest-operator-documentation' },
