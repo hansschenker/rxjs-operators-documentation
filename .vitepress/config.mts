@@ -96,6 +96,7 @@ export default defineConfig({
             { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
             { text: 'takeWhile (advanced)', link: '/operators-claude/filtering/takeWhile-advanced' },
             { text: 'filter (advanced)', link: '/operators-claude/filtering/filter-advanced' },
+            { text: 'distinct (advanced)', link: '/operators-claude/filtering/distinct-advanced' },
             { text: 'first / last (advanced)', link: '/operators-claude/filtering/first-last-advanced' },
             { text: 'skipUntil / skipWhile (advanced)', link: '/operators-claude/filtering/skipUntil-skipWhile-advanced' },
           ]
@@ -317,6 +318,7 @@ export default defineConfig({
             { text: 'Virtual Scroll', link: '/docs/operator-trees/rxjs-virtual-scroll' },
             { text: 'Service Worker Patterns', link: '/docs/operator-trees/rxjs-service-worker-patterns' },
             { text: 'Accessibility Patterns', link: '/docs/operator-trees/rxjs-accessibility-patterns' },
+            { text: 'GraphQL Patterns', link: '/docs/operator-trees/rxjs-graphql-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
