@@ -43,6 +43,8 @@ export default defineConfig({
             { text: 'groupBy (advanced)', link: '/operators-claude/transformation/groupBy-advanced' },
             { text: 'concatMap (advanced)', link: '/operators-claude/transformation/concatMap-advanced' },
             { text: 'switchMap (advanced)', link: '/operators-claude/transformation/switchMap-advanced' },
+            { text: 'mergeMap (advanced)', link: '/operators-claude/transformation/mergeMap-advanced' },
+            { text: 'expand (advanced)', link: '/operators-claude/transformation/expand-advanced' },
           ]
         },
         {
@@ -227,6 +229,7 @@ export default defineConfig({
             { text: 'State Management', link: '/docs/operator-trees/state-management-patterns' },
             { text: 'NgRx Effects Patterns', link: '/docs/operator-trees/ngrx-effects-patterns' },
             { text: 'RxJS Migration Guide', link: '/docs/operator-trees/rxjs-migration-guide' },
+            { text: 'RxJS Best Practices', link: '/docs/operator-trees/rxjs-best-practices' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
