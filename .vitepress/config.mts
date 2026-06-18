@@ -22,6 +22,7 @@ export default defineConfig({
         {
           text: 'Transformation',
           items: [
+            { text: 'map', link: '/operators-claude/transformation/map' },
             { text: 'mergeMap', link: '/operators-claude/transformation/mergeMap' },
             { text: 'switchMap', link: '/operators-claude/transformation/switchMap' },
             { text: 'concatMap', link: '/operators-claude/transformation/concatMap' },
