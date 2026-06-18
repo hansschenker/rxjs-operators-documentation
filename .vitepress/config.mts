@@ -124,6 +124,7 @@ export default defineConfig({
             { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
             { text: 'exhaustAll / exhaustMap (advanced)', link: '/operators-claude/higher-order/exhaustAll-advanced' },
             { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
+            { text: 'combineLatestAll (advanced)', link: '/operators-claude/higher-order/combineLatestAll-advanced' },
             { text: 'zipAll', link: '/operators-claude/higher-order/zipAll' },
           ]
         },
