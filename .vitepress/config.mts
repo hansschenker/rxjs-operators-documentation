@@ -35,6 +35,7 @@ export default defineConfig({
             { text: 'buffer / window', link: '/operators-claude/transformation/buffer-window' },
             { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
             { text: 'switchScan', link: '/operators-claude/transformation/switchScan' },
+            { text: 'mergeScan', link: '/operators-claude/transformation/mergeScan' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
           ]
@@ -109,6 +110,8 @@ export default defineConfig({
             { text: 'iif', link: '/operators-claude/creation/iif' },
             { text: 'throwError', link: '/operators-claude/creation/throwError' },
             { text: 'generate', link: '/operators-claude/creation/generate' },
+            { text: 'fromEventPattern', link: '/operators-claude/creation/fromEventPattern' },
+            { text: 'using', link: '/operators-claude/creation/using' },
             { text: 'ajax', link: '/operators-claude/creation/ajax' },
             { text: 'fromFetch', link: '/operators-claude/creation/fromFetch' },
             { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
