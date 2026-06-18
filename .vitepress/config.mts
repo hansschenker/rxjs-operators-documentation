@@ -46,6 +46,7 @@ export default defineConfig({
             { text: 'mergeMap (advanced)', link: '/operators-claude/transformation/mergeMap-advanced' },
             { text: 'expand (advanced)', link: '/operators-claude/transformation/expand-advanced' },
             { text: 'windowTime (advanced)', link: '/operators-claude/transformation/windowTime-advanced' },
+            { text: 'map (advanced)', link: '/operators-claude/transformation/map-advanced' },
           ]
         },
         {
@@ -55,6 +56,7 @@ export default defineConfig({
             { text: 'finalize', link: '/operators-claude/utility/finalize' },
             { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
             { text: 'repeat', link: '/operators-claude/utility/repeat' },
+            { text: 'delay / delayWhen (advanced)', link: '/operators-claude/utility/delay-delayWhen-advanced' },
             { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
@@ -260,6 +262,7 @@ export default defineConfig({
             { text: 'Operator Selection Guide', link: '/docs/operator-trees/operator-selection-guide' },
             { text: 'RxJS in Vue', link: '/docs/operator-trees/rxjs-vue-patterns' },
             { text: 'RxJS in Svelte', link: '/docs/operator-trees/rxjs-svelte-patterns' },
+            { text: 'RxJS Mental Models', link: '/docs/operator-trees/rxjs-mental-models' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
