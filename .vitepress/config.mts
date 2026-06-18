@@ -40,6 +40,7 @@ export default defineConfig({
           text: 'Filtering',
           items: [
             { text: 'filter', link: '/operators-claude/filtering/filter' },
+            { text: 'debounceTime', link: '/operators-claude/filtering/debounceTime' },
           ]
         },
         {
