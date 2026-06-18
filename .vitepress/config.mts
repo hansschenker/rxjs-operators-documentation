@@ -10,7 +10,8 @@ export default defineConfig({
       {
         text: 'Operators',
         items: [
-          { text: 'Transformation', link: '/operators-claude/transformation/mergeMap' },
+          { text: 'Transformation', link: '/operators-claude/transformation/map' },
+          { text: 'Filtering', link: '/operators-claude/filtering/filter' },
           { text: 'Combination', link: '/operators-claude/combination/combineLatest-operator-documentation' },
         ]
       },
@@ -27,6 +28,12 @@ export default defineConfig({
             { text: 'switchMap', link: '/operators-claude/transformation/switchMap' },
             { text: 'concatMap', link: '/operators-claude/transformation/concatMap' },
             { text: 'exhaustMap', link: '/operators-claude/transformation/exhaustMap' },
+          ]
+        },
+        {
+          text: 'Filtering',
+          items: [
+            { text: 'filter', link: '/operators-claude/filtering/filter' },
           ]
         },
         {
