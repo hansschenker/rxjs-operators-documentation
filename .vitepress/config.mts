@@ -80,6 +80,7 @@ export default defineConfig({
             { text: 'distinct', link: '/operators-claude/filtering/distinct' },
             { text: 'skip / takeLast / elementAt', link: '/operators-claude/filtering/skip-takeLast-elementAt' },
             { text: 'debounceTime (advanced)', link: '/operators-claude/filtering/debounceTime-advanced' },
+            { text: 'distinctUntilChanged (advanced)', link: '/operators-claude/filtering/distinctUntilChanged-advanced' },
             { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
           ]
         },
@@ -184,6 +185,7 @@ export default defineConfig({
             { text: 'combineLatestWith / mergeWith / concatWith', link: '/operators-claude/combination/combineLatestWith-mergeWith' },
             { text: 'withLatestFrom (advanced)', link: '/operators-claude/combination/withLatestFrom-advanced' },
             { text: 'forkJoin (advanced)', link: '/operators-claude/combination/forkJoin-advanced' },
+            { text: 'combineLatest (advanced)', link: '/operators-claude/combination/combineLatest-advanced' },
           ]
         },
       ],
@@ -242,6 +244,7 @@ export default defineConfig({
             { text: 'TypeScript + RxJS Guide', link: '/docs/operator-trees/typescript-rxjs-guide' },
             { text: 'Real-Time Data Guide', link: '/docs/operator-trees/realtime-data-guide' },
             { text: 'Form Validation Guide', link: '/docs/operator-trees/form-validation-guide' },
+            { text: 'RxJS in React', link: '/docs/operator-trees/rxjs-react-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
