@@ -147,6 +147,7 @@ export default defineConfig({
             { text: 'reduce', link: '/operators-claude/mathematical-aggregate/reduce' },
             { text: 'toArray / count', link: '/operators-claude/mathematical-aggregate/toArray-count' },
             { text: 'min / max', link: '/operators-claude/mathematical-aggregate/min-max' },
+            { text: 'scan (advanced)', link: '/operators-claude/mathematical-aggregate/scan-advanced' },
           ]
         },
         {
@@ -176,6 +177,7 @@ export default defineConfig({
             { text: 'race', link: '/operators-claude/combination/race' },
             { text: 'Pipeable Aliases', link: '/operators-claude/combination/pipeable-aliases' },
             { text: 'combineLatestWith / mergeWith / concatWith', link: '/operators-claude/combination/combineLatestWith-mergeWith' },
+            { text: 'withLatestFrom (advanced)', link: '/operators-claude/combination/withLatestFrom-advanced' },
           ]
         },
       ],
@@ -230,6 +232,7 @@ export default defineConfig({
             { text: 'NgRx Effects Patterns', link: '/docs/operator-trees/ngrx-effects-patterns' },
             { text: 'RxJS Migration Guide', link: '/docs/operator-trees/rxjs-migration-guide' },
             { text: 'RxJS Best Practices', link: '/docs/operator-trees/rxjs-best-practices' },
+            { text: 'Angular Signals + RxJS', link: '/docs/operator-trees/angular-signals-rxjs' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
