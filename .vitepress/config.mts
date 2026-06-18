@@ -47,6 +47,7 @@ export default defineConfig({
             { text: 'expand (advanced)', link: '/operators-claude/transformation/expand-advanced' },
             { text: 'windowTime (advanced)', link: '/operators-claude/transformation/windowTime-advanced' },
             { text: 'map (advanced)', link: '/operators-claude/transformation/map-advanced' },
+            { text: 'pairwise (advanced)', link: '/operators-claude/transformation/pairwise-advanced' },
           ]
         },
         {
@@ -58,6 +59,7 @@ export default defineConfig({
             { text: 'repeat', link: '/operators-claude/utility/repeat' },
             { text: 'delay / delayWhen (advanced)', link: '/operators-claude/utility/delay-delayWhen-advanced' },
             { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
+            { text: 'materialize / dematerialize (advanced)', link: '/operators-claude/utility/materialize-dematerialize-advanced' },
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
@@ -266,6 +268,7 @@ export default defineConfig({
             { text: 'RxJS in Svelte', link: '/docs/operator-trees/rxjs-svelte-patterns' },
             { text: 'RxJS Mental Models', link: '/docs/operator-trees/rxjs-mental-models' },
             { text: 'Caching Patterns', link: '/docs/operator-trees/rxjs-caching-patterns' },
+            { text: 'Higher-Order Observables', link: '/docs/operator-trees/higher-order-observables-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
