@@ -33,6 +33,7 @@ export default defineConfig({
             { text: 'bufferTime', link: '/operators-claude/transformation/bufferTime' },
             { text: 'bufferCount', link: '/operators-claude/transformation/bufferCount' },
             { text: 'buffer / window', link: '/operators-claude/transformation/buffer-window' },
+            { text: 'bufferWhen / windowWhen', link: '/operators-claude/transformation/bufferWhen-windowWhen' },
             { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
             { text: 'switchScan', link: '/operators-claude/transformation/switchScan' },
             { text: 'mergeScan', link: '/operators-claude/transformation/mergeScan' },
@@ -51,6 +52,7 @@ export default defineConfig({
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
+            { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
           ]
         },
         {
@@ -201,6 +203,7 @@ export default defineConfig({
             { text: 'Error Handling Patterns', link: '/docs/operator-trees/error-handling-patterns' },
             { text: 'Multicasting Guide', link: '/docs/operator-trees/multicasting-guide' },
             { text: 'Rate-Limiting Guide', link: '/docs/operator-trees/rate-limiting-guide' },
+            { text: 'Custom Operators Guide', link: '/docs/operator-trees/custom-operators-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
