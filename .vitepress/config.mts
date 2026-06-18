@@ -31,6 +31,7 @@ export default defineConfig({
             { text: 'pairwise', link: '/operators-claude/transformation/pairwise' },
             { text: 'groupBy', link: '/operators-claude/transformation/groupBy' },
             { text: 'bufferTime', link: '/operators-claude/transformation/bufferTime' },
+            { text: 'bufferTime (advanced)', link: '/operators-claude/transformation/bufferTime-advanced' },
             { text: 'bufferCount', link: '/operators-claude/transformation/bufferCount' },
             { text: 'buffer / window', link: '/operators-claude/transformation/buffer-window' },
             { text: 'bufferWhen / windowWhen', link: '/operators-claude/transformation/bufferWhen-windowWhen' },
@@ -175,6 +176,7 @@ export default defineConfig({
           text: 'Multicasting',
           items: [
             { text: 'shareReplay', link: '/operators-claude/multicasting/shareReplay' },
+            { text: 'shareReplay (advanced)', link: '/operators-claude/multicasting/shareReplay-advanced' },
             { text: 'share', link: '/operators-claude/multicasting/share' },
             { text: 'share (advanced)', link: '/operators-claude/multicasting/share-advanced' },
           ]
@@ -278,6 +280,7 @@ export default defineConfig({
             { text: 'Infinite Scroll & Pagination', link: '/docs/operator-trees/rxjs-infinite-scroll-pagination' },
             { text: 'Search & Autocomplete', link: '/docs/operator-trees/rxjs-search-autocomplete-patterns' },
             { text: 'Drag, Drop & Animation', link: '/docs/operator-trees/rxjs-drag-drop-animation' },
+            { text: 'Notification & Toast Patterns', link: '/docs/operator-trees/rxjs-notification-toast-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
