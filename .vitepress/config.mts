@@ -156,6 +156,7 @@ export default defineConfig({
             { text: 'toArray / count', link: '/operators-claude/mathematical-aggregate/toArray-count' },
             { text: 'min / max', link: '/operators-claude/mathematical-aggregate/min-max' },
             { text: 'scan (advanced)', link: '/operators-claude/mathematical-aggregate/scan-advanced' },
+            { text: 'reduce (advanced)', link: '/operators-claude/mathematical-aggregate/reduce-advanced' },
           ]
         },
         {
@@ -254,6 +255,8 @@ export default defineConfig({
             { text: 'Debugging Guide', link: '/docs/operator-trees/debugging-guide' },
             { text: 'Pipeline Architecture', link: '/docs/operator-trees/pipeline-architecture-guide' },
             { text: 'Concurrency Patterns', link: '/docs/operator-trees/concurrency-guide' },
+            { text: 'Operator Selection Guide', link: '/docs/operator-trees/operator-selection-guide' },
+            { text: 'RxJS in Vue', link: '/docs/operator-trees/rxjs-vue-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
