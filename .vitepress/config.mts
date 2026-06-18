@@ -29,6 +29,9 @@ export default defineConfig({
             { text: 'concatMap', link: '/operators-claude/transformation/concatMap' },
             { text: 'exhaustMap', link: '/operators-claude/transformation/exhaustMap' },
             { text: 'pairwise', link: '/operators-claude/transformation/pairwise' },
+            { text: 'groupBy', link: '/operators-claude/transformation/groupBy' },
+            { text: 'bufferTime', link: '/operators-claude/transformation/bufferTime' },
+            { text: 'expand', link: '/operators-claude/transformation/expand' },
           ]
         },
         {
