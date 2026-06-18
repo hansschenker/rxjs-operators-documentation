@@ -60,6 +60,7 @@ export default defineConfig({
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
             { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
             { text: 'Schedulers', link: '/operators-claude/utility/schedulers' },
+            { text: 'repeat (advanced)', link: '/operators-claude/utility/repeat-advanced' },
           ]
         },
         {
@@ -178,6 +179,7 @@ export default defineConfig({
             { text: 'Pipeable Aliases', link: '/operators-claude/combination/pipeable-aliases' },
             { text: 'combineLatestWith / mergeWith / concatWith', link: '/operators-claude/combination/combineLatestWith-mergeWith' },
             { text: 'withLatestFrom (advanced)', link: '/operators-claude/combination/withLatestFrom-advanced' },
+            { text: 'forkJoin (advanced)', link: '/operators-claude/combination/forkJoin-advanced' },
           ]
         },
       ],
@@ -233,6 +235,7 @@ export default defineConfig({
             { text: 'RxJS Migration Guide', link: '/docs/operator-trees/rxjs-migration-guide' },
             { text: 'RxJS Best Practices', link: '/docs/operator-trees/rxjs-best-practices' },
             { text: 'Angular Signals + RxJS', link: '/docs/operator-trees/angular-signals-rxjs' },
+            { text: 'TypeScript + RxJS Guide', link: '/docs/operator-trees/typescript-rxjs-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
