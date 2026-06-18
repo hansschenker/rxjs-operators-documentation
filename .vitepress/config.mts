@@ -71,6 +71,7 @@ export default defineConfig({
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
             { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
             { text: 'Schedulers', link: '/operators-claude/utility/schedulers' },
+            { text: 'Schedulers (advanced)', link: '/operators-claude/utility/schedulers-advanced' },
             { text: 'repeat (advanced)', link: '/operators-claude/utility/repeat-advanced' },
           ]
         },
@@ -237,6 +238,7 @@ export default defineConfig({
           text: 'Conditional',
           items: [
             { text: 'defaultIfEmpty / isEmpty / every / sequenceEqual', link: '/operators-claude/conditional/conditional-operators' },
+            { text: 'Conditional Operators (advanced)', link: '/operators-claude/conditional/conditional-operators-advanced' },
           ]
         },
         {
@@ -282,6 +284,7 @@ export default defineConfig({
             { text: 'Node.js Patterns', link: '/docs/operator-trees/nodejs-rxjs-patterns' },
             { text: 'State Management', link: '/docs/operator-trees/state-management-patterns' },
             { text: 'NgRx Effects Patterns', link: '/docs/operator-trees/ngrx-effects-patterns' },
+            { text: 'NgRx ComponentStore', link: '/docs/operator-trees/rxjs-ngrx-component-store' },
             { text: 'RxJS Migration Guide', link: '/docs/operator-trees/rxjs-migration-guide' },
             { text: 'RxJS Best Practices', link: '/docs/operator-trees/rxjs-best-practices' },
             { text: 'Angular Signals + RxJS', link: '/docs/operator-trees/angular-signals-rxjs' },
