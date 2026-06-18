@@ -96,6 +96,7 @@ export default defineConfig({
             { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
             { text: 'takeWhile (advanced)', link: '/operators-claude/filtering/takeWhile-advanced' },
             { text: 'filter (advanced)', link: '/operators-claude/filtering/filter-advanced' },
+            { text: 'first / last (advanced)', link: '/operators-claude/filtering/first-last-advanced' },
             { text: 'skipUntil / skipWhile (advanced)', link: '/operators-claude/filtering/skipUntil-skipWhile-advanced' },
           ]
         },
