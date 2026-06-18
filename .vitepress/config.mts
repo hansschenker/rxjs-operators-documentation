@@ -67,6 +67,9 @@ export default defineConfig({
           text: 'Combination',
           items: [
             { text: 'combineLatest', link: '/operators-claude/combination/combineLatest-operator-documentation' },
+            { text: 'startWith', link: '/operators-claude/combination/startWith' },
+            { text: 'forkJoin', link: '/operators-claude/combination/forkJoin' },
+            { text: 'merge', link: '/operators-claude/combination/merge' },
           ]
         },
       ],
