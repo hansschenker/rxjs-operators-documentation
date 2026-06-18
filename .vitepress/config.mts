@@ -161,6 +161,7 @@ export default defineConfig({
           items: [
             { text: 'shareReplay', link: '/operators-claude/multicasting/shareReplay' },
             { text: 'share', link: '/operators-claude/multicasting/share' },
+            { text: 'share (advanced)', link: '/operators-claude/multicasting/share-advanced' },
           ]
         },
         {
@@ -186,6 +187,7 @@ export default defineConfig({
             { text: 'withLatestFrom (advanced)', link: '/operators-claude/combination/withLatestFrom-advanced' },
             { text: 'forkJoin (advanced)', link: '/operators-claude/combination/forkJoin-advanced' },
             { text: 'combineLatest (advanced)', link: '/operators-claude/combination/combineLatest-advanced' },
+            { text: 'zip (advanced)', link: '/operators-claude/combination/zip-advanced' },
           ]
         },
       ],
@@ -245,6 +247,7 @@ export default defineConfig({
             { text: 'Real-Time Data Guide', link: '/docs/operator-trees/realtime-data-guide' },
             { text: 'Form Validation Guide', link: '/docs/operator-trees/form-validation-guide' },
             { text: 'RxJS in React', link: '/docs/operator-trees/rxjs-react-patterns' },
+            { text: 'Debugging Guide', link: '/docs/operator-trees/debugging-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
