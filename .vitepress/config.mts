@@ -42,6 +42,7 @@ export default defineConfig({
             { text: 'filter', link: '/operators-claude/filtering/filter' },
             { text: 'debounceTime', link: '/operators-claude/filtering/debounceTime' },
             { text: 'distinctUntilChanged', link: '/operators-claude/filtering/distinctUntilChanged' },
+            { text: 'take', link: '/operators-claude/filtering/take' },
             { text: 'takeUntil', link: '/operators-claude/filtering/takeUntil' },
             { text: 'throttleTime', link: '/operators-claude/filtering/throttleTime' },
           ]
@@ -53,9 +54,16 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Creation',
+          items: [
+            { text: 'interval', link: '/operators-claude/creation/interval' },
+          ]
+        },
+        {
           text: 'Mathematical / Aggregate',
           items: [
             { text: 'scan', link: '/operators-claude/mathematical-aggregate/scan' },
+            { text: 'reduce', link: '/operators-claude/mathematical-aggregate/reduce' },
           ]
         },
         {
