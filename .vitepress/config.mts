@@ -337,6 +337,8 @@ export default defineConfig({
             { text: 'Integration Testing', link: '/docs/operator-trees/rxjs-testing-integration' },
             { text: 'RxJS 8 Preparation', link: '/docs/operator-trees/rxjs-rxjs8-preparation' },
             { text: 'WebSocket Patterns', link: '/docs/operator-trees/rxjs-websocket-patterns' },
+            { text: 'Angular Standalone APIs', link: '/docs/operator-trees/rxjs-angular-standalone' },
+            { text: 'Performance Profiling', link: '/docs/operator-trees/rxjs-performance-profiling' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
