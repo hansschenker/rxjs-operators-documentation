@@ -66,6 +66,7 @@ export default defineConfig({
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
             { text: 'observeOn / subscribeOn (advanced)', link: '/operators-claude/utility/observeOn-subscribeOn-advanced' },
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
+            { text: 'timeInterval / timestamp (advanced)', link: '/operators-claude/utility/timeInterval-timestamp-advanced' },
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
             { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
             { text: 'Schedulers', link: '/operators-claude/utility/schedulers' },
@@ -176,6 +177,7 @@ export default defineConfig({
             { text: 'min / max', link: '/operators-claude/mathematical-aggregate/min-max' },
             { text: 'scan (advanced)', link: '/operators-claude/mathematical-aggregate/scan-advanced' },
             { text: 'reduce (advanced)', link: '/operators-claude/mathematical-aggregate/reduce-advanced' },
+            { text: 'toArray / count (advanced)', link: '/operators-claude/mathematical-aggregate/toArray-count-advanced' },
           ]
         },
         {
@@ -296,6 +298,7 @@ export default defineConfig({
             { text: 'Undo/Redo Patterns', link: '/docs/operator-trees/rxjs-undo-redo-patterns' },
             { text: 'Data Synchronization', link: '/docs/operator-trees/rxjs-data-synchronization-patterns' },
             { text: 'Multi-Tab Patterns', link: '/docs/operator-trees/rxjs-multi-tab-patterns' },
+            { text: 'Marble Testing (Advanced)', link: '/docs/operator-trees/rxjs-marble-testing-advanced' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
