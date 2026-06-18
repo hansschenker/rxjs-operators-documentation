@@ -50,6 +50,7 @@ export default defineConfig({
             { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
+            { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
           ]
         },
         {
@@ -110,6 +111,7 @@ export default defineConfig({
             { text: 'iif', link: '/operators-claude/creation/iif' },
             { text: 'throwError', link: '/operators-claude/creation/throwError' },
             { text: 'generate', link: '/operators-claude/creation/generate' },
+            { text: 'bindCallback / bindNodeCallback', link: '/operators-claude/creation/bindCallback-bindNodeCallback' },
             { text: 'fromEventPattern', link: '/operators-claude/creation/fromEventPattern' },
             { text: 'using', link: '/operators-claude/creation/using' },
             { text: 'ajax', link: '/operators-claude/creation/ajax' },
@@ -186,6 +188,7 @@ export default defineConfig({
             { text: 'Overview', link: '/docs/operator-trees/overview' },
             { text: 'Flattening Strategy Guide', link: '/docs/operator-trees/flattening-strategy-guide' },
             { text: 'Subject Decision Guide', link: '/docs/operator-trees/subject-decision-guide' },
+            { text: 'Error Handling Patterns', link: '/docs/operator-trees/error-handling-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
