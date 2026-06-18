@@ -61,6 +61,7 @@ export default defineConfig({
             { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
             { text: 'materialize / dematerialize (advanced)', link: '/operators-claude/utility/materialize-dematerialize-advanced' },
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
+            { text: 'observeOn / subscribeOn (advanced)', link: '/operators-claude/utility/observeOn-subscribeOn-advanced' },
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
             { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
@@ -145,6 +146,7 @@ export default defineConfig({
             { text: 'animationFrames', link: '/operators-claude/creation/animationFrames' },
             { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
             { text: 'interval / timer (advanced)', link: '/operators-claude/creation/interval-timer-advanced' },
+            { text: 'fromEvent (advanced)', link: '/operators-claude/creation/fromEvent-advanced' },
           ]
         },
         {
@@ -269,6 +271,7 @@ export default defineConfig({
             { text: 'RxJS Mental Models', link: '/docs/operator-trees/rxjs-mental-models' },
             { text: 'Caching Patterns', link: '/docs/operator-trees/rxjs-caching-patterns' },
             { text: 'Higher-Order Observables', link: '/docs/operator-trees/higher-order-observables-guide' },
+            { text: 'Infinite Scroll & Pagination', link: '/docs/operator-trees/rxjs-infinite-scroll-pagination' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
