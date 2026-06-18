@@ -34,6 +34,7 @@ export default defineConfig({
             { text: 'bufferCount', link: '/operators-claude/transformation/bufferCount' },
             { text: 'buffer / window', link: '/operators-claude/transformation/buffer-window' },
             { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
+            { text: 'switchScan', link: '/operators-claude/transformation/switchScan' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
           ]
@@ -83,6 +84,7 @@ export default defineConfig({
             { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
             { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
             { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
+            { text: 'zipAll', link: '/operators-claude/higher-order/zipAll' },
           ]
         },
         {
@@ -180,6 +182,7 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/docs/operator-trees/overview' },
             { text: 'Flattening Strategy Guide', link: '/docs/operator-trees/flattening-strategy-guide' },
+            { text: 'Subject Decision Guide', link: '/docs/operator-trees/subject-decision-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
