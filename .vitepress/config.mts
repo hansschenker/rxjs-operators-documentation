@@ -119,6 +119,7 @@ export default defineConfig({
             { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
             { text: 'mergeAll / concatAll / switchAll (advanced)', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll-advanced' },
             { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
+            { text: 'exhaustAll / exhaustMap (advanced)', link: '/operators-claude/higher-order/exhaustAll-advanced' },
             { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
             { text: 'zipAll', link: '/operators-claude/higher-order/zipAll' },
           ]
@@ -319,6 +320,8 @@ export default defineConfig({
             { text: 'Service Worker Patterns', link: '/docs/operator-trees/rxjs-service-worker-patterns' },
             { text: 'Accessibility Patterns', link: '/docs/operator-trees/rxjs-accessibility-patterns' },
             { text: 'GraphQL Patterns', link: '/docs/operator-trees/rxjs-graphql-patterns' },
+            { text: 'Integration Testing', link: '/docs/operator-trees/rxjs-testing-integration' },
+            { text: 'RxJS 8 Preparation', link: '/docs/operator-trees/rxjs-rxjs8-preparation' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
