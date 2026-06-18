@@ -141,6 +141,7 @@ export default defineConfig({
           items: [
             { text: 'of', link: '/operators-claude/creation/of' },
             { text: 'from', link: '/operators-claude/creation/from' },
+            { text: 'from (advanced)', link: '/operators-claude/creation/from-advanced' },
             { text: 'defer', link: '/operators-claude/creation/defer' },
             { text: 'interval', link: '/operators-claude/creation/interval' },
             { text: 'timer', link: '/operators-claude/creation/timer' },
@@ -251,6 +252,7 @@ export default defineConfig({
           text: 'Testing / Debugging',
           items: [
             { text: 'TestScheduler', link: '/operators-claude/testing/TestScheduler' },
+            { text: 'TestScheduler (advanced)', link: '/operators-claude/testing/TestScheduler-advanced' },
             { text: 'Debugging Streams', link: '/operators-claude/testing/debugging-operators' },
           ]
         },
@@ -285,6 +287,7 @@ export default defineConfig({
             { text: 'State Management', link: '/docs/operator-trees/state-management-patterns' },
             { text: 'NgRx Effects Patterns', link: '/docs/operator-trees/ngrx-effects-patterns' },
             { text: 'NgRx ComponentStore', link: '/docs/operator-trees/rxjs-ngrx-component-store' },
+            { text: 'Enterprise Patterns', link: '/docs/operator-trees/rxjs-enterprise-patterns' },
             { text: 'RxJS Migration Guide', link: '/docs/operator-trees/rxjs-migration-guide' },
             { text: 'RxJS Best Practices', link: '/docs/operator-trees/rxjs-best-practices' },
             { text: 'Angular Signals + RxJS', link: '/docs/operator-trees/angular-signals-rxjs' },
