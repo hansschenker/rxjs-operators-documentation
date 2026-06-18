@@ -160,6 +160,7 @@ export default defineConfig({
             { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
             { text: 'BehaviorSubject (advanced)', link: '/operators-claude/subject/BehaviorSubject-advanced' },
             { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
+            { text: 'ReplaySubject (advanced)', link: '/operators-claude/subject/ReplaySubject-advanced' },
             { text: 'AsyncSubject', link: '/operators-claude/subject/AsyncSubject' },
           ]
         },
@@ -284,6 +285,8 @@ export default defineConfig({
             { text: 'Drag, Drop & Animation', link: '/docs/operator-trees/rxjs-drag-drop-animation' },
             { text: 'Notification & Toast Patterns', link: '/docs/operator-trees/rxjs-notification-toast-patterns' },
             { text: 'Optimistic UI Patterns', link: '/docs/operator-trees/rxjs-optimistic-ui-patterns' },
+            { text: 'Authentication Patterns', link: '/docs/operator-trees/rxjs-authentication-patterns' },
+            { text: 'File Upload Patterns', link: '/docs/operator-trees/rxjs-file-upload-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
