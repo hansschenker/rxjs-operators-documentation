@@ -87,6 +87,7 @@ export default defineConfig({
             { text: 'takeWhile', link: '/operators-claude/filtering/takeWhile' },
             { text: 'skipUntil / skipWhile', link: '/operators-claude/filtering/skipUntil-skipWhile' },
             { text: 'distinctUntilKeyChanged', link: '/operators-claude/filtering/distinctUntilKeyChanged' },
+            { text: 'distinctUntilKeyChanged (advanced)', link: '/operators-claude/filtering/distinctUntilKeyChanged-advanced' },
             { text: 'find / findIndex', link: '/operators-claude/filtering/find-findIndex' },
             { text: 'distinct', link: '/operators-claude/filtering/distinct' },
             { text: 'skip / takeLast / elementAt', link: '/operators-claude/filtering/skip-takeLast-elementAt' },
@@ -255,6 +256,7 @@ export default defineConfig({
           text: 'Interop',
           items: [
             { text: 'Async Iterable / ReadableStream', link: '/operators-claude/interop/async-iterable' },
+            { text: 'Async Iterable (advanced)', link: '/operators-claude/interop/async-iterable-advanced' },
           ]
         },
       ],
@@ -322,6 +324,7 @@ export default defineConfig({
             { text: 'GraphQL Patterns', link: '/docs/operator-trees/rxjs-graphql-patterns' },
             { text: 'Integration Testing', link: '/docs/operator-trees/rxjs-testing-integration' },
             { text: 'RxJS 8 Preparation', link: '/docs/operator-trees/rxjs-rxjs8-preparation' },
+            { text: 'WebSocket Patterns', link: '/docs/operator-trees/rxjs-websocket-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
