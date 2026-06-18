@@ -58,6 +58,7 @@ export default defineConfig({
             { text: 'skipUntil / skipWhile', link: '/operators-claude/filtering/skipUntil-skipWhile' },
             { text: 'distinctUntilKeyChanged', link: '/operators-claude/filtering/distinctUntilKeyChanged' },
             { text: 'find / findIndex', link: '/operators-claude/filtering/find-findIndex' },
+            { text: 'distinct', link: '/operators-claude/filtering/distinct' },
           ]
         },
         {
@@ -72,6 +73,7 @@ export default defineConfig({
           text: 'Higher-Order',
           items: [
             { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
+            { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
           ]
         },
         {
