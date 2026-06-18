@@ -59,6 +59,7 @@ export default defineConfig({
             { text: 'distinctUntilKeyChanged', link: '/operators-claude/filtering/distinctUntilKeyChanged' },
             { text: 'find / findIndex', link: '/operators-claude/filtering/find-findIndex' },
             { text: 'distinct', link: '/operators-claude/filtering/distinct' },
+            { text: 'skip / takeLast / elementAt', link: '/operators-claude/filtering/skip-takeLast-elementAt' },
           ]
         },
         {
@@ -96,6 +97,7 @@ export default defineConfig({
             { text: 'iif', link: '/operators-claude/creation/iif' },
             { text: 'throwError', link: '/operators-claude/creation/throwError' },
             { text: 'ajax', link: '/operators-claude/creation/ajax' },
+            { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
           ]
         },
         {
