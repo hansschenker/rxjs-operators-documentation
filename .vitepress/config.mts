@@ -79,6 +79,8 @@ export default defineConfig({
             { text: 'find / findIndex', link: '/operators-claude/filtering/find-findIndex' },
             { text: 'distinct', link: '/operators-claude/filtering/distinct' },
             { text: 'skip / takeLast / elementAt', link: '/operators-claude/filtering/skip-takeLast-elementAt' },
+            { text: 'debounceTime (advanced)', link: '/operators-claude/filtering/debounceTime-advanced' },
+            { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
           ]
         },
         {
@@ -239,6 +241,7 @@ export default defineConfig({
             { text: 'Angular Signals + RxJS', link: '/docs/operator-trees/angular-signals-rxjs' },
             { text: 'TypeScript + RxJS Guide', link: '/docs/operator-trees/typescript-rxjs-guide' },
             { text: 'Real-Time Data Guide', link: '/docs/operator-trees/realtime-data-guide' },
+            { text: 'Form Validation Guide', link: '/docs/operator-trees/form-validation-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
