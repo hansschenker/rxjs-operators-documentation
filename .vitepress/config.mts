@@ -185,6 +185,7 @@ export default defineConfig({
             { text: 'scan (advanced)', link: '/operators-claude/mathematical-aggregate/scan-advanced' },
             { text: 'reduce (advanced)', link: '/operators-claude/mathematical-aggregate/reduce-advanced' },
             { text: 'toArray / count (advanced)', link: '/operators-claude/mathematical-aggregate/toArray-count-advanced' },
+            { text: 'min / max (advanced)', link: '/operators-claude/mathematical-aggregate/min-max-advanced' },
           ]
         },
         {
@@ -314,6 +315,7 @@ export default defineConfig({
             { text: 'Micro-Frontend Patterns', link: '/docs/operator-trees/rxjs-micro-frontend-patterns' },
             { text: 'Virtual Scroll', link: '/docs/operator-trees/rxjs-virtual-scroll' },
             { text: 'Service Worker Patterns', link: '/docs/operator-trees/rxjs-service-worker-patterns' },
+            { text: 'Accessibility Patterns', link: '/docs/operator-trees/rxjs-accessibility-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
