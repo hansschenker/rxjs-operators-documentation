@@ -122,6 +122,7 @@ export default defineConfig({
             { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
             { text: 'sample / audit', link: '/operators-claude/rate-limiting/sample-audit' },
             { text: 'throttle / debounce', link: '/operators-claude/rate-limiting/throttle-debounce' },
+            { text: 'throttle / debounce (advanced)', link: '/operators-claude/rate-limiting/throttle-debounce-advanced' },
           ]
         },
         {
@@ -287,6 +288,8 @@ export default defineConfig({
             { text: 'Optimistic UI Patterns', link: '/docs/operator-trees/rxjs-optimistic-ui-patterns' },
             { text: 'Authentication Patterns', link: '/docs/operator-trees/rxjs-authentication-patterns' },
             { text: 'File Upload Patterns', link: '/docs/operator-trees/rxjs-file-upload-patterns' },
+            { text: 'Polling Patterns', link: '/docs/operator-trees/rxjs-polling-patterns' },
+            { text: 'Promise Interop', link: '/docs/operator-trees/rxjs-promise-interop' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
