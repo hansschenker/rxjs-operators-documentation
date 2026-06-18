@@ -132,6 +132,7 @@ export default defineConfig({
             { text: 'concat', link: '/operators-claude/combination/concat' },
             { text: 'withLatestFrom', link: '/operators-claude/combination/withLatestFrom' },
             { text: 'zip', link: '/operators-claude/combination/zip' },
+            { text: 'Pipeable Aliases', link: '/operators-claude/combination/pipeable-aliases' },
           ]
         },
       ],
