@@ -1,341 +1,428 @@
-# RxJS Operator Documentation
+# RxJS Operators Documentation
 
-> **Comprehensive, formal specifications for RxJS operators using an eight-policy framework**
+> **The most comprehensive RxJS operator reference ever assembled.**
+> 222 pages. All 17 operator categories. Production-grade patterns. TypeScript-first.
 
-A systematic documentation project providing complete, pedagogically-sound operator specifications for the RxJS library. Each operator is documented following a rigorous eight-policy framework designed to eliminate ambiguity, prevent common mistakes, and provide developers with complete mental models for reactive programming.
-
-**Project Mentor**: [Claude Sonnet 4.5](https://www.anthropic.com/claude) - AI assistant by Anthropic
-
----
-
-## 📚 Documentation Philosophy
-
-This project goes beyond typical API documentation by providing:
-
-- **Mathematical precision** - Formal functional specifications
-- **Visual clarity** - ASCII marble diagrams for temporal behavior
-- **Type safety** - Complete TypeScript integration details
-- **Practical wisdom** - Real-world examples and anti-patterns
-- **Pedagogical structure** - Designed for both learning and reference
-
-### The Eight-Policy Framework
-
-Every operator is documented using eight comprehensive policies:
-
-1. **Operator Identity** - Classification, categorization, and signatures
-2. **Functional Specification** - Mathematical transformation definition
-3. **Marble Diagrams** - Visual temporal behavior representation
-4. **Behavioral Characteristics** - Subscription, completion, errors, backpressure
-5. **Type System Integration** - TypeScript type safety and inference
-6. **Practical Examples** - Basic usage, common patterns, edge cases
-7. **Common Pitfalls** - Anti-patterns with corrections
-8. **Related Operators** - Ecosystem context and alternatives
-
-See [SKILL.md](./SKILL.md) for the complete documentation standard.
+Built with [VitePress](https://vitepress.dev) and the **Eight-Policy Framework** — a formal specification standard that ensures every operator is documented with the same depth, structure, and production focus. Every page answers not just *"what does this operator do?"* but *"what is its full behavioral contract, where does it fail, and when should I reach for something else?"*
 
 ---
 
-## 🎯 Project Goals
+## Why This Exists
 
-1. **Eliminate ambiguity** in operator behavior through formal specifications
-2. **Prevent common mistakes** by documenting anti-patterns and pitfalls
-3. **Accelerate learning** with systematic categorization and learning paths
-4. **Improve debugging** by providing complete behavioral characteristics
-5. **Support teaching** with cognitive load analysis and pedagogical notes
-6. **Enable informed decisions** through comprehensive operator comparisons
+The official [rxjs.dev](https://rxjs.dev) documentation is an API reference. [learn-rxjs.io](https://www.learnrxjs.io) is an excellent introduction. [rxmarbles.com](https://rxmarbles.com) visualizes timing.
 
----
+None of them answer the questions that come up in production:
 
-## 📖 Documentation Status
+- What happens to `switchMap` when the inner Observable errors but I don't catch it?
+- Why does `distinct()` cause a memory leak in a long-running stream?
+- When does `exhaustMap` permanently stop accepting new values, and how do I fix it?
+- How do I choose between `debounceTime`, `throttleTime`, `auditTime`, and `sampleTime`?
+- What is the behavioral difference between `share()` and `shareReplay(1)` on reconnect?
 
-**Current Progress**: 2 / 100+ operators documented
-
-### Recently Documented
-- ✅ [combineLatest](./operators/combination/combineLatest.md) - Combination operator for reactive state management
-- ✅ [mergeMap](./operators/transformation/mergeMap.md) - Concurrent flattening for parallel async operations
-
-### Browse All Operators
-See the complete [Operator Index](./index.md) for:
-- All operator categories and status
-- Cognitive load and usage frequency ratings
-- Learning path recommendations
-- Quick reference guides
+This reference is built for those moments — for engineers who already know *of* an operator and need to understand it *completely*.
 
 ---
 
-## 🚀 Quick Start
+## Scale
 
-### For Learners
-
-**New to RxJS?** Follow the [Beginner Learning Path](./index.md#beginner-path):
-1. Start with creation operators (of, from, fromEvent)
-2. Master basic transformations (map, filter, tap)
-3. Learn combination patterns (combineLatest)
-4. Understand timing (debounceTime, throttleTime)
-5. Practice completion (take, takeUntil, first)
-
-**Each operator documentation includes**:
-- Clear explanations of what it does and why
-- Visual marble diagrams
-- Runnable code examples
-- Common mistakes to avoid
-- When to use this vs. alternatives
-
-### For Practitioners
-
-**Looking for a specific operator?** Use the [Quick Reference](./index.md#quick-reference) or search by:
-- **Use case** - "I need to handle multiple HTTP requests"
-- **Problem** - "My stream is emitting too fast"
-- **Pattern** - "I need sequential async operations"
-
-**Key operator families documented**:
-- Flattening strategies: mergeMap, switchMap (coming soon), concatMap (coming soon)
-- Rate limiting: debounceTime (coming soon), throttleTime (coming soon)
-- Combination: combineLatest, withLatestFrom (coming soon)
-
-### For Educators
-
-Each operator includes:
-- **Cognitive Load Rating** (1-5) - Helps sequence curriculum
-- **Usage Frequency** (1-5) - Prioritizes essential operators
-- **Teaching Notes** - Prerequisite concepts and common misconceptions
-- **rxjs-strategies Integration** - Strategy pattern classifications
+| Metric | Count |
+|---|---|
+| Operator documentation pages | **157** |
+| Reference guides & pattern libraries | **65** |
+| **Total pages** | **222** |
+| Operator categories covered | **17 / 17** |
+| Operators with advanced deep-dive docs | **40+** |
+| Real-world domain pattern guides | **40+** |
+| Anti-pattern examples with corrections | **200+** |
+| Git commits | **84** |
 
 ---
 
-## 📂 Repository Structure
+## The Eight-Policy Framework
+
+Every operator document — without exception — covers all eight policies in order:
+
+| # | Policy | What it answers |
+|---|---|---|
+| 1 | **Identity** | Name, category, TypeScript signature, import path |
+| 2 | **Functional Specification** | Input/output types, transformation rules, mathematical invariants |
+| 3 | **Marble Diagrams** | ASCII temporal visualization of every meaningful behavior variant |
+| 4 | **Behavioral Characteristics** | Subscription mechanics, completion semantics, error propagation, backpressure, hot vs cold |
+| 5 | **Type System Integration** | Generics, type narrowing, compile-time guarantees |
+| 6 | **Practical Examples** | Minimum 3 complete runnable examples: basic → common pattern → edge case |
+| 7 | **Common Pitfalls** | Anti-patterns with corrections using `❌ INCORRECT` / `✅ CORRECT` / `WHY:` format |
+| 8 | **Related Operators** | Same-category alternatives, complementary operators, decision matrix |
+
+Each doc also carries **educational metadata**: Cognitive Load (1–5), Usage Frequency (1–5), Composability Factor (1–5), and teaching sequence placement — so you know how much mental overhead to budget and where each operator belongs in a learning curriculum.
+
+---
+
+## Operator Coverage
+
+### Transformation (29 docs)
+
+The core of RxJS — every major flattening strategy, buffering, and projection operator.
+
+| Operator(s) | Core | Advanced |
+|---|---|---|
+| `map` | ✅ | ✅ |
+| `mergeMap` | ✅ | ✅ |
+| `switchMap` | ✅ | ✅ |
+| `concatMap` | ✅ | ✅ |
+| `exhaustMap` | ✅ | ✅ |
+| `groupBy` | ✅ | ✅ |
+| `expand` | ✅ | ✅ |
+| `pairwise` | ✅ | ✅ |
+| `bufferTime`, `bufferCount` | ✅ | ✅ / — |
+| `buffer`, `window` | ✅ | — |
+| `bufferWhen`, `windowWhen` | ✅ | — |
+| `bufferToggle`, `windowToggle` | ✅ | — |
+| `windowCount`, `windowTime` | ✅ | ✅ |
+| `switchScan` | ✅ | ✅ |
+| `mergeScan` | ✅ | ✅ |
+
+### Filtering (23 docs)
+
+When, how often, and whether values pass through.
+
+| Operator(s) | Core | Advanced |
+|---|---|---|
+| `filter` | ✅ | ✅ |
+| `debounceTime` | ✅ | ✅ |
+| `throttleTime` | ✅ | ✅ |
+| `distinctUntilChanged` | ✅ | ✅ |
+| `distinctUntilKeyChanged` | ✅ | ✅ |
+| `distinct` | ✅ | ✅ |
+| `take`, `takeUntil`, `takeWhile` | ✅ | ✅ each |
+| `first`, `last` | ✅ | ✅ |
+| `skip`, `skipUntil`, `skipWhile` | ✅ | ✅ |
+| `find`, `findIndex` | ✅ | — |
+| `takeLast`, `elementAt` | ✅ | — |
+
+### Creation (27 docs)
+
+Every factory function for producing Observables.
+
+| Operator(s) | Core | Advanced |
+|---|---|---|
+| `of`, `from`, `range`, `generate` | ✅ | — |
+| `interval`, `timer` | ✅ | ✅ |
+| `fromEvent`, `fromEventPattern` | ✅ | ✅ / — |
+| `fromFetch` | ✅ | ✅ |
+| `defer` | ✅ | ✅ |
+| `EMPTY`, `NEVER`, `throwError` | ✅ | — |
+| `ajax` | ✅ | ✅ |
+| `webSocket` | ✅ | ✅ |
+| `animationFrames` | ✅ | ✅ |
+| `partition`, `iif` | ✅ | — |
+| `bindCallback`, `bindNodeCallback` | ✅ | — |
+| `scheduled`, `using` | ✅ | — |
+
+### Combination (18 docs)
+
+Merging, joining, and coordinating multiple streams.
+
+| Operator(s) | Core | Advanced |
+|---|---|---|
+| `combineLatest` | ✅ | ✅ |
+| `merge`, `concat` | ✅ | ✅ each |
+| `forkJoin` | ✅ | ✅ |
+| `zip` | ✅ | ✅ |
+| `race` | ✅ | ✅ |
+| `withLatestFrom` | ✅ | ✅ |
+| `startWith` | ✅ | ✅ |
+| `combineLatestWith`, `mergeWith`, `concatWith` | ✅ | — |
+
+### Error Handling (7 docs)
+
+| Operator(s) | Core | Advanced |
+|---|---|---|
+| `catchError` | ✅ | ✅ |
+| `retry` | ✅ | ✅ |
+| `timeout` | ✅ | ✅ |
+| `onErrorResumeNext` | ✅ | — |
+
+### Subjects (7 docs)
+
+| Type | Core | Advanced |
+|---|---|---|
+| `Subject` | ✅ | — |
+| `BehaviorSubject` | ✅ | ✅ |
+| `ReplaySubject` | ✅ | ✅ |
+| `AsyncSubject` | ✅ | ✅ |
+
+### Multicasting, Mathematical/Aggregate, Utility, Higher-Order, Rate Limiting, Interop, Testing, Conditional, Connectable
+
+All 17 categories fully covered. See the sidebar for complete listings.
+
+---
+
+## Reference Library (65 guides)
+
+Beyond operator docs, the reference library covers production patterns organized by domain.
+
+### Decision Guides — Start here when you're choosing
+
+| Guide | Answers |
+|---|---|
+| [Flattening Strategy Guide](docs/operator-trees/flattening-strategy-guide.md) | `switchMap` vs `concatMap` vs `mergeMap` vs `exhaustMap` |
+| [Subject Decision Guide](docs/operator-trees/subject-decision-guide.md) | Which Subject type for which use case |
+| [Operator Selection Guide](docs/operator-trees/operator-selection-guide.md) | Match your intent to the right operator |
+| [Rate-Limiting Guide](docs/operator-trees/rate-limiting-guide.md) | `debounce` vs `throttle` vs `audit` vs `sample` |
+| [Error Handling Patterns](docs/operator-trees/error-handling-patterns.md) | Retry strategies, circuit breakers, fallback chains |
+| [Multicasting Guide](docs/operator-trees/multicasting-guide.md) | `share` vs `shareReplay`, refCount vs reset semantics |
+| [Higher-Order Observables](docs/operator-trees/higher-order-observables-guide.md) | When and how to flatten inner Observables |
+
+### Architecture & Testing
+
+[Pipeline Architecture](docs/operator-trees/pipeline-architecture-guide.md) ·
+[State Management Patterns](docs/operator-trees/state-management-patterns.md) ·
+[Concurrency Patterns](docs/operator-trees/concurrency-guide.md) ·
+[Custom Operators Guide](docs/operator-trees/custom-operators-guide.md) ·
+[Custom Operators Advanced](docs/operator-trees/rxjs-custom-operators-advanced.md) ·
+[Subscription Management](docs/operator-trees/subscription-management-guide.md) ·
+[Cold vs Hot Observables](docs/operator-trees/cold-vs-hot-guide.md) ·
+[Marble Testing Advanced](docs/operator-trees/rxjs-marble-testing-advanced.md) ·
+[Integration Testing](docs/operator-trees/rxjs-testing-integration.md) ·
+[Debugging Guide](docs/operator-trees/debugging-guide.md) ·
+[Performance Patterns](docs/operator-trees/performance-patterns-guide.md) ·
+[State Machines](docs/operator-trees/rxjs-state-machines.md)
+
+### Framework Integrations
+
+[Angular + RxJS Patterns](docs/operator-trees/angular-rxjs-patterns.md) ·
+[Angular Signals + RxJS](docs/operator-trees/angular-signals-rxjs.md) ·
+[NgRx Effects Patterns](docs/operator-trees/ngrx-effects-patterns.md) ·
+[RxJS in React](docs/operator-trees/rxjs-react-patterns.md) ·
+[RxJS in Vue](docs/operator-trees/rxjs-vue-patterns.md) ·
+[RxJS in Svelte](docs/operator-trees/rxjs-svelte-patterns.md) ·
+[Node.js Patterns](docs/operator-trees/nodejs-rxjs-patterns.md) ·
+[TypeScript + RxJS Guide](docs/operator-trees/typescript-rxjs-guide.md)
+
+### Real-World Domain Patterns
+
+[WebSocket Patterns](docs/operator-trees/rxjs-websocket-patterns.md) ·
+[GraphQL Patterns](docs/operator-trees/rxjs-graphql-patterns.md) ·
+[Authentication Patterns](docs/operator-trees/rxjs-authentication-patterns.md) ·
+[Caching Patterns](docs/operator-trees/rxjs-caching-patterns.md) ·
+[Real-Time Data Guide](docs/operator-trees/realtime-data-guide.md) ·
+[Polling Patterns](docs/operator-trees/rxjs-polling-patterns.md) ·
+[File Upload Patterns](docs/operator-trees/rxjs-file-upload-patterns.md) ·
+[Form Validation Guide](docs/operator-trees/form-validation-guide.md) ·
+[Optimistic UI Patterns](docs/operator-trees/rxjs-optimistic-ui-patterns.md) ·
+[Undo/Redo Patterns](docs/operator-trees/rxjs-undo-redo-patterns.md) ·
+[Data Synchronization](docs/operator-trees/rxjs-data-synchronization-patterns.md) ·
+[Multi-Tab Patterns](docs/operator-trees/rxjs-multi-tab-patterns.md) ·
+[Notification & Toast Patterns](docs/operator-trees/rxjs-notification-toast-patterns.md)
+
+### Browser & Platform APIs
+
+[Web Worker Patterns](docs/operator-trees/rxjs-web-worker-patterns.md) ·
+[Service Worker Patterns](docs/operator-trees/rxjs-service-worker-patterns.md) ·
+[IndexedDB Patterns](docs/operator-trees/rxjs-indexeddb-patterns.md) ·
+[Accessibility Patterns](docs/operator-trees/rxjs-accessibility-patterns.md) ·
+[Charts & Visualization](docs/operator-trees/rxjs-charts-visualization.md) ·
+[Drag, Drop & Animation](docs/operator-trees/rxjs-drag-drop-animation.md) ·
+[Virtual Scroll](docs/operator-trees/rxjs-virtual-scroll.md) ·
+[Infinite Scroll & Pagination](docs/operator-trees/rxjs-infinite-scroll-pagination.md) ·
+[Search & Autocomplete](docs/operator-trees/rxjs-search-autocomplete-patterns.md) ·
+[Micro-Frontend Patterns](docs/operator-trees/rxjs-micro-frontend-patterns.md)
+
+### Migration & Future
+
+[RxJS 8 Preparation](docs/operator-trees/rxjs-rxjs8-preparation.md) ·
+[RxJS Migration Guide](docs/operator-trees/rxjs-migration-guide.md) ·
+[Promise Interop](docs/operator-trees/rxjs-promise-interop.md) ·
+[Error Resilience Patterns](docs/operator-trees/rxjs-error-resilience-patterns.md) ·
+[RxJS Best Practices](docs/operator-trees/rxjs-best-practices.md) ·
+[RxJS Mental Models](docs/operator-trees/rxjs-mental-models.md)
+
+---
+
+## Learning Paths
+
+### Beginner — "I'm new to RxJS"
+
+1. **[RxJS Mental Models](docs/operator-trees/rxjs-mental-models.md)** — build the conceptual foundation first
+2. `of`, `from`, `interval`, `fromEvent` — the four most common creation operators
+3. `map`, `filter`, `tap` — basic transformation
+4. **[Cold vs Hot Observables](docs/operator-trees/cold-vs-hot-guide.md)** — the most important concept to internalize early
+5. **[Subscription Management](docs/operator-trees/subscription-management-guide.md)** — avoid leaks from day one
+6. `debounceTime`, `distinctUntilChanged` — the two filtering operators you'll use most
+7. `catchError`, `retry` — error handling basics
+8. **[RxJS Cookbook](docs/operator-trees/rxjs-cookbook.md)** — common recipes ready to use
+
+### Intermediate — "I use RxJS daily and want to go deeper"
+
+1. **[Flattening Strategy Guide](docs/operator-trees/flattening-strategy-guide.md)** — the most consequential RxJS decision
+2. `switchMap` advanced · `concatMap` advanced · `mergeMap` advanced · `exhaustMap` advanced
+3. **[Multicasting Guide](docs/operator-trees/multicasting-guide.md)** — `shareReplay`, `share`, refCount semantics
+4. **[Subject Decision Guide](docs/operator-trees/subject-decision-guide.md)**
+5. `scan` advanced — state accumulation without external variables
+6. **[Error Handling Patterns](docs/operator-trees/error-handling-patterns.md)** — exponential backoff, circuit breakers
+7. **[Custom Operators Guide](docs/operator-trees/custom-operators-guide.md)**
+8. **[Marble Testing Advanced](docs/operator-trees/rxjs-marble-testing-advanced.md)**
+
+### Advanced — "I design systems built on RxJS"
+
+1. **[Pipeline Architecture](docs/operator-trees/pipeline-architecture-guide.md)**
+2. **[Concurrency Patterns](docs/operator-trees/concurrency-guide.md)**
+3. **[State Machines](docs/operator-trees/rxjs-state-machines.md)**
+4. **[Custom Operators Advanced](docs/operator-trees/rxjs-custom-operators-advanced.md)**
+5. **[Performance Patterns](docs/operator-trees/performance-patterns-guide.md)**
+6. **[TypeScript + RxJS Guide](docs/operator-trees/typescript-rxjs-guide.md)**
+7. **[Integration Testing](docs/operator-trees/rxjs-testing-integration.md)**
+8. **[RxJS 8 Preparation](docs/operator-trees/rxjs-rxjs8-preparation.md)**
+
+### Domain-specific paths
+
+| Context | Recommended path |
+|---|---|
+| Angular developer | Angular + RxJS → Angular Signals + RxJS → NgRx Effects Patterns |
+| Real-time app | WebSocket Patterns → GraphQL Patterns → Data Synchronization → Multi-Tab Patterns |
+| Node.js backend | Node.js Patterns → Async Iterable Advanced → Error Resilience Patterns |
+| Testing focus | Marble Testing Advanced → Integration Testing → Debugging Guide |
+| Performance work | Performance Patterns → Schedulers → observeOn/subscribeOn Advanced |
+
+---
+
+## What Makes This Different
+
+### Anti-patterns are first-class content
+
+Most docs show correct code. This library shows *why specific incorrect patterns fail* — the subtle invariant being violated, the failure mode it creates in production, and the corrected version:
+
+```typescript
+// ❌ INCORRECT — catching error outside exhaustMap locks it forever:
+submit$.pipe(
+  exhaustMap(data => this.api.save(data)),
+  catchError(err => { showError(err); return EMPTY; })
+  // After first error: EMPTY terminates the outer chain.
+  // No further submit events will ever be processed.
+)
+
+// ✅ CORRECT — catch inside the inner Observable:
+submit$.pipe(
+  exhaustMap(data =>
+    this.api.save(data).pipe(
+      catchError(err => { showError(err); return EMPTY; })
+      // EMPTY completes the inner Observable only.
+      // exhaustMap's outer subscription stays alive.
+    )
+  )
+)
+// WHY: catchError on the outer pipe terminates the entire exhaustMap chain.
+//      Catching inside the inner Observable terminates only that attempt,
+//      leaving the outer subscription open for subsequent submit events.
+```
+
+### Marble diagrams for every behavioral variant
+
+Not one generic diagram per operator — one diagram for each configuration that has meaningfully different behavior:
 
 ```
-rxjs-operator-documentation/
+// throttleTime(300, { leading: true, trailing: false }) — default:
+Source: --a-b-c-----------d-e--|
+Result: --a-----------d--------|
+           ^300ms window
+
+// throttleTime(300, { leading: true, trailing: true }):
+Source: --a-b-c-----------d-e--|
+Result: --a-------c------d---e-|
+                  ^ trailing value emitted at end of window
+```
+
+### Behavioral contracts, not descriptions
+
+Each doc specifies the operator's contract in terms precise enough to reason about correctness:
+
+> `first(predicate, defaultValue)` — emits the first value satisfying `predicate`, then completes. If the source completes without a matching value: emits `defaultValue` if provided; throws `EmptyError` if not. Never errors on the predicate itself — predicate exceptions propagate as errors.
+
+### Advanced pattern docs extend fundamentals without repeating them
+
+Each major operator has a companion `-advanced.md` that assumes the fundamentals and goes directly to production patterns: concurrent file processing with `mergeScan`, progressive search with accumulated results using `switchScan`, animation-frame-locked game loops with `animationFrames`, LRU-bounded deduplication for long-running streams.
+
+### Educational metadata on every doc
+
+```
+Cognitive Load:   2/5  (one main caveat, otherwise predictable)
+Usage Frequency:  4/5  (appears in most production Angular/React apps)
+Composability:    5/5  (composes naturally with the entire operator set)
+Teaching sequence: After debounceTime — introduce as the "suppress consecutive repeats" complement
+```
+
+---
+
+## Running Locally
+
+```bash
+npm install
+npm run docs:dev      # dev server at http://localhost:5173
+npm run docs:build    # build static site to .vitepress/dist
+npm run docs:preview  # preview the built site
+```
+
+Requirements: Node.js 18+
+
+---
+
+## Repository Structure
+
+```
+.
+├── operators-claude/           # Operator documentation (157 pages)
+│   ├── transformation/         # map, mergeMap, switchMap, groupBy, expand, buffer…
+│   ├── filtering/              # filter, debounceTime, distinctUntilChanged, take…
+│   ├── creation/               # of, from, ajax, webSocket, animationFrames…
+│   ├── combination/            # combineLatest, forkJoin, merge, zip, race…
+│   ├── error-handling/         # catchError, retry, timeout…
+│   ├── subject/                # Subject, BehaviorSubject, ReplaySubject, AsyncSubject
+│   ├── multicasting/           # share, shareReplay
+│   ├── mathematical-aggregate/ # scan, reduce, toArray, min/max
+│   ├── utility/                # tap, finalize, delay, schedulers, materialize…
+│   ├── higher-order/           # mergeAll, concatAll, switchAll, exhaustAll
+│   ├── rate-limiting/          # auditTime, sampleTime, throttle, debounce
+│   ├── interop/                # async-iterable, ReadableStream
+│   ├── testing/                # TestScheduler, debugging
+│   ├── conditional/            # defaultIfEmpty, isEmpty, every, sequenceEqual
+│   └── connectable/            # connectable, connect
 │
-├── README.md                    # This file
-├── SKILL.md                     # Documentation standard and template
-├── index.md                     # Complete operator index and learning paths
-├── CONTRIBUTING.md              # Contribution guidelines (coming soon)
+├── docs/operator-trees/        # Reference guides & pattern libraries (65 pages)
+│   ├── *-guide.md              # Decision guides
+│   ├── rxjs-*-patterns.md      # Domain pattern libraries
+│   └── *.md                    # Mental models, best practices, cookbooks
 │
-├── operators/                   # Operator documentation by category
-│   ├── combination/
-│   │   └── combineLatest.md
-│   ├── transformation/
-│   │   └── mergeMap.md
-│   ├── filtering/
-│   ├── error-handling/
-│   ├── utility/
-│   └── ... (other categories)
-│
-└── examples/                    # Standalone examples (coming soon)
-    ├── patterns/
-    └── anti-patterns/
+├── SKILL.md                    # The complete Eight-Policy Framework specification
+└── .vitepress/config.mts       # Site config: nav, sidebar, theme
 ```
 
 ---
 
-## 🎓 Learning Resources
+## Design Decisions
 
-### Understanding the Framework
+**Why VitePress?** Markdown-first, excellent code syntax highlighting, zero-config static output, and a sidebar structure that matches the way developers navigate reference documentation.
 
-Before diving into specific operators, review:
-- [SKILL.md](./SKILL.md) - Complete documentation methodology
-- [Operator Index](./index.md) - Categorization system and learning paths
+**Why separate `-advanced.md` files?** Core docs stay focused on the contract and fundamentals. Advanced docs assume that knowledge and go directly to production patterns without re-explaining the basics. A developer debugging a production WebSocket reconnection issue doesn't want to scroll past an explanation of what `webSocket()` is.
 
-### External Resources
+**Why the Eight-Policy Framework?** Consistency is the most underrated property of documentation. When every doc answers the same questions in the same order, readers build a mental index: they know exactly where to look for the behavioral contract, exactly where the pitfalls section is. The framework also makes gaps visible — if you can't fill out all eight policies for an operator, you don't fully understand it yet.
 
-- **RxJS Official Docs**: [https://rxjs.dev](https://rxjs.dev)
-- **ReactiveX**: [http://reactivex.io](http://reactivex.io)
-- **Learn RxJS**: [https://www.learnrxjs.io](https://www.learnrxjs.io)
-- **RxJS Marbles**: [https://rxmarbles.com](https://rxmarbles.com)
-
-### Related Projects
-
-This documentation project is part of a larger ecosystem:
-- **rxjs-strategies** - Library implementing strategy patterns for RxJS operators
-- **rxjs-contracts** - Design by Contract debugging library for Observables
+**Why 200+ anti-patterns?** The gap between "I understand this operator" and "I use this operator correctly in production" is almost always an anti-pattern. Most RxJS bugs in real codebases fall into a small set of recurring failure modes: memory leaks from unbounded `distinct()`, form submission locking from catching outside `exhaustMap`, parallel writes from using `switchMap` instead of `concatMap`. Making those failure modes explicit — with the *mechanism* of why they fail — is more valuable than another correct usage example.
 
 ---
 
-## 🤝 Contributing
+## License
 
-We welcome contributions! Here's how you can help:
-
-### Documentation Contributions
-
-1. **Document new operators** following the [SKILL.md](./SKILL.md) template
-2. **Improve existing documentation** with better examples or clarifications
-3. **Add practical examples** from real-world use cases
-4. **Report issues** with existing documentation
-
-### Quality Standards
-
-All contributions must:
-- ✅ Follow the eight-policy framework completely
-- ✅ Include minimum 3 practical examples
-- ✅ Document at least 2 common pitfalls
-- ✅ Provide accurate marble diagrams
-- ✅ Include complete TypeScript signatures
-- ✅ Test all code examples
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) (coming soon) for detailed guidelines.
-
-### Suggesting Operators to Document
-
-Priority is given to:
-1. **High-frequency operators** - Most commonly used in production
-2. **Confusing operators** - Those with common misconceptions
-3. **Operator families** - Completing related sets (e.g., all flattening operators)
-4. **Teaching sequences** - Operators needed for learning paths
-
-Open an issue to suggest which operator should be documented next!
+MIT — use freely, attribution appreciated.
 
 ---
 
-## 🏗️ Project History
+<p align="center">
+  <a href="https://www.anthropic.com/claude">
+    <img src="https://www.anthropic.com/images/icons/claude-ai-icon.svg" alt="Claude AI" width="48" height="48" />
+  </a>
+  <br/>
+  <em>Co-authored with <a href="https://www.anthropic.com/claude">Claude Sonnet 4.6</a> by Anthropic</em>
+</p>
 
-### Genesis
-
-This project emerged from the need for comprehensive, formal operator documentation that serves both as:
-- A **reference** for experienced developers debugging complex reactive streams
-- An **educational resource** for developers learning functional reactive programming
-- A **specification** for library authors and tool creators
-
-### Mentorship by Claude Sonnet 4.5
-
-This documentation project is mentored and co-created with **Claude Sonnet 4.5**, Anthropic's advanced AI assistant. Claude contributes:
-
-- **Template design** - The eight-policy framework structure
-- **Documentation generation** - Comprehensive operator specifications
-- **Quality assurance** - Ensuring consistency and completeness
-- **Pedagogical insights** - Learning path design and cognitive load analysis
-- **Technical accuracy** - Verification against RxJS source code and TypeScript
-
-The human-AI collaboration enables:
-1. **Systematic coverage** - Consistent application of the framework across all operators
-2. **Deep analysis** - Exploration of edge cases and anti-patterns
-3. **Rapid iteration** - Quick generation of comprehensive documentation
-4. **Quality at scale** - Maintaining high standards across 100+ operators
-
-### Integration with rxjs-strategies
-
-This documentation serves as the foundational knowledge base for the **rxjs-strategies** library, which:
-- Applies strategy patterns to simplify RxJS's 100+ operators
-- Reduces cognitive complexity through systematic categorization
-- Provides educational tools for teaching reactive programming
-- Implements Design by Contract debugging with **rxjs-contracts**
-
----
-
-## 📊 Operator Coverage Roadmap
-
-### Phase 1: Core Operators (Q1 2025)
-**Target**: 20 most frequently used operators
-
-- [x] combineLatest
-- [x] mergeMap
-- [ ] switchMap
-- [ ] map
-- [ ] filter
-- [ ] tap
-- [ ] catchError
-- [ ] debounceTime
-- [ ] distinctUntilChanged
-- [ ] takeUntil
-- [ ] ... (10 more)
-
-### Phase 2: Essential Patterns (Q2 2025)
-**Target**: Complete operator families
-
-- [ ] All flattening operators (concatMap, exhaustMap, mergeAll, etc.)
-- [ ] All rate limiting operators (throttle, audit, sample families)
-- [ ] All combination operators (zip, forkJoin, withLatestFrom, etc.)
-- [ ] All error handling operators (retry, retryWhen, onErrorResumeNext)
-
-### Phase 3: Complete Coverage (Q3-Q4 2025)
-**Target**: All RxJS 7.x operators
-
-- [ ] Utility operators
-- [ ] Conditional operators
-- [ ] Mathematical operators
-- [ ] Multicasting operators
-- [ ] Creation operators
-
----
-
-## 🔬 Methodology
-
-### Documentation Process
-
-Each operator undergoes:
-
-1. **Source Analysis** - Review of RxJS implementation and TypeScript definitions
-2. **Behavioral Testing** - Verification of edge cases and completion semantics
-3. **Pattern Identification** - Analysis of common use cases and anti-patterns
-4. **Framework Application** - Systematic documentation using eight policies
-5. **Cross-Reference** - Comparison with related operators and alternatives
-6. **Pedagogical Review** - Assessment of cognitive load and teaching placement
-
-### Quality Assurance
-
-Documentation is verified through:
-- ✅ Code example testing (all examples must run)
-- ✅ Marble diagram validation (behavioral correctness)
-- ✅ TypeScript compilation (signature accuracy)
-- ✅ Cross-referencing (related operators are accurate)
-- ✅ Completeness check (all eight policies covered)
-
----
-
-## 📄 License
-
-This documentation is released under the **MIT License**.
-
-```
-Copyright (c) 2024-2025 RxJS Operator Documentation Project
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
-
-## 🙏 Acknowledgments
-
-- **RxJS Core Team** - For creating and maintaining the RxJS library
-- **ReactiveX Community** - For reactive programming patterns and documentation
-- **Anthropic** - For developing Claude Sonnet 4.5, the AI mentor of this project
-- **TypeScript Team** - For type system enabling precise specifications
-- **Functional Programming Community** - For theoretical foundations
-
----
-
-## 📞 Contact & Support
-
-- **Issues**: Open an issue on GitHub for bugs, suggestions, or questions
-- **Discussions**: Use GitHub Discussions for general questions about RxJS or reactive programming
-- **Related Work**: See [rxjs-strategies](https://github.com/[your-username]/rxjs-strategies) and [rxjs-contracts](https://github.com/[your-username]/rxjs-contracts)
-
----
-
-## 🌟 Star History
-
-If you find this documentation valuable, please consider starring the repository to help others discover it!
-
----
-
-**Documentation Standard**: Eight-Policy Framework v1.0  
-**RxJS Version Compatibility**: 7.x, 8.x  
-**Last Updated**: December 2024  
-**Project Mentor**: Claude Sonnet 4.5 by Anthropic
+*Eight-Policy Framework specification: [SKILL.md](./SKILL.md)*  
+*RxJS version compatibility: 7.x (RxJS 8 migration guide included)*
