@@ -86,6 +86,7 @@ export default defineConfig({
             { text: 'throttleTime (advanced)', link: '/operators-claude/filtering/throttleTime-advanced' },
             { text: 'distinctUntilChanged (advanced)', link: '/operators-claude/filtering/distinctUntilChanged-advanced' },
             { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
+            { text: 'filter (advanced)', link: '/operators-claude/filtering/filter-advanced' },
           ]
         },
         {
@@ -97,6 +98,7 @@ export default defineConfig({
             { text: 'onErrorResumeNext', link: '/operators-claude/error-handling/onErrorResumeNext' },
             { text: 'catchError (advanced)', link: '/operators-claude/error-handling/catchError-advanced' },
             { text: 'retry (advanced)', link: '/operators-claude/error-handling/retry-advanced' },
+            { text: 'timeout (advanced)', link: '/operators-claude/error-handling/timeout-advanced' },
           ]
         },
         {
@@ -263,6 +265,7 @@ export default defineConfig({
             { text: 'RxJS in Vue', link: '/docs/operator-trees/rxjs-vue-patterns' },
             { text: 'RxJS in Svelte', link: '/docs/operator-trees/rxjs-svelte-patterns' },
             { text: 'RxJS Mental Models', link: '/docs/operator-trees/rxjs-mental-models' },
+            { text: 'Caching Patterns', link: '/docs/operator-trees/rxjs-caching-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
