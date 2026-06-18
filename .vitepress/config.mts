@@ -53,6 +53,7 @@ export default defineConfig({
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
             { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
+            { text: 'Schedulers', link: '/operators-claude/utility/schedulers' },
           ]
         },
         {
@@ -168,6 +169,7 @@ export default defineConfig({
             { text: 'zip', link: '/operators-claude/combination/zip' },
             { text: 'race', link: '/operators-claude/combination/race' },
             { text: 'Pipeable Aliases', link: '/operators-claude/combination/pipeable-aliases' },
+            { text: 'combineLatestWith / mergeWith / concatWith', link: '/operators-claude/combination/combineLatestWith-mergeWith' },
           ]
         },
       ],
@@ -204,6 +206,7 @@ export default defineConfig({
             { text: 'Multicasting Guide', link: '/docs/operator-trees/multicasting-guide' },
             { text: 'Rate-Limiting Guide', link: '/docs/operator-trees/rate-limiting-guide' },
             { text: 'Custom Operators Guide', link: '/docs/operator-trees/custom-operators-guide' },
+            { text: 'Subscription Management', link: '/docs/operator-trees/subscription-management-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
