@@ -56,6 +56,8 @@ export default defineConfig({
             { text: 'first / last', link: '/operators-claude/filtering/first-last' },
             { text: 'takeWhile', link: '/operators-claude/filtering/takeWhile' },
             { text: 'skipUntil / skipWhile', link: '/operators-claude/filtering/skipUntil-skipWhile' },
+            { text: 'distinctUntilKeyChanged', link: '/operators-claude/filtering/distinctUntilKeyChanged' },
+            { text: 'find / findIndex', link: '/operators-claude/filtering/find-findIndex' },
           ]
         },
         {
@@ -91,6 +93,7 @@ export default defineConfig({
             { text: 'partition', link: '/operators-claude/creation/partition' },
             { text: 'iif', link: '/operators-claude/creation/iif' },
             { text: 'throwError', link: '/operators-claude/creation/throwError' },
+            { text: 'ajax', link: '/operators-claude/creation/ajax' },
           ]
         },
         {
