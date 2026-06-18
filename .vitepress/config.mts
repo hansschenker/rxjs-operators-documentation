@@ -34,6 +34,7 @@ export default defineConfig({
           text: 'Utility',
           items: [
             { text: 'tap', link: '/operators-claude/utility/tap' },
+            { text: 'finalize', link: '/operators-claude/utility/finalize' },
           ]
         },
         {
@@ -56,14 +57,16 @@ export default defineConfig({
         {
           text: 'Creation',
           items: [
+            { text: 'of', link: '/operators-claude/creation/of' },
+            { text: 'from', link: '/operators-claude/creation/from' },
             { text: 'interval', link: '/operators-claude/creation/interval' },
             { text: 'timer', link: '/operators-claude/creation/timer' },
-            { text: 'from', link: '/operators-claude/creation/from' },
           ]
         },
         {
           text: 'Subject',
           items: [
+            { text: 'Subject', link: '/operators-claude/subject/Subject' },
             { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
           ]
         },
