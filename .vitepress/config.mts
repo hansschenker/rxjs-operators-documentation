@@ -72,6 +72,7 @@ export default defineConfig({
             { text: 'catchError', link: '/operators-claude/error-handling/catchError' },
             { text: 'retry', link: '/operators-claude/error-handling/retry' },
             { text: 'timeout', link: '/operators-claude/error-handling/timeout' },
+            { text: 'onErrorResumeNext', link: '/operators-claude/error-handling/onErrorResumeNext' },
           ]
         },
         {
@@ -79,6 +80,7 @@ export default defineConfig({
           items: [
             { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
             { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
+            { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
           ]
         },
         {
@@ -102,6 +104,7 @@ export default defineConfig({
             { text: 'iif', link: '/operators-claude/creation/iif' },
             { text: 'throwError', link: '/operators-claude/creation/throwError' },
             { text: 'ajax', link: '/operators-claude/creation/ajax' },
+            { text: 'fromFetch', link: '/operators-claude/creation/fromFetch' },
             { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
           ]
         },
