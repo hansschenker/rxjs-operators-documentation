@@ -89,6 +89,7 @@ export default defineConfig({
             { text: 'throttleTime (advanced)', link: '/operators-claude/filtering/throttleTime-advanced' },
             { text: 'distinctUntilChanged (advanced)', link: '/operators-claude/filtering/distinctUntilChanged-advanced' },
             { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
+            { text: 'takeWhile (advanced)', link: '/operators-claude/filtering/takeWhile-advanced' },
             { text: 'filter (advanced)', link: '/operators-claude/filtering/filter-advanced' },
           ]
         },
@@ -203,6 +204,7 @@ export default defineConfig({
             { text: 'zip (advanced)', link: '/operators-claude/combination/zip-advanced' },
             { text: 'startWith (advanced)', link: '/operators-claude/combination/startWith-advanced' },
             { text: 'race (advanced)', link: '/operators-claude/combination/race-advanced' },
+            { text: 'merge (advanced)', link: '/operators-claude/combination/merge-advanced' },
           ]
         },
       ],
@@ -272,6 +274,7 @@ export default defineConfig({
             { text: 'Caching Patterns', link: '/docs/operator-trees/rxjs-caching-patterns' },
             { text: 'Higher-Order Observables', link: '/docs/operator-trees/higher-order-observables-guide' },
             { text: 'Infinite Scroll & Pagination', link: '/docs/operator-trees/rxjs-infinite-scroll-pagination' },
+            { text: 'Search & Autocomplete', link: '/docs/operator-trees/rxjs-search-autocomplete-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
