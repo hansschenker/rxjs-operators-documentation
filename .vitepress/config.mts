@@ -159,6 +159,7 @@ export default defineConfig({
             { text: 'ajax (advanced)', link: '/operators-claude/creation/ajax-advanced' },
             { text: 'fromFetch (advanced)', link: '/operators-claude/creation/fromFetch-advanced' },
             { text: 'webSocket (advanced)', link: '/operators-claude/creation/webSocket-advanced' },
+            { text: 'animationFrames (advanced)', link: '/operators-claude/creation/animationFrames-advanced' },
           ]
         },
         {
@@ -308,6 +309,8 @@ export default defineConfig({
             { text: 'Web Worker Patterns', link: '/docs/operator-trees/rxjs-web-worker-patterns' },
             { text: 'State Machines', link: '/docs/operator-trees/rxjs-state-machines' },
             { text: 'IndexedDB Patterns', link: '/docs/operator-trees/rxjs-indexeddb-patterns' },
+            { text: 'Charts & Visualization', link: '/docs/operator-trees/rxjs-charts-visualization' },
+            { text: 'Micro-Frontend Patterns', link: '/docs/operator-trees/rxjs-micro-frontend-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
