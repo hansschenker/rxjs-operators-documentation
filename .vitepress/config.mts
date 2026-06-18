@@ -32,6 +32,7 @@ export default defineConfig({
             { text: 'groupBy', link: '/operators-claude/transformation/groupBy' },
             { text: 'bufferTime', link: '/operators-claude/transformation/bufferTime' },
             { text: 'bufferCount', link: '/operators-claude/transformation/bufferCount' },
+            { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
           ]
@@ -44,6 +45,7 @@ export default defineConfig({
             { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
             { text: 'repeat', link: '/operators-claude/utility/repeat' },
             { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
+            { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
           ]
         },
         {
@@ -83,6 +85,7 @@ export default defineConfig({
           text: 'Rate Limiting',
           items: [
             { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
+            { text: 'sample / audit', link: '/operators-claude/rate-limiting/sample-audit' },
           ]
         },
         {
