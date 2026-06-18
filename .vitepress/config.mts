@@ -42,6 +42,7 @@ export default defineConfig({
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
             { text: 'groupBy (advanced)', link: '/operators-claude/transformation/groupBy-advanced' },
             { text: 'concatMap (advanced)', link: '/operators-claude/transformation/concatMap-advanced' },
+            { text: 'switchMap (advanced)', link: '/operators-claude/transformation/switchMap-advanced' },
           ]
         },
         {
@@ -224,6 +225,8 @@ export default defineConfig({
             { text: 'Testing Patterns', link: '/docs/operator-trees/testing-patterns-guide' },
             { text: 'Node.js Patterns', link: '/docs/operator-trees/nodejs-rxjs-patterns' },
             { text: 'State Management', link: '/docs/operator-trees/state-management-patterns' },
+            { text: 'NgRx Effects Patterns', link: '/docs/operator-trees/ngrx-effects-patterns' },
+            { text: 'RxJS Migration Guide', link: '/docs/operator-trees/rxjs-migration-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
