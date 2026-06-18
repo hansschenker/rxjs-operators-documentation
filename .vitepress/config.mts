@@ -59,6 +59,7 @@ export default defineConfig({
           items: [
             { text: 'of', link: '/operators-claude/creation/of' },
             { text: 'from', link: '/operators-claude/creation/from' },
+            { text: 'defer', link: '/operators-claude/creation/defer' },
             { text: 'interval', link: '/operators-claude/creation/interval' },
             { text: 'timer', link: '/operators-claude/creation/timer' },
           ]
@@ -68,6 +69,7 @@ export default defineConfig({
           items: [
             { text: 'Subject', link: '/operators-claude/subject/Subject' },
             { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
+            { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
           ]
         },
         {
