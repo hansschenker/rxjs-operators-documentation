@@ -31,6 +31,7 @@ export default defineConfig({
             { text: 'pairwise', link: '/operators-claude/transformation/pairwise' },
             { text: 'groupBy', link: '/operators-claude/transformation/groupBy' },
             { text: 'bufferTime', link: '/operators-claude/transformation/bufferTime' },
+            { text: 'bufferCount', link: '/operators-claude/transformation/bufferCount' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
           ]
@@ -42,6 +43,7 @@ export default defineConfig({
             { text: 'finalize', link: '/operators-claude/utility/finalize' },
             { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
             { text: 'repeat', link: '/operators-claude/utility/repeat' },
+            { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
           ]
         },
         {
@@ -134,6 +136,7 @@ export default defineConfig({
             { text: 'concat', link: '/operators-claude/combination/concat' },
             { text: 'withLatestFrom', link: '/operators-claude/combination/withLatestFrom' },
             { text: 'zip', link: '/operators-claude/combination/zip' },
+            { text: 'race', link: '/operators-claude/combination/race' },
             { text: 'Pipeable Aliases', link: '/operators-claude/combination/pipeable-aliases' },
           ]
         },
