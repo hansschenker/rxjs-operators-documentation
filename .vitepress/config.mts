@@ -40,6 +40,7 @@ export default defineConfig({
             { text: 'mergeScan', link: '/operators-claude/transformation/mergeScan' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
+            { text: 'groupBy (advanced)', link: '/operators-claude/transformation/groupBy-advanced' },
           ]
         },
         {
@@ -210,6 +211,8 @@ export default defineConfig({
             { text: 'Subscription Management', link: '/docs/operator-trees/subscription-management-guide' },
             { text: 'Cold vs Hot Observables', link: '/docs/operator-trees/cold-vs-hot-guide' },
             { text: 'Performance Patterns', link: '/docs/operator-trees/performance-patterns-guide' },
+            { text: 'Angular + RxJS Patterns', link: '/docs/operator-trees/angular-rxjs-patterns' },
+            { text: 'RxJS Cookbook', link: '/docs/operator-trees/rxjs-cookbook' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
