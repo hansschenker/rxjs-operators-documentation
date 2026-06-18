@@ -61,6 +61,7 @@ export default defineConfig({
           text: 'Utility',
           items: [
             { text: 'tap', link: '/operators-claude/utility/tap' },
+            { text: 'tap (advanced)', link: '/operators-claude/utility/tap-advanced' },
             { text: 'finalize', link: '/operators-claude/utility/finalize' },
             { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
             { text: 'repeat', link: '/operators-claude/utility/repeat' },
