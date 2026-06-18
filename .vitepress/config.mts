@@ -96,6 +96,7 @@ export default defineConfig({
             { text: 'takeUntil (advanced)', link: '/operators-claude/filtering/takeUntil-advanced' },
             { text: 'takeWhile (advanced)', link: '/operators-claude/filtering/takeWhile-advanced' },
             { text: 'filter (advanced)', link: '/operators-claude/filtering/filter-advanced' },
+            { text: 'skipUntil / skipWhile (advanced)', link: '/operators-claude/filtering/skipUntil-skipWhile-advanced' },
           ]
         },
         {
@@ -305,6 +306,8 @@ export default defineConfig({
             { text: 'Marble Testing (Advanced)', link: '/docs/operator-trees/rxjs-marble-testing-advanced' },
             { text: 'Custom Operators (Advanced)', link: '/docs/operator-trees/rxjs-custom-operators-advanced' },
             { text: 'Web Worker Patterns', link: '/docs/operator-trees/rxjs-web-worker-patterns' },
+            { text: 'State Machines', link: '/docs/operator-trees/rxjs-state-machines' },
+            { text: 'IndexedDB Patterns', link: '/docs/operator-trees/rxjs-indexeddb-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
