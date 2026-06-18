@@ -28,6 +28,7 @@ export default defineConfig({
             { text: 'switchMap', link: '/operators-claude/transformation/switchMap' },
             { text: 'concatMap', link: '/operators-claude/transformation/concatMap' },
             { text: 'exhaustMap', link: '/operators-claude/transformation/exhaustMap' },
+            { text: 'pairwise', link: '/operators-claude/transformation/pairwise' },
           ]
         },
         {
@@ -56,6 +57,13 @@ export default defineConfig({
           items: [
             { text: 'catchError', link: '/operators-claude/error-handling/catchError' },
             { text: 'retry', link: '/operators-claude/error-handling/retry' },
+            { text: 'timeout', link: '/operators-claude/error-handling/timeout' },
+          ]
+        },
+        {
+          text: 'Rate Limiting',
+          items: [
+            { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
           ]
         },
         {
