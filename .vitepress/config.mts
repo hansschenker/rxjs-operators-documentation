@@ -43,6 +43,7 @@ export default defineConfig({
             { text: 'debounceTime', link: '/operators-claude/filtering/debounceTime' },
             { text: 'distinctUntilChanged', link: '/operators-claude/filtering/distinctUntilChanged' },
             { text: 'takeUntil', link: '/operators-claude/filtering/takeUntil' },
+            { text: 'throttleTime', link: '/operators-claude/filtering/throttleTime' },
           ]
         },
         {
@@ -70,6 +71,8 @@ export default defineConfig({
             { text: 'startWith', link: '/operators-claude/combination/startWith' },
             { text: 'forkJoin', link: '/operators-claude/combination/forkJoin' },
             { text: 'merge', link: '/operators-claude/combination/merge' },
+            { text: 'concat', link: '/operators-claude/combination/concat' },
+            { text: 'withLatestFrom', link: '/operators-claude/combination/withLatestFrom' },
           ]
         },
       ],
