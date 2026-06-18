@@ -46,6 +46,7 @@ export default defineConfig({
             { text: 'take', link: '/operators-claude/filtering/take' },
             { text: 'takeUntil', link: '/operators-claude/filtering/takeUntil' },
             { text: 'throttleTime', link: '/operators-claude/filtering/throttleTime' },
+            { text: 'first / last', link: '/operators-claude/filtering/first-last' },
           ]
         },
         {
@@ -62,6 +63,7 @@ export default defineConfig({
             { text: 'defer', link: '/operators-claude/creation/defer' },
             { text: 'interval', link: '/operators-claude/creation/interval' },
             { text: 'timer', link: '/operators-claude/creation/timer' },
+            { text: 'EMPTY / NEVER', link: '/operators-claude/creation/EMPTY-NEVER' },
           ]
         },
         {
