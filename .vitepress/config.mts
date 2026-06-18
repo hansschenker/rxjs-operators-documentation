@@ -48,6 +48,7 @@ export default defineConfig({
             { text: 'windowTime (advanced)', link: '/operators-claude/transformation/windowTime-advanced' },
             { text: 'map (advanced)', link: '/operators-claude/transformation/map-advanced' },
             { text: 'pairwise (advanced)', link: '/operators-claude/transformation/pairwise-advanced' },
+            { text: 'exhaustMap (advanced)', link: '/operators-claude/transformation/exhaustMap-advanced' },
           ]
         },
         {
@@ -205,6 +206,7 @@ export default defineConfig({
             { text: 'startWith (advanced)', link: '/operators-claude/combination/startWith-advanced' },
             { text: 'race (advanced)', link: '/operators-claude/combination/race-advanced' },
             { text: 'merge (advanced)', link: '/operators-claude/combination/merge-advanced' },
+            { text: 'concat (advanced)', link: '/operators-claude/combination/concat-advanced' },
           ]
         },
       ],
@@ -275,6 +277,7 @@ export default defineConfig({
             { text: 'Higher-Order Observables', link: '/docs/operator-trees/higher-order-observables-guide' },
             { text: 'Infinite Scroll & Pagination', link: '/docs/operator-trees/rxjs-infinite-scroll-pagination' },
             { text: 'Search & Autocomplete', link: '/docs/operator-trees/rxjs-search-autocomplete-patterns' },
+            { text: 'Drag, Drop & Animation', link: '/docs/operator-trees/rxjs-drag-drop-animation' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
