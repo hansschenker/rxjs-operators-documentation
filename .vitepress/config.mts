@@ -41,6 +41,14 @@ export default defineConfig({
           items: [
             { text: 'filter', link: '/operators-claude/filtering/filter' },
             { text: 'debounceTime', link: '/operators-claude/filtering/debounceTime' },
+            { text: 'distinctUntilChanged', link: '/operators-claude/filtering/distinctUntilChanged' },
+            { text: 'takeUntil', link: '/operators-claude/filtering/takeUntil' },
+          ]
+        },
+        {
+          text: 'Error Handling',
+          items: [
+            { text: 'catchError', link: '/operators-claude/error-handling/catchError' },
           ]
         },
         {
