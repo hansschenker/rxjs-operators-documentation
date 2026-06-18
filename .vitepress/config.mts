@@ -115,6 +115,7 @@ export default defineConfig({
           text: 'Higher-Order',
           items: [
             { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
+            { text: 'mergeAll / concatAll / switchAll (advanced)', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll-advanced' },
             { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
             { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
             { text: 'zipAll', link: '/operators-claude/higher-order/zipAll' },
@@ -311,6 +312,8 @@ export default defineConfig({
             { text: 'IndexedDB Patterns', link: '/docs/operator-trees/rxjs-indexeddb-patterns' },
             { text: 'Charts & Visualization', link: '/docs/operator-trees/rxjs-charts-visualization' },
             { text: 'Micro-Frontend Patterns', link: '/docs/operator-trees/rxjs-micro-frontend-patterns' },
+            { text: 'Virtual Scroll', link: '/docs/operator-trees/rxjs-virtual-scroll' },
+            { text: 'Service Worker Patterns', link: '/docs/operator-trees/rxjs-service-worker-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
