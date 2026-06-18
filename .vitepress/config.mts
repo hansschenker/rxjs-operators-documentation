@@ -35,6 +35,7 @@ export default defineConfig({
             { text: 'bufferCount', link: '/operators-claude/transformation/bufferCount' },
             { text: 'buffer / window', link: '/operators-claude/transformation/buffer-window' },
             { text: 'bufferWhen / windowWhen', link: '/operators-claude/transformation/bufferWhen-windowWhen' },
+            { text: 'bufferWhen / windowWhen (advanced)', link: '/operators-claude/transformation/bufferWhen-windowWhen-advanced' },
             { text: 'bufferToggle / windowToggle', link: '/operators-claude/transformation/bufferToggle-windowToggle' },
             { text: 'bufferToggle / windowToggle (advanced)', link: '/operators-claude/transformation/bufferToggle-windowToggle-advanced' },
             { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
@@ -183,6 +184,7 @@ export default defineConfig({
           text: 'Subject',
           items: [
             { text: 'Subject', link: '/operators-claude/subject/Subject' },
+            { text: 'Subject (advanced)', link: '/operators-claude/subject/Subject-advanced' },
             { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
             { text: 'BehaviorSubject (advanced)', link: '/operators-claude/subject/BehaviorSubject-advanced' },
             { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
@@ -346,6 +348,7 @@ export default defineConfig({
             { text: 'Operator Composition Patterns', link: '/docs/operator-trees/rxjs-operator-composition-patterns' },
             { text: 'Reactive Forms Advanced', link: '/docs/operator-trees/rxjs-reactive-forms-advanced' },
             { text: 'Signals ↔ RxJS Deep Interop', link: '/docs/operator-trees/rxjs-signals-interop-deep' },
+            { text: 'Server-Side Rendering (SSR)', link: '/docs/operator-trees/rxjs-server-side-rendering' },
             { text: 'Angular Standalone APIs', link: '/docs/operator-trees/rxjs-angular-standalone' },
             { text: 'Performance Profiling', link: '/docs/operator-trees/rxjs-performance-profiling' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
