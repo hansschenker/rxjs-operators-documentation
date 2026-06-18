@@ -35,6 +35,7 @@ export default defineConfig({
           items: [
             { text: 'tap', link: '/operators-claude/utility/tap' },
             { text: 'finalize', link: '/operators-claude/utility/finalize' },
+            { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
           ]
         },
         {
@@ -54,6 +55,7 @@ export default defineConfig({
           text: 'Error Handling',
           items: [
             { text: 'catchError', link: '/operators-claude/error-handling/catchError' },
+            { text: 'retry', link: '/operators-claude/error-handling/retry' },
           ]
         },
         {
@@ -81,6 +83,7 @@ export default defineConfig({
           items: [
             { text: 'scan', link: '/operators-claude/mathematical-aggregate/scan' },
             { text: 'reduce', link: '/operators-claude/mathematical-aggregate/reduce' },
+            { text: 'toArray / count', link: '/operators-claude/mathematical-aggregate/toArray-count' },
           ]
         },
         {
