@@ -32,6 +32,7 @@ export default defineConfig({
             { text: 'groupBy', link: '/operators-claude/transformation/groupBy' },
             { text: 'bufferTime', link: '/operators-claude/transformation/bufferTime' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
+            { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
           ]
         },
         {
@@ -78,6 +79,8 @@ export default defineConfig({
             { text: 'interval', link: '/operators-claude/creation/interval' },
             { text: 'timer', link: '/operators-claude/creation/timer' },
             { text: 'EMPTY / NEVER', link: '/operators-claude/creation/EMPTY-NEVER' },
+            { text: 'partition', link: '/operators-claude/creation/partition' },
+            { text: 'iif', link: '/operators-claude/creation/iif' },
           ]
         },
         {
