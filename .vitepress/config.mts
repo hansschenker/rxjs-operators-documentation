@@ -31,6 +31,12 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Utility',
+          items: [
+            { text: 'tap', link: '/operators-claude/utility/tap' },
+          ]
+        },
+        {
           text: 'Filtering',
           items: [
             { text: 'filter', link: '/operators-claude/filtering/filter' },
