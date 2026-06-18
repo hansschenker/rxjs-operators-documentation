@@ -149,6 +149,21 @@ export default defineConfig({
         },
       ],
 
+        {
+          text: 'Connectable Observable',
+          items: [
+            { text: 'connectable / connect', link: '/operators-claude/connectable/connectable-connect' },
+          ]
+        },
+        {
+          text: 'Testing / Debugging',
+          items: [
+            { text: 'TestScheduler', link: '/operators-claude/testing/TestScheduler' },
+            { text: 'Debugging Streams', link: '/operators-claude/testing/debugging-operators' },
+          ]
+        },
+      ],
+
       '/docs/operator-trees/': [
         {
           text: 'Operator Trees',
