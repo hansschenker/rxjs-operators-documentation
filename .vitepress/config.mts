@@ -195,6 +195,12 @@ export default defineConfig({
             { text: 'Debugging Streams', link: '/operators-claude/testing/debugging-operators' },
           ]
         },
+        {
+          text: 'Interop',
+          items: [
+            { text: 'Async Iterable / ReadableStream', link: '/operators-claude/interop/async-iterable' },
+          ]
+        },
       ],
 
       '/docs/operator-trees/': [
@@ -213,6 +219,8 @@ export default defineConfig({
             { text: 'Performance Patterns', link: '/docs/operator-trees/performance-patterns-guide' },
             { text: 'Angular + RxJS Patterns', link: '/docs/operator-trees/angular-rxjs-patterns' },
             { text: 'RxJS Cookbook', link: '/docs/operator-trees/rxjs-cookbook' },
+            { text: 'Error Handling Cookbook', link: '/docs/operator-trees/error-handling-cookbook' },
+            { text: 'Testing Patterns', link: '/docs/operator-trees/testing-patterns-guide' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
