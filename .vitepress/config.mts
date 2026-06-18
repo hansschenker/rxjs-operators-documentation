@@ -41,6 +41,7 @@ export default defineConfig({
             { text: 'expand', link: '/operators-claude/transformation/expand' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
             { text: 'groupBy (advanced)', link: '/operators-claude/transformation/groupBy-advanced' },
+            { text: 'concatMap (advanced)', link: '/operators-claude/transformation/concatMap-advanced' },
           ]
         },
         {
@@ -221,6 +222,8 @@ export default defineConfig({
             { text: 'RxJS Cookbook', link: '/docs/operator-trees/rxjs-cookbook' },
             { text: 'Error Handling Cookbook', link: '/docs/operator-trees/error-handling-cookbook' },
             { text: 'Testing Patterns', link: '/docs/operator-trees/testing-patterns-guide' },
+            { text: 'Node.js Patterns', link: '/docs/operator-trees/nodejs-rxjs-patterns' },
+            { text: 'State Management', link: '/docs/operator-trees/state-management-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
