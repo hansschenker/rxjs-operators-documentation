@@ -151,6 +151,7 @@ export default defineConfig({
             { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
             { text: 'interval / timer (advanced)', link: '/operators-claude/creation/interval-timer-advanced' },
             { text: 'fromEvent (advanced)', link: '/operators-claude/creation/fromEvent-advanced' },
+            { text: 'fromFetch (advanced)', link: '/operators-claude/creation/fromFetch-advanced' },
             { text: 'webSocket (advanced)', link: '/operators-claude/creation/webSocket-advanced' },
           ]
         },
@@ -290,6 +291,8 @@ export default defineConfig({
             { text: 'File Upload Patterns', link: '/docs/operator-trees/rxjs-file-upload-patterns' },
             { text: 'Polling Patterns', link: '/docs/operator-trees/rxjs-polling-patterns' },
             { text: 'Promise Interop', link: '/docs/operator-trees/rxjs-promise-interop' },
+            { text: 'Error Resilience Patterns', link: '/docs/operator-trees/rxjs-error-resilience-patterns' },
+            { text: 'Undo/Redo Patterns', link: '/docs/operator-trees/rxjs-undo-redo-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
