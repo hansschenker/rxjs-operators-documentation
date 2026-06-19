@@ -180,6 +180,7 @@ export default defineConfig({
             { text: 'timeout', link: '/operators-claude/error-handling/timeout' },
             { text: 'timeout (advanced)', link: '/operators-claude/error-handling/timeout-advanced' },
             { text: 'onErrorResumeNext', link: '/operators-claude/error-handling/onErrorResumeNext' },
+            { text: 'onErrorResumeNext (advanced)', link: '/operators-claude/error-handling/onErrorResumeNext-advanced' },
           ]
         },
       ],
@@ -203,6 +204,7 @@ export default defineConfig({
             { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
             { text: 'auditTime / sampleTime (advanced)', link: '/operators-claude/rate-limiting/auditTime-sampleTime-advanced' },
             { text: 'sample / audit', link: '/operators-claude/rate-limiting/sample-audit' },
+            { text: 'sample / audit (advanced)', link: '/operators-claude/rate-limiting/sample-audit-advanced' },
             { text: 'throttle / debounce', link: '/operators-claude/rate-limiting/throttle-debounce' },
             { text: 'throttle / debounce (advanced)', link: '/operators-claude/rate-limiting/throttle-debounce-advanced' },
           ]
@@ -317,6 +319,7 @@ export default defineConfig({
             { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
             { text: 'timeInterval / timestamp (advanced)', link: '/operators-claude/utility/timeInterval-timestamp-advanced' },
             { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
+            { text: 'endWith / ignoreElements (advanced)', link: '/operators-claude/utility/endWith-ignoreElements-advanced' },
             { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
             { text: 'firstValueFrom / lastValueFrom (advanced)', link: '/operators-claude/utility/firstValueFrom-lastValueFrom-advanced' },
             { text: 'Schedulers', link: '/operators-claude/utility/schedulers' },
