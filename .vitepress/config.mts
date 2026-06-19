@@ -31,7 +31,7 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/operators-claude/': [
+      '/operators-claude/transformation/': [
         {
           text: 'Transformation',
           items: [
@@ -53,45 +53,25 @@ export default defineConfig({
             { text: 'windowCount', link: '/operators-claude/transformation/windowCount' },
             { text: 'switchScan', link: '/operators-claude/transformation/switchScan' },
             { text: 'switchScan (advanced)', link: '/operators-claude/transformation/switchScan-advanced' },
-            { text: 'mergeScan (advanced)', link: '/operators-claude/transformation/mergeScan-advanced' },
             { text: 'mergeScan', link: '/operators-claude/transformation/mergeScan' },
+            { text: 'mergeScan (advanced)', link: '/operators-claude/transformation/mergeScan-advanced' },
             { text: 'expand', link: '/operators-claude/transformation/expand' },
+            { text: 'expand (advanced)', link: '/operators-claude/transformation/expand-advanced' },
             { text: 'windowTime', link: '/operators-claude/transformation/windowTime' },
+            { text: 'windowTime (advanced)', link: '/operators-claude/transformation/windowTime-advanced' },
             { text: 'groupBy (advanced)', link: '/operators-claude/transformation/groupBy-advanced' },
             { text: 'concatMap (advanced)', link: '/operators-claude/transformation/concatMap-advanced' },
             { text: 'switchMap (advanced)', link: '/operators-claude/transformation/switchMap-advanced' },
             { text: 'mergeMap (advanced)', link: '/operators-claude/transformation/mergeMap-advanced' },
-            { text: 'expand (advanced)', link: '/operators-claude/transformation/expand-advanced' },
-            { text: 'windowTime (advanced)', link: '/operators-claude/transformation/windowTime-advanced' },
             { text: 'bufferCount / windowCount (advanced)', link: '/operators-claude/transformation/bufferCount-windowCount-advanced' },
             { text: 'map (advanced)', link: '/operators-claude/transformation/map-advanced' },
             { text: 'pairwise (advanced)', link: '/operators-claude/transformation/pairwise-advanced' },
             { text: 'exhaustMap (advanced)', link: '/operators-claude/transformation/exhaustMap-advanced' },
           ]
         },
-        {
-          text: 'Utility',
-          items: [
-            { text: 'tap', link: '/operators-claude/utility/tap' },
-            { text: 'tap (advanced)', link: '/operators-claude/utility/tap-advanced' },
-            { text: 'finalize', link: '/operators-claude/utility/finalize' },
-            { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
-            { text: 'repeat', link: '/operators-claude/utility/repeat' },
-            { text: 'delay / delayWhen (advanced)', link: '/operators-claude/utility/delay-delayWhen-advanced' },
-            { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
-            { text: 'materialize / dematerialize (advanced)', link: '/operators-claude/utility/materialize-dematerialize-advanced' },
-            { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
-            { text: 'observeOn / subscribeOn (advanced)', link: '/operators-claude/utility/observeOn-subscribeOn-advanced' },
-            { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
-            { text: 'timeInterval / timestamp (advanced)', link: '/operators-claude/utility/timeInterval-timestamp-advanced' },
-            { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
-            { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
-            { text: 'firstValueFrom / lastValueFrom (advanced)', link: '/operators-claude/utility/firstValueFrom-lastValueFrom-advanced' },
-            { text: 'Schedulers', link: '/operators-claude/utility/schedulers' },
-            { text: 'Schedulers (advanced)', link: '/operators-claude/utility/schedulers-advanced' },
-            { text: 'repeat (advanced)', link: '/operators-claude/utility/repeat-advanced' },
-          ]
-        },
+      ],
+
+      '/operators-claude/filtering/': [
         {
           text: 'Filtering',
           items: [
@@ -122,119 +102,9 @@ export default defineConfig({
             { text: 'skipUntil / skipWhile (advanced)', link: '/operators-claude/filtering/skipUntil-skipWhile-advanced' },
           ]
         },
-        {
-          text: 'Error Handling',
-          items: [
-            { text: 'catchError', link: '/operators-claude/error-handling/catchError' },
-            { text: 'retry', link: '/operators-claude/error-handling/retry' },
-            { text: 'timeout', link: '/operators-claude/error-handling/timeout' },
-            { text: 'onErrorResumeNext', link: '/operators-claude/error-handling/onErrorResumeNext' },
-            { text: 'catchError (advanced)', link: '/operators-claude/error-handling/catchError-advanced' },
-            { text: 'retry (advanced)', link: '/operators-claude/error-handling/retry-advanced' },
-            { text: 'timeout (advanced)', link: '/operators-claude/error-handling/timeout-advanced' },
-          ]
-        },
-        {
-          text: 'Higher-Order',
-          items: [
-            { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
-            { text: 'mergeAll / concatAll / switchAll (advanced)', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll-advanced' },
-            { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
-            { text: 'exhaustAll / exhaustMap (advanced)', link: '/operators-claude/higher-order/exhaustAll-advanced' },
-            { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
-            { text: 'combineLatestAll (advanced)', link: '/operators-claude/higher-order/combineLatestAll-advanced' },
-            { text: 'zipAll', link: '/operators-claude/higher-order/zipAll' },
-            { text: 'zipAll (advanced)', link: '/operators-claude/higher-order/zipAll-advanced' },
-          ]
-        },
-        {
-          text: 'Rate Limiting',
-          items: [
-            { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
-            { text: 'sample / audit', link: '/operators-claude/rate-limiting/sample-audit' },
-            { text: 'throttle / debounce', link: '/operators-claude/rate-limiting/throttle-debounce' },
-            { text: 'throttle / debounce (advanced)', link: '/operators-claude/rate-limiting/throttle-debounce-advanced' },
-            { text: 'auditTime / sampleTime (advanced)', link: '/operators-claude/rate-limiting/auditTime-sampleTime-advanced' },
-          ]
-        },
-        {
-          text: 'Creation',
-          items: [
-            { text: 'of', link: '/operators-claude/creation/of' },
-            { text: 'from', link: '/operators-claude/creation/from' },
-            { text: 'from (advanced)', link: '/operators-claude/creation/from-advanced' },
-            { text: 'defer', link: '/operators-claude/creation/defer' },
-            { text: 'interval', link: '/operators-claude/creation/interval' },
-            { text: 'timer', link: '/operators-claude/creation/timer' },
-            { text: 'fromEvent', link: '/operators-claude/creation/fromEvent' },
-            { text: 'EMPTY / NEVER', link: '/operators-claude/creation/EMPTY-NEVER' },
-            { text: 'EMPTY / NEVER (advanced)', link: '/operators-claude/creation/EMPTY-NEVER-advanced' },
-            { text: 'partition', link: '/operators-claude/creation/partition' },
-            { text: 'iif', link: '/operators-claude/creation/iif' },
-            { text: 'partition / iif (advanced)', link: '/operators-claude/creation/partition-iif-advanced' },
-            { text: 'throwError', link: '/operators-claude/creation/throwError' },
-            { text: 'range', link: '/operators-claude/creation/range' },
-            { text: 'generate', link: '/operators-claude/creation/generate' },
-            { text: 'scheduled', link: '/operators-claude/creation/scheduled' },
-            { text: 'bindCallback / bindNodeCallback', link: '/operators-claude/creation/bindCallback-bindNodeCallback' },
-            { text: 'fromEventPattern', link: '/operators-claude/creation/fromEventPattern' },
-            { text: 'using', link: '/operators-claude/creation/using' },
-            { text: 'ajax', link: '/operators-claude/creation/ajax' },
-            { text: 'fromFetch', link: '/operators-claude/creation/fromFetch' },
-            { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
-            { text: 'animationFrames', link: '/operators-claude/creation/animationFrames' },
-            { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
-            { text: 'interval / timer (advanced)', link: '/operators-claude/creation/interval-timer-advanced' },
-            { text: 'fromEvent (advanced)', link: '/operators-claude/creation/fromEvent-advanced' },
-            { text: 'ajax (advanced)', link: '/operators-claude/creation/ajax-advanced' },
-            { text: 'fromFetch (advanced)', link: '/operators-claude/creation/fromFetch-advanced' },
-            { text: 'webSocket (advanced)', link: '/operators-claude/creation/webSocket-advanced' },
-            { text: 'animationFrames (advanced)', link: '/operators-claude/creation/animationFrames-advanced' },
-            { text: 'generate / using (advanced)', link: '/operators-claude/creation/generate-using-advanced' },
-          ]
-        },
-        {
-          text: 'Subject',
-          items: [
-            { text: 'Subject', link: '/operators-claude/subject/Subject' },
-            { text: 'Subject (advanced)', link: '/operators-claude/subject/Subject-advanced' },
-            { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
-            { text: 'BehaviorSubject (advanced)', link: '/operators-claude/subject/BehaviorSubject-advanced' },
-            { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
-            { text: 'ReplaySubject (advanced)', link: '/operators-claude/subject/ReplaySubject-advanced' },
-            { text: 'AsyncSubject', link: '/operators-claude/subject/AsyncSubject' },
-            { text: 'AsyncSubject (advanced)', link: '/operators-claude/subject/AsyncSubject-advanced' },
-          ]
-        },
-        {
-          text: 'Mathematical / Aggregate',
-          items: [
-            { text: 'scan', link: '/operators-claude/mathematical-aggregate/scan' },
-            { text: 'reduce', link: '/operators-claude/mathematical-aggregate/reduce' },
-            { text: 'toArray / count', link: '/operators-claude/mathematical-aggregate/toArray-count' },
-            { text: 'min / max', link: '/operators-claude/mathematical-aggregate/min-max' },
-            { text: 'scan (advanced)', link: '/operators-claude/mathematical-aggregate/scan-advanced' },
-            { text: 'reduce (advanced)', link: '/operators-claude/mathematical-aggregate/reduce-advanced' },
-            { text: 'toArray / count (advanced)', link: '/operators-claude/mathematical-aggregate/toArray-count-advanced' },
-            { text: 'min / max (advanced)', link: '/operators-claude/mathematical-aggregate/min-max-advanced' },
-          ]
-        },
-        {
-          text: 'Multicasting',
-          items: [
-            { text: 'shareReplay', link: '/operators-claude/multicasting/shareReplay' },
-            { text: 'shareReplay (advanced)', link: '/operators-claude/multicasting/shareReplay-advanced' },
-            { text: 'share', link: '/operators-claude/multicasting/share' },
-            { text: 'share (advanced)', link: '/operators-claude/multicasting/share-advanced' },
-          ]
-        },
-        {
-          text: 'Utility (Advanced)',
-          items: [
-            { text: 'tap / finalize (advanced)', link: '/operators-claude/utility/tap-finalize-advanced' },
-            { text: 'Deprecated Operators', link: '/operators-claude/utility/deprecated-operators' },
-          ]
-        },
+      ],
+
+      '/operators-claude/combination/': [
         {
           text: 'Combination',
           items: [
@@ -258,6 +128,120 @@ export default defineConfig({
             { text: 'concat (advanced)', link: '/operators-claude/combination/concat-advanced' },
           ]
         },
+      ],
+
+      '/operators-claude/creation/': [
+        {
+          text: 'Creation',
+          items: [
+            { text: 'of', link: '/operators-claude/creation/of' },
+            { text: 'from', link: '/operators-claude/creation/from' },
+            { text: 'from (advanced)', link: '/operators-claude/creation/from-advanced' },
+            { text: 'defer', link: '/operators-claude/creation/defer' },
+            { text: 'defer (advanced)', link: '/operators-claude/creation/defer-advanced' },
+            { text: 'interval', link: '/operators-claude/creation/interval' },
+            { text: 'timer', link: '/operators-claude/creation/timer' },
+            { text: 'interval / timer (advanced)', link: '/operators-claude/creation/interval-timer-advanced' },
+            { text: 'fromEvent', link: '/operators-claude/creation/fromEvent' },
+            { text: 'fromEvent (advanced)', link: '/operators-claude/creation/fromEvent-advanced' },
+            { text: 'EMPTY / NEVER', link: '/operators-claude/creation/EMPTY-NEVER' },
+            { text: 'EMPTY / NEVER (advanced)', link: '/operators-claude/creation/EMPTY-NEVER-advanced' },
+            { text: 'partition', link: '/operators-claude/creation/partition' },
+            { text: 'iif', link: '/operators-claude/creation/iif' },
+            { text: 'partition / iif (advanced)', link: '/operators-claude/creation/partition-iif-advanced' },
+            { text: 'throwError', link: '/operators-claude/creation/throwError' },
+            { text: 'range', link: '/operators-claude/creation/range' },
+            { text: 'generate', link: '/operators-claude/creation/generate' },
+            { text: 'scheduled', link: '/operators-claude/creation/scheduled' },
+            { text: 'bindCallback / bindNodeCallback', link: '/operators-claude/creation/bindCallback-bindNodeCallback' },
+            { text: 'fromEventPattern', link: '/operators-claude/creation/fromEventPattern' },
+            { text: 'using', link: '/operators-claude/creation/using' },
+            { text: 'ajax', link: '/operators-claude/creation/ajax' },
+            { text: 'ajax (advanced)', link: '/operators-claude/creation/ajax-advanced' },
+            { text: 'fromFetch', link: '/operators-claude/creation/fromFetch' },
+            { text: 'fromFetch (advanced)', link: '/operators-claude/creation/fromFetch-advanced' },
+            { text: 'webSocket', link: '/operators-claude/creation/webSocket' },
+            { text: 'webSocket (advanced)', link: '/operators-claude/creation/webSocket-advanced' },
+            { text: 'animationFrames', link: '/operators-claude/creation/animationFrames' },
+            { text: 'animationFrames (advanced)', link: '/operators-claude/creation/animationFrames-advanced' },
+            { text: 'generate / using (advanced)', link: '/operators-claude/creation/generate-using-advanced' },
+          ]
+        },
+      ],
+
+      '/operators-claude/error-handling/': [
+        {
+          text: 'Error Handling',
+          items: [
+            { text: 'catchError', link: '/operators-claude/error-handling/catchError' },
+            { text: 'catchError (advanced)', link: '/operators-claude/error-handling/catchError-advanced' },
+            { text: 'retry', link: '/operators-claude/error-handling/retry' },
+            { text: 'retry (advanced)', link: '/operators-claude/error-handling/retry-advanced' },
+            { text: 'timeout', link: '/operators-claude/error-handling/timeout' },
+            { text: 'timeout (advanced)', link: '/operators-claude/error-handling/timeout-advanced' },
+            { text: 'onErrorResumeNext', link: '/operators-claude/error-handling/onErrorResumeNext' },
+          ]
+        },
+      ],
+
+      '/operators-claude/multicasting/': [
+        {
+          text: 'Multicasting',
+          items: [
+            { text: 'share', link: '/operators-claude/multicasting/share' },
+            { text: 'share (advanced)', link: '/operators-claude/multicasting/share-advanced' },
+            { text: 'shareReplay', link: '/operators-claude/multicasting/shareReplay' },
+            { text: 'shareReplay (advanced)', link: '/operators-claude/multicasting/shareReplay-advanced' },
+          ]
+        },
+      ],
+
+      '/operators-claude/rate-limiting/': [
+        {
+          text: 'Rate Limiting',
+          items: [
+            { text: 'auditTime / sampleTime', link: '/operators-claude/rate-limiting/auditTime-sampleTime' },
+            { text: 'auditTime / sampleTime (advanced)', link: '/operators-claude/rate-limiting/auditTime-sampleTime-advanced' },
+            { text: 'sample / audit', link: '/operators-claude/rate-limiting/sample-audit' },
+            { text: 'throttle / debounce', link: '/operators-claude/rate-limiting/throttle-debounce' },
+            { text: 'throttle / debounce (advanced)', link: '/operators-claude/rate-limiting/throttle-debounce-advanced' },
+          ]
+        },
+      ],
+
+      '/operators-claude/higher-order/': [
+        {
+          text: 'Higher-Order',
+          items: [
+            { text: 'mergeAll / concatAll / switchAll', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll' },
+            { text: 'mergeAll / concatAll / switchAll (advanced)', link: '/operators-claude/higher-order/mergeAll-concatAll-switchAll-advanced' },
+            { text: 'exhaustAll / exhaustMap', link: '/operators-claude/higher-order/exhaustAll' },
+            { text: 'exhaustAll / exhaustMap (advanced)', link: '/operators-claude/higher-order/exhaustAll-advanced' },
+            { text: 'combineLatestAll', link: '/operators-claude/higher-order/combineLatestAll' },
+            { text: 'combineLatestAll (advanced)', link: '/operators-claude/higher-order/combineLatestAll-advanced' },
+            { text: 'zipAll', link: '/operators-claude/higher-order/zipAll' },
+            { text: 'zipAll (advanced)', link: '/operators-claude/higher-order/zipAll-advanced' },
+          ]
+        },
+      ],
+
+      '/operators-claude/mathematical-aggregate/': [
+        {
+          text: 'Mathematical / Aggregate',
+          items: [
+            { text: 'scan', link: '/operators-claude/mathematical-aggregate/scan' },
+            { text: 'scan (advanced)', link: '/operators-claude/mathematical-aggregate/scan-advanced' },
+            { text: 'reduce', link: '/operators-claude/mathematical-aggregate/reduce' },
+            { text: 'reduce (advanced)', link: '/operators-claude/mathematical-aggregate/reduce-advanced' },
+            { text: 'toArray / count', link: '/operators-claude/mathematical-aggregate/toArray-count' },
+            { text: 'toArray / count (advanced)', link: '/operators-claude/mathematical-aggregate/toArray-count-advanced' },
+            { text: 'min / max', link: '/operators-claude/mathematical-aggregate/min-max' },
+            { text: 'min / max (advanced)', link: '/operators-claude/mathematical-aggregate/min-max-advanced' },
+          ]
+        },
+      ],
+
+      '/operators-claude/conditional/': [
         {
           text: 'Conditional',
           items: [
@@ -265,6 +249,25 @@ export default defineConfig({
             { text: 'Conditional Operators (advanced)', link: '/operators-claude/conditional/conditional-operators-advanced' },
           ]
         },
+      ],
+
+      '/operators-claude/subject/': [
+        {
+          text: 'Subject',
+          items: [
+            { text: 'Subject', link: '/operators-claude/subject/Subject' },
+            { text: 'Subject (advanced)', link: '/operators-claude/subject/Subject-advanced' },
+            { text: 'BehaviorSubject', link: '/operators-claude/subject/BehaviorSubject' },
+            { text: 'BehaviorSubject (advanced)', link: '/operators-claude/subject/BehaviorSubject-advanced' },
+            { text: 'ReplaySubject', link: '/operators-claude/subject/ReplaySubject' },
+            { text: 'ReplaySubject (advanced)', link: '/operators-claude/subject/ReplaySubject-advanced' },
+            { text: 'AsyncSubject', link: '/operators-claude/subject/AsyncSubject' },
+            { text: 'AsyncSubject (advanced)', link: '/operators-claude/subject/AsyncSubject-advanced' },
+          ]
+        },
+      ],
+
+      '/operators-claude/connectable/': [
         {
           text: 'Connectable Observable',
           items: [
@@ -272,6 +275,9 @@ export default defineConfig({
             { text: 'connectable / connect (advanced)', link: '/operators-claude/connectable/connectable-connect-advanced' },
           ]
         },
+      ],
+
+      '/operators-claude/testing/': [
         {
           text: 'Testing / Debugging',
           items: [
@@ -280,11 +286,42 @@ export default defineConfig({
             { text: 'Debugging Streams', link: '/operators-claude/testing/debugging-operators' },
           ]
         },
+      ],
+
+      '/operators-claude/interop/': [
         {
           text: 'Interop',
           items: [
             { text: 'Async Iterable / ReadableStream', link: '/operators-claude/interop/async-iterable' },
             { text: 'Async Iterable (advanced)', link: '/operators-claude/interop/async-iterable-advanced' },
+          ]
+        },
+      ],
+
+      '/operators-claude/utility/': [
+        {
+          text: 'Utility',
+          items: [
+            { text: 'tap', link: '/operators-claude/utility/tap' },
+            { text: 'tap (advanced)', link: '/operators-claude/utility/tap-advanced' },
+            { text: 'tap / finalize (advanced)', link: '/operators-claude/utility/tap-finalize-advanced' },
+            { text: 'finalize', link: '/operators-claude/utility/finalize' },
+            { text: 'delay / delayWhen', link: '/operators-claude/utility/delay-delayWhen' },
+            { text: 'delay / delayWhen (advanced)', link: '/operators-claude/utility/delay-delayWhen-advanced' },
+            { text: 'repeat', link: '/operators-claude/utility/repeat' },
+            { text: 'repeat (advanced)', link: '/operators-claude/utility/repeat-advanced' },
+            { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
+            { text: 'materialize / dematerialize (advanced)', link: '/operators-claude/utility/materialize-dematerialize-advanced' },
+            { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
+            { text: 'observeOn / subscribeOn (advanced)', link: '/operators-claude/utility/observeOn-subscribeOn-advanced' },
+            { text: 'timeInterval / timestamp', link: '/operators-claude/utility/timeInterval-timestamp' },
+            { text: 'timeInterval / timestamp (advanced)', link: '/operators-claude/utility/timeInterval-timestamp-advanced' },
+            { text: 'endWith / ignoreElements', link: '/operators-claude/utility/endWith-ignoreElements' },
+            { text: 'firstValueFrom / lastValueFrom', link: '/operators-claude/utility/firstValueFrom-lastValueFrom' },
+            { text: 'firstValueFrom / lastValueFrom (advanced)', link: '/operators-claude/utility/firstValueFrom-lastValueFrom-advanced' },
+            { text: 'Schedulers', link: '/operators-claude/utility/schedulers' },
+            { text: 'Schedulers (advanced)', link: '/operators-claude/utility/schedulers-advanced' },
+            { text: 'Deprecated Operators', link: '/operators-claude/utility/deprecated-operators' },
           ]
         },
       ],
