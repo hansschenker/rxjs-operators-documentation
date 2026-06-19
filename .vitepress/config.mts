@@ -156,6 +156,7 @@ export default defineConfig({
             { text: 'scheduled', link: '/operators-claude/creation/scheduled' },
             { text: 'scheduled (advanced)', link: '/operators-claude/creation/scheduled-advanced' },
             { text: 'bindCallback / bindNodeCallback', link: '/operators-claude/creation/bindCallback-bindNodeCallback' },
+            { text: 'bindCallback / bindNodeCallback (advanced)', link: '/operators-claude/creation/bindCallback-bindNodeCallback-advanced' },
             { text: 'fromEventPattern', link: '/operators-claude/creation/fromEventPattern' },
             { text: 'fromEventPattern (advanced)', link: '/operators-claude/creation/fromEventPattern-advanced' },
             { text: 'using', link: '/operators-claude/creation/using' },
@@ -289,6 +290,7 @@ export default defineConfig({
             { text: 'TestScheduler', link: '/operators-claude/testing/TestScheduler' },
             { text: 'TestScheduler (advanced)', link: '/operators-claude/testing/TestScheduler-advanced' },
             { text: 'Debugging Streams', link: '/operators-claude/testing/debugging-operators' },
+            { text: 'Debugging Streams (advanced)', link: '/operators-claude/testing/debugging-operators-advanced' },
           ]
         },
       ],
