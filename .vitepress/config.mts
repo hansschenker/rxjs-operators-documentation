@@ -246,8 +246,6 @@ export default defineConfig({
             { text: 'concat (advanced)', link: '/operators-claude/combination/concat-advanced' },
           ]
         },
-      ],
-
         {
           text: 'Conditional',
           items: [
