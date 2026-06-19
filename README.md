@@ -1,7 +1,7 @@
 # RxJS Operators Documentation
 
 > **The most comprehensive RxJS operator reference ever assembled.**
-> 257 pages. All 17 operator categories. 80+ advanced deep-dives. 75+ reference guides. TypeScript-first.
+> 265 pages. All 17 operator categories. 90+ advanced deep-dives. 82 reference guides. TypeScript-first.
 
 Built with [VitePress](https://vitepress.dev) and the **Eight-Policy Framework** — a formal specification standard that ensures every operator is documented with the same depth, structure, and production focus. Every page answers not just *"what does this operator do?"* but *"what is its full behavioral contract, where does it fail, and when should I reach for something else?"*
 
@@ -27,14 +27,14 @@ This reference is built for those moments — for engineers who already know *of
 
 | Metric | Count |
 |---|---|
-| Operator documentation pages | **182** |
-| Reference guides & pattern libraries | **75** |
-| **Total pages** | **257** |
+| Operator documentation pages | **183** |
+| Reference guides & pattern libraries | **82** |
+| **Total pages** | **265** |
 | Operator categories covered | **17 / 17** |
-| Operators with advanced deep-dive docs | **80+** |
-| Real-world domain pattern guides | **50+** |
-| Anti-pattern examples with corrections | **250+** |
-| Git commits | **97** |
+| Operators with advanced deep-dive docs | **90+** |
+| Real-world domain pattern guides | **55+** |
+| Anti-pattern examples with corrections | **270+** |
+| Git commits | **107+** |
 
 ---
 
@@ -75,7 +75,7 @@ The core of RxJS — every major flattening strategy, buffering, and projection 
 | `pairwise` | ✅ | ✅ |
 | `bufferTime` | ✅ | ✅ |
 | `bufferCount`, `windowCount` | ✅ | ✅ |
-| `buffer`, `window` | ✅ | — |
+| `buffer`, `window` | ✅ | ✅ |
 | `bufferWhen`, `windowWhen` | ✅ | ✅ |
 | `bufferToggle`, `windowToggle` | ✅ | ✅ |
 | `windowTime` | ✅ | ✅ |
@@ -111,7 +111,7 @@ Every factory function for producing Observables.
 | `generate`, `using` | ✅ | ✅ |
 | `interval`, `timer` | ✅ | ✅ |
 | `fromEvent` | ✅ | ✅ |
-| `fromEventPattern` | ✅ | — |
+| `fromEventPattern` | ✅ | ✅ |
 | `fromFetch` | ✅ | ✅ |
 | `defer` | ✅ | ✅ |
 | `EMPTY`, `NEVER` | ✅ | ✅ |
@@ -120,8 +120,8 @@ Every factory function for producing Observables.
 | `webSocket` | ✅ | ✅ |
 | `animationFrames` | ✅ | ✅ |
 | `partition`, `iif` | ✅ | ✅ |
-| `bindCallback`, `bindNodeCallback` | ✅ | — |
-| `scheduled` | ✅ | — |
+| `bindCallback`, `bindNodeCallback` | ✅ | ✅ |
+| `scheduled` | ✅ | ✅ |
 
 ### Combination (18 docs)
 
@@ -145,7 +145,7 @@ Merging, joining, and coordinating multiple streams.
 | `catchError` | ✅ | ✅ |
 | `retry` | ✅ | ✅ |
 | `timeout` | ✅ | ✅ |
-| `onErrorResumeNext` | ✅ | — |
+| `onErrorResumeNext` | ✅ | ✅ |
 
 ### Subjects (9 docs)
 
@@ -169,7 +169,7 @@ Merging, joining, and coordinating multiple streams.
 | `repeat` | ✅ | ✅ |
 | `schedulers` | ✅ | ✅ |
 | `firstValueFrom`, `lastValueFrom` | ✅ | ✅ |
-| `endWith`, `ignoreElements` | ✅ | — |
+| `endWith`, `ignoreElements` | ✅ | ✅ |
 | `deprecated operators` | ✅ | — |
 
 ### Higher-Order, Multicasting, Mathematical/Aggregate, Rate Limiting, Interop, Testing, Conditional, Connectable
@@ -178,7 +178,7 @@ All 17 categories fully covered with both core docs and advanced deep-dives. See
 
 ---
 
-## Reference Library (75 guides)
+## Reference Library (82 guides)
 
 Beyond operator docs, the reference library covers production patterns organized by domain.
 
@@ -391,7 +391,7 @@ Requirements: Node.js 18+
 
 ```
 .
-├── operators-claude/           # Operator documentation (182 pages)
+├── operators-claude/           # Operator documentation (183 pages)
 │   ├── transformation/         # map, mergeMap, switchMap, groupBy, expand, buffer…
 │   ├── filtering/              # filter, debounceTime, distinctUntilChanged, take…
 │   ├── creation/               # of, from, ajax, webSocket, animationFrames…
@@ -408,7 +408,7 @@ Requirements: Node.js 18+
 │   ├── conditional/            # defaultIfEmpty, isEmpty, every, sequenceEqual
 │   └── connectable/            # connectable, connect
 │
-├── docs/operator-trees/        # Reference guides & pattern libraries (75 pages)
+├── docs/operator-trees/        # Reference guides & pattern libraries (82 pages)
 │   ├── *-guide.md              # Decision guides
 │   ├── rxjs-*-patterns.md      # Domain pattern libraries
 │   └── *.md                    # Mental models, best practices, cookbooks
