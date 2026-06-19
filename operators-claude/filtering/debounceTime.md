@@ -511,7 +511,7 @@ class SearchComponent implements OnDestroy {
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/debounceTime](https://rxjs.dev/api/operators/debounceTime)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/debounce.html](http://reactivex.io/documentation/operators/debounce.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounceTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounceTime.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounceTime.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounceTime.ts)
 
 ---
 

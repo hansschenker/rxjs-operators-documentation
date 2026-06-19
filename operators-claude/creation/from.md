@@ -371,7 +371,7 @@ source$.pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/from](https://rxjs.dev/api/index/function/from)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/from.html](http://reactivex.io/documentation/operators/from.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/from.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/from.ts)
 
 ---
 

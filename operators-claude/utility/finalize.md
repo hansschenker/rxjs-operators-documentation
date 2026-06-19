@@ -372,7 +372,7 @@ ajax.getJSON('/api/data').pipe(
 
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/finalize](https://rxjs.dev/api/operators/finalize)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/finalize.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/finalize.ts)
 
 ---
 

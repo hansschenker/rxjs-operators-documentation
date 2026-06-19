@@ -392,7 +392,7 @@ const lateSubscriber$ = resize$.pipe(/* some delay */);
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/startWith](https://rxjs.dev/api/operators/startWith)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/startwith.html](http://reactivex.io/documentation/operators/startwith.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/startWith.ts)
 
 ---
 

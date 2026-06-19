@@ -409,7 +409,7 @@ submitSearch$.pipe(
 
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/withLatestFrom](https://rxjs.dev/api/operators/withLatestFrom)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/withLatestFrom.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/withLatestFrom.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/withLatestFrom.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/withLatestFrom.ts)
 
 ---
 

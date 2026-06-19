@@ -419,7 +419,7 @@ source$.pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/merge](https://rxjs.dev/api/index/function/merge)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/merge.html](http://reactivex.io/documentation/operators/merge.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/merge.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/merge.ts)
 
 ---
 

@@ -426,7 +426,7 @@ class ReactiveItemService {
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/class/BehaviorSubject](https://rxjs.dev/api/index/class/BehaviorSubject)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/subject.html](http://reactivex.io/documentation/subject.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/BehaviorSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/BehaviorSubject.ts)
 
 ---
 

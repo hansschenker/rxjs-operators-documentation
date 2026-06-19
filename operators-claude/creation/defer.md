@@ -220,7 +220,7 @@ config$.subscribe(renderFooter);  // uses cached result
 
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/defer](https://rxjs.dev/api/index/function/defer)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/defer.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/defer.ts)
 
 ---
 

@@ -517,7 +517,7 @@ source$.pipe(tap({ next: nextFn, error: errorFn, complete: completeFn }))
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/tap](https://rxjs.dev/api/operators/tap)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/do.html](http://reactivex.io/documentation/operators/do.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/tap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/tap.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/tap.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/tap.ts)
 
 ---
 

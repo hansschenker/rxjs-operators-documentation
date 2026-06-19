@@ -386,7 +386,7 @@ from([1, 2, 3, 4, 5]).pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/reduce](https://rxjs.dev/api/operators/reduce)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/reduce.html](http://reactivex.io/documentation/operators/reduce.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/reduce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/reduce.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/reduce.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/reduce.ts)
 
 ---
 

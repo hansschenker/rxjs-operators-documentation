@@ -311,7 +311,7 @@ source$.pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/of](https://rxjs.dev/api/index/function/of)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/just.html](http://reactivex.io/documentation/operators/just.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/of.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/of.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/of.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/of.ts)
 
 ---
 

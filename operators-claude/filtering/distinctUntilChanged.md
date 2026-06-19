@@ -454,7 +454,7 @@ item$.next({ ...item$.getValue(), count: item$.getValue().count + 1 });
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/distinctUntilChanged](https://rxjs.dev/api/operators/distinctUntilChanged)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/distinct.html](http://reactivex.io/documentation/operators/distinct.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinctUntilChanged.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinctUntilChanged.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/distinctUntilChanged.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/distinctUntilChanged.ts)
 
 ---
 

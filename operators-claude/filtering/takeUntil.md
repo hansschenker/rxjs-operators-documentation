@@ -423,7 +423,7 @@ class SafeComponentA {
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/takeUntil](https://rxjs.dev/api/operators/takeUntil)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/takeuntil.html](http://reactivex.io/documentation/operators/takeuntil.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeUntil.ts)
 
 ---
 

@@ -415,7 +415,7 @@ class SafeNotificationService {
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/class/Subject](https://rxjs.dev/api/index/class/Subject)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/subject.html](http://reactivex.io/documentation/subject.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/Subject.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/Subject.ts)
 
 ---
 

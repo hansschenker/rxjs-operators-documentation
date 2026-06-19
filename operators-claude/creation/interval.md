@@ -384,7 +384,7 @@ of('hello').pipe(delay(2000)).subscribe(console.log);
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/interval](https://rxjs.dev/api/index/function/interval)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/interval.html](http://reactivex.io/documentation/operators/interval.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/interval.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/interval.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/interval.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/interval.ts)
 
 ---
 

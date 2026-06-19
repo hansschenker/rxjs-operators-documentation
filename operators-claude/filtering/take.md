@@ -341,7 +341,7 @@ const bounded$ = interval(100).pipe(take(10));
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/take](https://rxjs.dev/api/operators/take)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/take.html](http://reactivex.io/documentation/operators/take.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/take.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/take.ts)
 
 ---
 

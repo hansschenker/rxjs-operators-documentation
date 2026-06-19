@@ -407,7 +407,7 @@ fromEvent(button, 'click').pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/throttleTime](https://rxjs.dev/api/operators/throttleTime)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/sample.html](http://reactivex.io/documentation/operators/sample.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/throttleTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/throttleTime.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/throttleTime.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/throttleTime.ts)
 
 ---
 

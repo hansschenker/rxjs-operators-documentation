@@ -305,7 +305,7 @@ timer(0, 1000).pipe(take(1)).subscribe(v => console.log('timer(0,1000) first:', 
 
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/timer](https://rxjs.dev/api/index/function/timer)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/timer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/timer.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/timer.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/timer.ts)
 
 ---
 

@@ -530,7 +530,7 @@ source$.pipe(first(p), defaultIfEmpty(fallback))
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/filter](https://rxjs.dev/api/operators/filter)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/filter.html](http://reactivex.io/documentation/operators/filter.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/filter.ts)
 
 ---
 

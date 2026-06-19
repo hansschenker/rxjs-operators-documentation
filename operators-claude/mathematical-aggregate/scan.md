@@ -506,7 +506,7 @@ const orderTotal2$ = combineLatest([
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/scan](https://rxjs.dev/api/operators/scan)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/scan.html](http://reactivex.io/documentation/operators/scan.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/scan.ts)
 
 ---
 

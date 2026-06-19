@@ -435,7 +435,7 @@ createUser(data).pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/concat](https://rxjs.dev/api/index/function/concat)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/concat.html](http://reactivex.io/documentation/operators/concat.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/concat.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/concat.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/concat.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/concat.ts)
 
 ---
 

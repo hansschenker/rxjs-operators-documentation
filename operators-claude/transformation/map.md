@@ -516,7 +516,7 @@ const efficient$ = scroll$.pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/map](https://rxjs.dev/api/operators/map)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/map.html](http://reactivex.io/documentation/operators/map.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/map.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/map.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/map.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/map.ts)
 
 ---
 

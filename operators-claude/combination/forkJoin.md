@@ -437,7 +437,7 @@ forkJoin([
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/forkJoin](https://rxjs.dev/api/index/function/forkJoin)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/zip.html](http://reactivex.io/documentation/operators/zip.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/forkJoin.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/forkJoin.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/forkJoin.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/forkJoin.ts)
 
 ---
 

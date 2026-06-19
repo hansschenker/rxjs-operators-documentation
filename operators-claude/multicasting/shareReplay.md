@@ -453,7 +453,7 @@ ajax.getJSON<User>('/api/me').pipe(
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/shareReplay](https://rxjs.dev/api/operators/shareReplay)
 - **ReactiveX Documentation**: [http://reactivex.io/documentation/operators/replay.html](http://reactivex.io/documentation/operators/replay.html)
-- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/shareReplay.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/shareReplay.ts)
+- **Source Code**: [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/shareReplay.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/shareReplay.ts)
 
 ---
 
