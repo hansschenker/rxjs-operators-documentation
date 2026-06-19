@@ -413,6 +413,8 @@ export default defineConfig({
             { text: 'Store from Scratch', link: '/docs/operator-trees/rxjs-store-from-scratch' },
             { text: 'NgRx Effects (Advanced)', link: '/docs/operator-trees/rxjs-effect-patterns-advanced' },
             { text: 'Microservices Patterns', link: '/docs/operator-trees/rxjs-microservices-patterns' },
+            { text: 'DevTools & Extensions', link: '/docs/operator-trees/rxjs-devtools-extensions' },
+            { text: 'Marble Testing Patterns', link: '/docs/operator-trees/rxjs-testing-marble-patterns' },
             { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
             { text: 'Legend', link: '/docs/operator-trees/legend' },
             { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
