@@ -1,7 +1,7 @@
 # RxJS Operators Documentation
 
 > **The most comprehensive RxJS operator reference ever assembled.**
-> 222 pages. All 17 operator categories. Production-grade patterns. TypeScript-first.
+> 257 pages. All 17 operator categories. 80+ advanced deep-dives. 75+ reference guides. TypeScript-first.
 
 Built with [VitePress](https://vitepress.dev) and the **Eight-Policy Framework** — a formal specification standard that ensures every operator is documented with the same depth, structure, and production focus. Every page answers not just *"what does this operator do?"* but *"what is its full behavioral contract, where does it fail, and when should I reach for something else?"*
 
@@ -27,14 +27,14 @@ This reference is built for those moments — for engineers who already know *of
 
 | Metric | Count |
 |---|---|
-| Operator documentation pages | **157** |
-| Reference guides & pattern libraries | **65** |
-| **Total pages** | **222** |
+| Operator documentation pages | **182** |
+| Reference guides & pattern libraries | **75** |
+| **Total pages** | **257** |
 | Operator categories covered | **17 / 17** |
-| Operators with advanced deep-dive docs | **40+** |
-| Real-world domain pattern guides | **40+** |
-| Anti-pattern examples with corrections | **200+** |
-| Git commits | **84** |
+| Operators with advanced deep-dive docs | **80+** |
+| Real-world domain pattern guides | **50+** |
+| Anti-pattern examples with corrections | **250+** |
+| Git commits | **97** |
 
 ---
 
@@ -59,7 +59,7 @@ Each doc also carries **educational metadata**: Cognitive Load (1–5), Usage Fr
 
 ## Operator Coverage
 
-### Transformation (29 docs)
+### Transformation (34 docs)
 
 The core of RxJS — every major flattening strategy, buffering, and projection operator.
 
@@ -73,15 +73,16 @@ The core of RxJS — every major flattening strategy, buffering, and projection 
 | `groupBy` | ✅ | ✅ |
 | `expand` | ✅ | ✅ |
 | `pairwise` | ✅ | ✅ |
-| `bufferTime`, `bufferCount` | ✅ | ✅ / — |
+| `bufferTime` | ✅ | ✅ |
+| `bufferCount`, `windowCount` | ✅ | ✅ |
 | `buffer`, `window` | ✅ | — |
-| `bufferWhen`, `windowWhen` | ✅ | — |
-| `bufferToggle`, `windowToggle` | ✅ | — |
-| `windowCount`, `windowTime` | ✅ | ✅ |
+| `bufferWhen`, `windowWhen` | ✅ | ✅ |
+| `bufferToggle`, `windowToggle` | ✅ | ✅ |
+| `windowTime` | ✅ | ✅ |
 | `switchScan` | ✅ | ✅ |
 | `mergeScan` | ✅ | ✅ |
 
-### Filtering (23 docs)
+### Filtering (26 docs)
 
 When, how often, and whether values pass through.
 
@@ -93,30 +94,34 @@ When, how often, and whether values pass through.
 | `distinctUntilChanged` | ✅ | ✅ |
 | `distinctUntilKeyChanged` | ✅ | ✅ |
 | `distinct` | ✅ | ✅ |
-| `take`, `takeUntil`, `takeWhile` | ✅ | ✅ each |
+| `take`, `skip`, `takeLast`, `elementAt` | ✅ | ✅ |
+| `takeUntil`, `takeWhile` | ✅ | ✅ each |
 | `first`, `last` | ✅ | ✅ |
-| `skip`, `skipUntil`, `skipWhile` | ✅ | ✅ |
-| `find`, `findIndex` | ✅ | — |
-| `takeLast`, `elementAt` | ✅ | — |
+| `skipUntil`, `skipWhile` | ✅ | ✅ |
+| `find`, `findIndex` | ✅ | ✅ |
 
-### Creation (27 docs)
+### Creation (33 docs)
 
 Every factory function for producing Observables.
 
 | Operator(s) | Core | Advanced |
 |---|---|---|
-| `of`, `from`, `range`, `generate` | ✅ | — |
+| `of`, `range` | ✅ | — |
+| `from` | ✅ | ✅ |
+| `generate`, `using` | ✅ | ✅ |
 | `interval`, `timer` | ✅ | ✅ |
-| `fromEvent`, `fromEventPattern` | ✅ | ✅ / — |
+| `fromEvent` | ✅ | ✅ |
+| `fromEventPattern` | ✅ | — |
 | `fromFetch` | ✅ | ✅ |
 | `defer` | ✅ | ✅ |
-| `EMPTY`, `NEVER`, `throwError` | ✅ | — |
+| `EMPTY`, `NEVER` | ✅ | ✅ |
+| `throwError` | ✅ | — |
 | `ajax` | ✅ | ✅ |
 | `webSocket` | ✅ | ✅ |
 | `animationFrames` | ✅ | ✅ |
-| `partition`, `iif` | ✅ | — |
+| `partition`, `iif` | ✅ | ✅ |
 | `bindCallback`, `bindNodeCallback` | ✅ | — |
-| `scheduled`, `using` | ✅ | — |
+| `scheduled` | ✅ | — |
 
 ### Combination (18 docs)
 
@@ -142,22 +147,38 @@ Merging, joining, and coordinating multiple streams.
 | `timeout` | ✅ | ✅ |
 | `onErrorResumeNext` | ✅ | — |
 
-### Subjects (7 docs)
+### Subjects (9 docs)
 
 | Type | Core | Advanced |
 |---|---|---|
-| `Subject` | ✅ | — |
+| `Subject` | ✅ | ✅ |
 | `BehaviorSubject` | ✅ | ✅ |
 | `ReplaySubject` | ✅ | ✅ |
 | `AsyncSubject` | ✅ | ✅ |
 
-### Multicasting, Mathematical/Aggregate, Utility, Higher-Order, Rate Limiting, Interop, Testing, Conditional, Connectable
+### Utility (22 docs)
 
-All 17 categories fully covered. See the sidebar for complete listings.
+| Operator(s) | Core | Advanced |
+|---|---|---|
+| `tap` | ✅ | ✅ |
+| `finalize` | ✅ | ✅ |
+| `delay`, `delayWhen` | ✅ | ✅ |
+| `observeOn`, `subscribeOn` | ✅ | ✅ |
+| `materialize`, `dematerialize` | ✅ | ✅ |
+| `timeInterval`, `timestamp` | ✅ | ✅ |
+| `repeat` | ✅ | ✅ |
+| `schedulers` | ✅ | ✅ |
+| `firstValueFrom`, `lastValueFrom` | ✅ | ✅ |
+| `endWith`, `ignoreElements` | ✅ | — |
+| `deprecated operators` | ✅ | — |
+
+### Higher-Order, Multicasting, Mathematical/Aggregate, Rate Limiting, Interop, Testing, Conditional, Connectable
+
+All 17 categories fully covered with both core docs and advanced deep-dives. See the sidebar for complete listings.
 
 ---
 
-## Reference Library (65 guides)
+## Reference Library (75 guides)
 
 Beyond operator docs, the reference library covers production patterns organized by domain.
 
@@ -278,7 +299,7 @@ Beyond operator docs, the reference library covers production patterns organized
 
 | Context | Recommended path |
 |---|---|
-| Angular developer | Angular + RxJS → Angular Signals + RxJS → NgRx Effects Patterns |
+| Angular developer | Angular Standalone APIs → Signals ↔ RxJS Deep Interop → NgRx Effects → Enterprise Patterns |
 | Real-time app | WebSocket Patterns → GraphQL Patterns → Data Synchronization → Multi-Tab Patterns |
 | Node.js backend | Node.js Patterns → Async Iterable Advanced → Error Resilience Patterns |
 | Testing focus | Marble Testing Advanced → Integration Testing → Debugging Guide |
@@ -370,7 +391,7 @@ Requirements: Node.js 18+
 
 ```
 .
-├── operators-claude/           # Operator documentation (157 pages)
+├── operators-claude/           # Operator documentation (182 pages)
 │   ├── transformation/         # map, mergeMap, switchMap, groupBy, expand, buffer…
 │   ├── filtering/              # filter, debounceTime, distinctUntilChanged, take…
 │   ├── creation/               # of, from, ajax, webSocket, animationFrames…
@@ -387,7 +408,7 @@ Requirements: Node.js 18+
 │   ├── conditional/            # defaultIfEmpty, isEmpty, every, sequenceEqual
 │   └── connectable/            # connectable, connect
 │
-├── docs/operator-trees/        # Reference guides & pattern libraries (65 pages)
+├── docs/operator-trees/        # Reference guides & pattern libraries (75 pages)
 │   ├── *-guide.md              # Decision guides
 │   ├── rxjs-*-patterns.md      # Domain pattern libraries
 │   └── *.md                    # Mental models, best practices, cookbooks
