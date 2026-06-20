@@ -1,3 +1,5 @@
+[← hansschenker.github.io](https://hansschenker.github.io)
+
 # RxJS Operator Documentation Index
 
 A comprehensive, formal documentation collection for RxJS operators following the eight-policy framework.
