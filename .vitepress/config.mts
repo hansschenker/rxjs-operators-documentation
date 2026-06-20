@@ -8,6 +8,7 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
+      { text: '← Portfolio', link: 'https://hansschenker.github.io' },
       { text: 'Home', link: '/' },
       {
         text: 'Operators',
