@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/rxjs-operators-documentation/',
   title: 'RxJS Operator Documentation',
   description: 'Comprehensive formal specifications for RxJS operators using the eight-policy framework',
 
