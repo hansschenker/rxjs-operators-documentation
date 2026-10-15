@@ -427,7 +427,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/hansschenker/rxjs-operator-documentation' }
+      { icon: 'github', link: 'https://github.com/hansschenker/rxjs-operators-documentation' }
     ]
   }
 })
