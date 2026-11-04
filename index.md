@@ -480,7 +480,7 @@ Result:   --A--B--C--|
 
 ## Contributing
 
-New operator pages follow the template in [SKILL.md](/SKILL), live in `operators-claude/<category>/<operatorName>.md`, and need a sidebar entry in `.vitepress/config.mts`. Every page must cover all eight policies, include at least three runnable examples with expected output, and document at least two pitfalls. Source: [github.com/hansschenker/rxjs-operators-documentation](https://github.com/hansschenker/rxjs-operators-documentation).
+New operator pages follow the template in [SKILL.md](/SKILL), live in `operators-claude/<category>/<operatorName>.md`, and need a sidebar entry in `.vitepress/config.mts`; then run `npm run docs:home` to regenerate this page. Every page must cover all eight policies, include at least three runnable examples with expected output, and document at least two pitfalls. Source: [github.com/hansschenker/rxjs-operators-documentation](https://github.com/hansschenker/rxjs-operators-documentation).
 
 ## Related Resources
 

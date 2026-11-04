@@ -8,6 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 npm run docs:dev       # Start VitePress dev server
 npm run docs:build     # Build static site
 npm run docs:preview   # Preview built site
+npm run docs:home      # Regenerate the home page (index.md) from the sidebar
 ```
 
 No test framework is configured. There is no lint command.
