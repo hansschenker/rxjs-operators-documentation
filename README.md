@@ -3,6 +3,8 @@
 > **The most comprehensive RxJS operator reference ever assembled.**
 > 283 pages. All 17 operator categories. 90+ advanced deep-dives. 82 reference guides and operator trees. TypeScript-first.
 
+📖 **Live site: [netxpert.ch/rxjs-operators-documentation](https://netxpert.ch/rxjs-operators-documentation/)** — every page below, searchable, deployed from `main` by GitHub Actions.
+
 Built with [VitePress](https://vitepress.dev) and the **Eight-Policy Framework** — a formal specification standard that ensures every operator is documented with the same depth, structure, and production focus. Every page answers not just *"what does this operator do?"* but *"what is its full behavioral contract, where does it fail, and when should I reach for something else?"*
 
 ---
