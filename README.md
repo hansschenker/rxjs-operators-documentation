@@ -1,7 +1,7 @@
 # RxJS Operators Documentation
 
 > **The most comprehensive RxJS operator reference ever assembled.**
-> 265 pages. All 17 operator categories. 90+ advanced deep-dives. 82 reference guides. TypeScript-first.
+> 277 pages. All 17 operator categories. 90+ advanced deep-dives. 76 reference guides. TypeScript-first.
 
 Built with [VitePress](https://vitepress.dev) and the **Eight-Policy Framework** — a formal specification standard that ensures every operator is documented with the same depth, structure, and production focus. Every page answers not just *"what does this operator do?"* but *"what is its full behavioral contract, where does it fail, and when should I reach for something else?"*
 
@@ -27,13 +27,13 @@ This reference is built for those moments — for engineers who already know *of
 
 | Metric | Count |
 |---|---|
-| Operator documentation pages | **183** |
-| Reference guides & pattern libraries | **82** |
-| **Total pages** | **265** |
+| Operator documentation pages | **201** |
+| Reference guides & pattern libraries | **76** |
+| **Total pages** | **277** |
 | Operator categories covered | **17 / 17** |
 | Operators with advanced deep-dive docs | **90+** |
 | Real-world domain pattern guides | **55+** |
-| Anti-pattern examples with corrections | **270+** |
+| Anti-pattern examples with corrections | **300+** |
 | Git commits | **107+** |
 
 ---
@@ -59,7 +59,7 @@ Each doc also carries **educational metadata**: Cognitive Load (1–5), Usage Fr
 
 ## Operator Coverage
 
-### Transformation (34 docs)
+### Transformation (37 docs)
 
 The core of RxJS — every major flattening strategy, buffering, and projection operator.
 
@@ -73,6 +73,8 @@ The core of RxJS — every major flattening strategy, buffering, and projection 
 | `groupBy` | ✅ | ✅ |
 | `expand` | ✅ | ✅ |
 | `pairwise` | ✅ | ✅ |
+| `mapTo` *(deprecated)* | ✅ | — |
+| `concatMapTo`, `mergeMapTo`, `switchMapTo` *(deprecated)* | ✅ each | — |
 | `bufferTime` | ✅ | ✅ |
 | `bufferCount`, `windowCount` | ✅ | ✅ |
 | `buffer`, `window` | ✅ | ✅ |
@@ -82,7 +84,7 @@ The core of RxJS — every major flattening strategy, buffering, and projection 
 | `switchScan` | ✅ | ✅ |
 | `mergeScan` | ✅ | ✅ |
 
-### Filtering (26 docs)
+### Filtering (27 docs)
 
 When, how often, and whether values pass through.
 
@@ -99,8 +101,10 @@ When, how often, and whether values pass through.
 | `first`, `last` | ✅ | ✅ |
 | `skipUntil`, `skipWhile` | ✅ | ✅ |
 | `find`, `findIndex` | ✅ | ✅ |
+| `single` | ✅ | — |
+| `skipLast` | ✅ | — |
 
-### Creation (33 docs)
+### Creation (34 docs)
 
 Every factory function for producing Observables.
 
@@ -123,7 +127,7 @@ Every factory function for producing Observables.
 | `bindCallback`, `bindNodeCallback` | ✅ | ✅ |
 | `scheduled` | ✅ | ✅ |
 
-### Combination (18 docs)
+### Combination (21 docs)
 
 Merging, joining, and coordinating multiple streams.
 
@@ -136,9 +140,10 @@ Merging, joining, and coordinating multiple streams.
 | `race` | ✅ | ✅ |
 | `withLatestFrom` | ✅ | ✅ |
 | `startWith` | ✅ | ✅ |
-| `combineLatestWith`, `mergeWith`, `concatWith` | ✅ | — |
+| `combineLatestWith`, `mergeWith` | ✅ | — |
+| `concatWith`, `zipWith`, `raceWith` | ✅ each | — |
 
-### Error Handling (7 docs)
+### Error Handling (12 docs)
 
 | Operator(s) | Core | Advanced |
 |---|---|---|
@@ -146,8 +151,12 @@ Merging, joining, and coordinating multiple streams.
 | `retry` | ✅ | ✅ |
 | `timeout` | ✅ | ✅ |
 | `onErrorResumeNext` | ✅ | ✅ |
+| `onErrorResumeNextWith` | ✅ | — |
+| `throwIfEmpty` | ✅ | — |
+| `retryWhen` *(deprecated)* | ✅ | — |
+| `timeoutWith` *(deprecated)* | ✅ | — |
 
-### Subjects (9 docs)
+### Subjects (8 docs)
 
 | Type | Core | Advanced |
 |---|---|---|
@@ -167,18 +176,30 @@ Merging, joining, and coordinating multiple streams.
 | `materialize`, `dematerialize` | ✅ | ✅ |
 | `timeInterval`, `timestamp` | ✅ | ✅ |
 | `repeat` | ✅ | ✅ |
+| `repeatWhen` *(deprecated)* | ✅ | — |
 | `schedulers` | ✅ | ✅ |
 | `firstValueFrom`, `lastValueFrom` | ✅ | ✅ |
 | `endWith`, `ignoreElements` | ✅ | ✅ |
 | `deprecated operators` | ✅ | — |
 
-### Higher-Order, Multicasting, Mathematical/Aggregate, Rate Limiting, Interop, Testing, Conditional, Connectable
+### Conditional (6 docs)
+
+| Operator(s) | Core | Advanced |
+|---|---|---|
+| `defaultIfEmpty` | ✅ | ✅ |
+| `isEmpty` | ✅ | ✅ |
+| `every` | ✅ | ✅ |
+| `sequenceEqual` | ✅ | ✅ |
+
+Each has a standalone page; the advanced coverage is the combined conditional-operators deep-dive.
+
+### Higher-Order, Multicasting, Mathematical/Aggregate, Rate Limiting, Interop, Testing, Connectable
 
 All 17 categories fully covered with both core docs and advanced deep-dives. See the sidebar for complete listings.
 
 ---
 
-## Reference Library (82 guides)
+## Reference Library (76 guides)
 
 Beyond operator docs, the reference library covers production patterns organized by domain.
 
@@ -391,7 +412,7 @@ Requirements: Node.js 18+
 
 ```
 .
-├── operators-claude/           # Operator documentation (183 pages)
+├── operators-claude/           # Operator documentation (201 pages)
 │   ├── transformation/         # map, mergeMap, switchMap, groupBy, expand, buffer…
 │   ├── filtering/              # filter, debounceTime, distinctUntilChanged, take…
 │   ├── creation/               # of, from, ajax, webSocket, animationFrames…
@@ -408,7 +429,7 @@ Requirements: Node.js 18+
 │   ├── conditional/            # defaultIfEmpty, isEmpty, every, sequenceEqual
 │   └── connectable/            # connectable, connect
 │
-├── docs/operator-trees/        # Reference guides & pattern libraries (82 pages)
+├── docs/operator-trees/        # Reference guides & pattern libraries (76 pages)
 │   ├── *-guide.md              # Decision guides
 │   ├── rxjs-*-patterns.md      # Domain pattern libraries
 │   └── *.md                    # Mental models, best practices, cookbooks

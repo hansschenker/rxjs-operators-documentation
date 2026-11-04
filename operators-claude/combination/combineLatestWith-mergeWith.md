@@ -79,6 +79,8 @@ merge(
 
 ## `concatWith`
 
+> Full standalone reference: [`concatWith`](./concatWith.md)
+
 Queue another Observable to start after the current one completes.
 
 ```typescript
@@ -106,6 +108,8 @@ concat(getAuthToken$(), getUserProfile$(), getUserPreferences$()).subscribe(hand
 
 ## `zipWith`
 
+> Full standalone reference: [`zipWith`](./zipWith.md)
+
 Pair emissions by index with another Observable — waits for both to emit before producing a pair.
 
 ```typescript
@@ -123,6 +127,8 @@ zip(questions$, answers$).subscribe(([q, a]) => renderQA(q, a));
 ---
 
 ## `raceWith`
+
+> Full standalone reference: [`raceWith`](./raceWith.md)
 
 Subscribe to the first Observable to emit, ignore all others.
 

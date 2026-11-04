@@ -494,7 +494,7 @@ const efficient$ = scroll$.pipe(
 - **`scan`**: Like `map` but accumulates state across emissions — use when the output depends on previous values (running total, accumulated state)
 - **`reduce`**: Like `scan` but only emits the final accumulated value on completion — use for aggregate operations over a finite stream
 - **`pluck`** *(deprecated in RxJS 8)*: A specialized `map` for extracting a nested property — replace with `map(x => x.prop)`
-- **`mapTo`** *(deprecated in RxJS 8)*: A specialized `map` that always returns the same constant — replace with `map(() => constant)`
+- **`mapTo`** *(deprecated in RxJS 8)*: A specialized `map` that always returns the same constant — replace with `map(() => constant)` — see [`mapTo`](./mapTo.md)
 - **`pairwise`**: Emits pairs of consecutive values — use when the transformation depends on the current and previous emission
 
 **Complementary Operators**:

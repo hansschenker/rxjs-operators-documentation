@@ -28,7 +28,7 @@ export default defineConfig({
           { text: 'Utility', link: '/operators-claude/utility/finalize' },
         ]
       },
-      { text: 'Reference', link: '/docs/operator-trees/overview' },
+      { text: 'Reference', link: '/docs/operator-trees/operator-selection-guide' },
     ],
 
     sidebar: {
@@ -37,9 +37,13 @@ export default defineConfig({
           text: 'Transformation',
           items: [
             { text: 'map', link: '/operators-claude/transformation/map' },
+            { text: 'mapTo (deprecated)', link: '/operators-claude/transformation/mapTo' },
             { text: 'mergeMap', link: '/operators-claude/transformation/mergeMap' },
+            { text: 'mergeMapTo (deprecated)', link: '/operators-claude/transformation/mergeMapTo' },
             { text: 'switchMap', link: '/operators-claude/transformation/switchMap' },
+            { text: 'switchMapTo (deprecated)', link: '/operators-claude/transformation/switchMapTo' },
             { text: 'concatMap', link: '/operators-claude/transformation/concatMap' },
+            { text: 'concatMapTo (deprecated)', link: '/operators-claude/transformation/concatMapTo' },
             { text: 'exhaustMap', link: '/operators-claude/transformation/exhaustMap' },
             { text: 'pairwise', link: '/operators-claude/transformation/pairwise' },
             { text: 'groupBy', link: '/operators-claude/transformation/groupBy' },
@@ -84,6 +88,7 @@ export default defineConfig({
             { text: 'takeUntil', link: '/operators-claude/filtering/takeUntil' },
             { text: 'throttleTime', link: '/operators-claude/filtering/throttleTime' },
             { text: 'first / last', link: '/operators-claude/filtering/first-last' },
+            { text: 'single', link: '/operators-claude/filtering/single' },
             { text: 'takeWhile', link: '/operators-claude/filtering/takeWhile' },
             { text: 'skipUntil / skipWhile', link: '/operators-claude/filtering/skipUntil-skipWhile' },
             { text: 'distinctUntilKeyChanged', link: '/operators-claude/filtering/distinctUntilKeyChanged' },
@@ -92,6 +97,7 @@ export default defineConfig({
             { text: 'find / findIndex (advanced)', link: '/operators-claude/filtering/find-findIndex-advanced' },
             { text: 'distinct', link: '/operators-claude/filtering/distinct' },
             { text: 'skip / takeLast / elementAt', link: '/operators-claude/filtering/skip-takeLast-elementAt' },
+            { text: 'skipLast', link: '/operators-claude/filtering/skipLast' },
             { text: 'take / skip (advanced)', link: '/operators-claude/filtering/take-skip-advanced' },
             { text: 'debounceTime (advanced)', link: '/operators-claude/filtering/debounceTime-advanced' },
             { text: 'throttleTime (advanced)', link: '/operators-claude/filtering/throttleTime-advanced' },
@@ -120,6 +126,9 @@ export default defineConfig({
             { text: 'race', link: '/operators-claude/combination/race' },
             { text: 'Pipeable Aliases', link: '/operators-claude/combination/pipeable-aliases' },
             { text: 'combineLatestWith / mergeWith / concatWith', link: '/operators-claude/combination/combineLatestWith-mergeWith' },
+            { text: 'concatWith', link: '/operators-claude/combination/concatWith' },
+            { text: 'zipWith', link: '/operators-claude/combination/zipWith' },
+            { text: 'raceWith', link: '/operators-claude/combination/raceWith' },
             { text: 'withLatestFrom (advanced)', link: '/operators-claude/combination/withLatestFrom-advanced' },
             { text: 'forkJoin (advanced)', link: '/operators-claude/combination/forkJoin-advanced' },
             { text: 'combineLatest (advanced)', link: '/operators-claude/combination/combineLatest-advanced' },
@@ -182,10 +191,14 @@ export default defineConfig({
             { text: 'catchError (advanced)', link: '/operators-claude/error-handling/catchError-advanced' },
             { text: 'retry', link: '/operators-claude/error-handling/retry' },
             { text: 'retry (advanced)', link: '/operators-claude/error-handling/retry-advanced' },
+            { text: 'retryWhen (deprecated)', link: '/operators-claude/error-handling/retryWhen' },
             { text: 'timeout', link: '/operators-claude/error-handling/timeout' },
             { text: 'timeout (advanced)', link: '/operators-claude/error-handling/timeout-advanced' },
+            { text: 'timeoutWith (deprecated)', link: '/operators-claude/error-handling/timeoutWith' },
             { text: 'onErrorResumeNext', link: '/operators-claude/error-handling/onErrorResumeNext' },
             { text: 'onErrorResumeNext (advanced)', link: '/operators-claude/error-handling/onErrorResumeNext-advanced' },
+            { text: 'onErrorResumeNextWith', link: '/operators-claude/error-handling/onErrorResumeNextWith' },
+            { text: 'throwIfEmpty', link: '/operators-claude/error-handling/throwIfEmpty' },
           ]
         },
       ],
@@ -254,6 +267,10 @@ export default defineConfig({
           items: [
             { text: 'defaultIfEmpty / isEmpty / every / sequenceEqual', link: '/operators-claude/conditional/conditional-operators' },
             { text: 'Conditional Operators (advanced)', link: '/operators-claude/conditional/conditional-operators-advanced' },
+            { text: 'defaultIfEmpty', link: '/operators-claude/conditional/defaultIfEmpty' },
+            { text: 'isEmpty', link: '/operators-claude/conditional/isEmpty' },
+            { text: 'every', link: '/operators-claude/conditional/every' },
+            { text: 'sequenceEqual', link: '/operators-claude/conditional/sequenceEqual' },
           ]
         },
       ],
@@ -318,6 +335,7 @@ export default defineConfig({
             { text: 'delay / delayWhen (advanced)', link: '/operators-claude/utility/delay-delayWhen-advanced' },
             { text: 'repeat', link: '/operators-claude/utility/repeat' },
             { text: 'repeat (advanced)', link: '/operators-claude/utility/repeat-advanced' },
+            { text: 'repeatWhen (deprecated)', link: '/operators-claude/utility/repeatWhen' },
             { text: 'materialize / dematerialize', link: '/operators-claude/utility/materialize-dematerialize' },
             { text: 'materialize / dematerialize (advanced)', link: '/operators-claude/utility/materialize-dematerialize-advanced' },
             { text: 'observeOn / subscribeOn', link: '/operators-claude/utility/observeOn-subscribeOn' },
@@ -427,7 +445,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/hansschenker/rxjs-operator-documentation' }
+      { icon: 'github', link: 'https://github.com/hansschenker/rxjs-operators-documentation' }
     ]
   }
 })

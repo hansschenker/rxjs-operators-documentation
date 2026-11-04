@@ -253,7 +253,7 @@ ajax.getJSON('/api/data').pipe(
 ## Related Operators
 
 - **`catchError`**: Handle errors without retrying — return a fallback Observable
-- **`retryWhen`** (deprecated in RxJS 7): Use `retry({ delay: fn })` in RxJS 7+ instead
+- **`retryWhen`** (deprecated in RxJS 7): Use `retry({ delay: fn })` in RxJS 7+ instead — see [`retryWhen`](./retryWhen.md)
 - **`defer`**: Wrap source in `defer` to ensure each retry creates a truly fresh execution with fresh state
 - **`timeout`**: Complement — errors if no emission within a window; often combined with retry
 - **`repeat`**: Like retry but for completion, not errors — resubscribes on complete

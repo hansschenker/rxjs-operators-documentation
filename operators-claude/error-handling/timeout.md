@@ -238,6 +238,7 @@ ajax.getJSON('/api/data').pipe(
 - **`catchError`**: Handle the TimeoutError with a fallback or recovery Observable
 - **`delay`**: Complement — delays emissions; timeout guards against too much delay
 - **`race`**: Alternative approach — first Observable to emit wins (can use for timeout logic)
+- **`timeoutWith`** *(deprecated in RxJS 7, removed in 8)*: Older fallback-switching form — see [`timeoutWith`](./timeoutWith.md); replace with `timeout({ each, with })`
 - **`debounceTime`**: Guards against too-frequent emissions; timeout guards against too-infrequent
 
 ## References

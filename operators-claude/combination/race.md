@@ -137,6 +137,8 @@ race(primary$, secondary$).subscribe(data => render(data));
 ```
 
 ### Common Pattern — `raceWith` in a Pipe
+
+> Full standalone reference: [`raceWith`](./raceWith.md)
 ```typescript
 import { fromEvent, timer } from 'rxjs';
 import { raceWith, map } from 'rxjs/operators';

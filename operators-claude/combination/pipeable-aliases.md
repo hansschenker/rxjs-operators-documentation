@@ -75,6 +75,8 @@ fromEvent<MouseEvent>(document, 'mousemove').pipe(
 ```
 
 ### `concatWith` — Sequential Completion in a Pipe
+
+> Full standalone reference: [`concatWith`](./concatWith.md)
 ```typescript
 import { of } from 'rxjs';
 import { concatWith } from 'rxjs/operators';
@@ -86,6 +88,8 @@ introAnimation$.pipe(
 ```
 
 ### `zipWith` — Index-Pair in a Pipe
+
+> Full standalone reference: [`zipWith`](./zipWith.md)
 ```typescript
 import { from } from 'rxjs';
 import { zipWith, map } from 'rxjs/operators';

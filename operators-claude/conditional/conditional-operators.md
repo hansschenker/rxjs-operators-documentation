@@ -2,6 +2,8 @@
 
 ## `defaultIfEmpty`
 
+> Full standalone reference: [`defaultIfEmpty`](./defaultIfEmpty.md)
+
 ### Identity
 - **Import**: `import { defaultIfEmpty } from 'rxjs/operators'`
 - **Signature**: `defaultIfEmpty<T, R>(defaultValue: R): OperatorFunction<T, T | R>`
@@ -70,6 +72,8 @@ source$.pipe(
 
 ## `isEmpty`
 
+> Full standalone reference: [`isEmpty`](./isEmpty.md)
+
 ### Identity
 - **Import**: `import { isEmpty } from 'rxjs/operators'`
 - **Signature**: `isEmpty<T>(): OperatorFunction<T, boolean>`
@@ -130,6 +134,8 @@ subject.complete(); // logs: true
 
 ## `every`
 
+> Full standalone reference: [`every`](./every.md)
+
 ### Identity
 - **Import**: `import { every } from 'rxjs/operators'`
 - **Signature**: `every<T>(predicate: (value: T, index: number, source: Observable<T>) => boolean): OperatorFunction<T, boolean>`
@@ -177,6 +183,8 @@ submittedItems$.pipe(
 ---
 
 ## `sequenceEqual`
+
+> Full standalone reference: [`sequenceEqual`](./sequenceEqual.md)
 
 ### Identity
 - **Import**: `import { sequenceEqual } from 'rxjs/operators'`

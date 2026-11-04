@@ -195,6 +195,7 @@ fromEvent(document, 'click').pipe(
 - **`switchMap`**: Latest-only — cancels previous inner on new source emission
 - **`exhaustMap`**: Ignore-while-busy — drops new emissions while an inner is active
 - **`mergeAll`**: Flattens `Observable<Observable<T>>` without a projection function
+- **`mergeMapTo`** *(deprecated in RxJS 7, removed in 8)*: Maps every source value to one fixed inner Observable — see [`mergeMapTo`](./mergeMapTo.md); replace with `mergeMap(() => inner$)`
 
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/mergeMap](https://rxjs.dev/api/operators/mergeMap)

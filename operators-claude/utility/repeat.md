@@ -224,6 +224,7 @@ ajax.getJSON('/api/data').pipe(
 ## Related Operators
 
 - **`retry`**: Symmetric counterpart — resubscribes on error instead of completion
+- **`repeatWhen`** *(deprecated in RxJS 7, removed in 8)*: Notifier-driven resubscription — see [`repeatWhen`](./repeatWhen.md); replace with `repeat({ delay })`
 - **`interval`**: Often a simpler alternative for fixed-rate polling (`interval(5000).pipe(switchMap(fetchData))`)
 - **`timer`**: Cleaner for "fetch immediately, then every N seconds" patterns
 - **`takeUntil`**: Required companion for infinite `repeat()` in component contexts

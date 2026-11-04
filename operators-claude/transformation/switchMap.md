@@ -505,6 +505,7 @@ fromEvent(window, 'mousemove').pipe(
 - **`concatMap`**: Sequential — queues emissions, processes one at a time in order. Use when order matters (step-by-step workflows, dependent operations).
 - **`exhaustMap`**: Ignoring — discards new source emissions while an inner Observable is active. Use to prevent duplicates (form submit buttons, save actions).
 - **`switchAll`**: Flattens `Observable<Observable<T>>` with cancellation semantics, without a projection function.
+- **`switchMapTo`** *(deprecated in RxJS 7, removed in 8)*: Maps every source value to one fixed inner Observable — see [`switchMapTo`](./switchMapTo.md); replace with `switchMap(() => inner$)`.
 
 **Complementary Operators**:
 - **`debounceTime`**: Rate-limit source before `switchMap` — the canonical search pattern: `debounceTime(300), switchMap(search)`

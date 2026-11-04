@@ -205,6 +205,7 @@ events$.pipe(first(null, null)).subscribe(v => {
 - **`find(predicate)`**: Like `first(predicate)` but emits `undefined` instead of erroring when not found
 - **`elementAt(index)`**: Emits value at a specific index position
 - **`filter`**: General predicate filtering — use when you want all matching values, not just first/last
+- **`single(predicate?)`**: Like `first` but errors when more than one value matches — see [`single`](./single.md)
 
 ## References
 - **RxJS first**: [https://rxjs.dev/api/operators/first](https://rxjs.dev/api/operators/first)

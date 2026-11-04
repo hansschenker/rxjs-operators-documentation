@@ -6,6 +6,8 @@ These operators are deprecated in RxJS 7 and will be removed in RxJS 8. Each ent
 
 ## `mapTo(value)` → `map(() => value)`
 
+> Full standalone reference: [`mapTo`](../transformation/mapTo.md)
+
 Maps every emission to the same constant value.
 
 **Status**: Deprecated in RxJS 7.4. Removed in RxJS 8.

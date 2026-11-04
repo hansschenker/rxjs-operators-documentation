@@ -124,6 +124,8 @@ cleanup(currentSession).subscribe({
 ```
 
 ### Common Pattern — Pipeable Fallback (`onErrorResumeNextWith`)
+
+> Full standalone reference: [`onErrorResumeNextWith`](./onErrorResumeNextWith.md)
 ```typescript
 import { fromFetch } from 'rxjs/fetch';
 import { onErrorResumeNextWith } from 'rxjs/operators';

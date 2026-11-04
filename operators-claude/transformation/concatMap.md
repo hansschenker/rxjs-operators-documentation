@@ -202,6 +202,7 @@ events$.pipe(
 - **`switchMap`**: Latest-only — cancels current inner when source emits again
 - **`exhaustMap`**: Ignore-while-busy — drops source emissions while an inner is active
 - **`concat`**: Static sequential subscription without a projection function
+- **`concatMapTo`** *(deprecated in RxJS 7, removed in 8)*: Maps every source value to one fixed inner Observable — see [`concatMapTo`](./concatMapTo.md); replace with `concatMap(() => inner$)`
 
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/operators/concatMap](https://rxjs.dev/api/operators/concatMap)

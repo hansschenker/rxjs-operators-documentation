@@ -14,12 +14,13 @@ No test framework is configured. There is no lint command.
 
 ## Architecture
 
-This is a VitePress documentation site for RxJS operators. The actual VitePress config and home page live in `.vitepress/` (not the project root), so the dev server serves from there.
+This is a VitePress documentation site for RxJS operators. The repo root is the VitePress project root: the site config is `.vitepress/config.mts` and the home page is the root `index.md` (generated from the sidebar config, see below). `.vitepress/.vitepress/` is an unused scaffold leftover.
 
 **Key directories:**
 - `operators-claude/` — all operator documentation, organized by category (transformation/, combination/, etc.)
 - `docs/operator-trees/` — learning path decision trees and operator categorization overviews
-- `.vitepress/.vitepress/config.mts` — site config (nav, sidebar, theme)
+- `.vitepress/config.mts` — site config (nav, sidebar, theme); the sidebar is hand-maintained, so every new page needs an entry here
+- `index.md` — home page; its category tables are generated from the sidebar config, so regenerate it after changing the sidebar rather than editing the tables by hand
 - `SKILL.md` — the complete eight-policy framework specification; read this before adding or editing any operator doc
 
 ## Eight-Policy Framework
