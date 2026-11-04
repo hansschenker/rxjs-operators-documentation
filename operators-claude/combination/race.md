@@ -4,7 +4,7 @@
 
 - **Name**: race
 - **Category**: Combination Operators (Join Creation)
-- **Type**: First-wins selector — subscribes to all sources, forwards emissions from whichever emits first, immediately unsubscribes from all others
+- **Type**: First-wins selector — subscribes to all sources, mirrors whichever delivers the first notification (`next`, error, or complete), immediately unsubscribes from all others
 - **Import**:
   ```typescript
   import { race } from 'rxjs';
@@ -23,15 +23,15 @@
 
 ## Functional Specification
 
-**Concept**: `race` subscribes to all input Observables simultaneously. The first one to emit a `next` value "wins" — its emissions are forwarded to the output. All other Observables are immediately unsubscribed from.
+**Concept**: `race` subscribes to all input Observables. The first one to deliver any notification "wins": a `next` value makes that source the winner and its stream is forwarded to the output, while an error or a completion that arrives first is forwarded as-is and ends the race. All other Observables are immediately unsubscribed from.
 
-**Winner determination**: First to emit `next()`. Completion and error before emission do NOT win — a source that completes or errors without emitting is removed from the race; the race continues with remaining sources.
+**Winner determination**: First notification of any kind. In RxJS 7 each contender is subscribed with the default error and complete handlers, so a source that errors before anyone emits errors the output, and a source that completes empty before anyone emits completes the output. Neither is skipped: the race ends with that notification and the remaining sources are unsubscribed.
 
 **Key invariants**:
-- All sources are subscribed to simultaneously (not sequentially)
-- Only `next` emissions determine the winner — completions/errors before any `next` just eliminate that source
+- Sources are subscribed in argument order within one synchronous pass; if a source delivers a notification synchronously during that pass, the later sources are never subscribed at all
+- The first notification of any kind decides the race — a `next` selects a winner, an error or an empty completion ends the output immediately
 - Once a winner is chosen, the output mirrors the winner's entire Observable (including completion and errors)
-- If all sources complete without emitting, the output completes without emitting
+- The output completes without emitting as soon as the first contender completes empty — it does not wait for the others
 
 **`raceWith`** (pipeable form): treats the upstream Observable as the first participant.
 
@@ -48,16 +48,20 @@ race(A, B, C):
 
 Result:    ---b1--b2-----------|   (mirrors B entirely)
 
-race with timeout pattern:
+Contender errors first:
 ajax$:     --------data|
-timeout$:  ------#  (errors after 5s — but errors before next don't win)
+timeout$:  ------#
+Result:    ------#            (the error is the first notification → forwarded; ajax$ cancelled)
 
-Actually:
+Contender completes empty first:
+A:         ----|
+B:         --------b1--|
+Result:    ----|              (empty completion is the first notification → output completes; B cancelled)
+
+Timeout race where the timer emits a value:
 ajax$:     --------data|
-timeout$:  -----timeout-value-or-error
-
-If timeout$ emits before ajax$:
-Result:    -----timeout|  (timeout wins, ajax is cancelled)
+timeout$:  -----t|
+Result:    -----t|            (timeout$ wins with a next; ajax$ cancelled)
 ```
 
 ## Type System Integration
@@ -155,12 +159,12 @@ fromEvent(document, 'click').pipe(
 });
 ```
 
-### Edge Case — Error Before Emission Does Not Win
+### Edge Case — Error or Empty Completion Before Any Emission Ends the Race
 ```typescript
-import { race, throwError, of } from 'rxjs';
+import { race, throwError, of, EMPTY } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
-// throwError emits an error synchronously — does it win the race?
+// throwError errors synchronously during subscription — is that the first notification?
 race(
   throwError(() => new Error('fast error')), // errors immediately
   of('value').pipe(delay(100))               // emits after 100ms
@@ -169,9 +173,21 @@ race(
   error: e => console.log('error:', e.message)
 });
 // Output: error: fast error
-// The error from throwError propagates — it IS the "first event"
-// NOTE: An error IS treated as a race-winning event — it propagates immediately
-// (unlike completion, which just eliminates the source from the race)
+// Yes. The error is the first notification, so it is forwarded and the race
+// ends. of('value') is never even subscribed: race subscribes the sources in
+// order and stops as soon as the output is closed.
+
+// The same holds for an empty completion:
+race(
+  EMPTY,                        // completes immediately, no value
+  of('value').pipe(delay(100))  // would emit after 100ms
+).subscribe({
+  next:     v  => console.log('winner:', v),
+  complete: () => console.log('complete — no value')
+});
+// Output: complete — no value
+// A contender that may legitimately be empty must be guarded, e.g. with
+// defaultIfEmpty(fallback), or left out of the race.
 ```
 
 ## Common Pitfalls
@@ -224,6 +240,8 @@ race(ws1$.asObservable(), ws2$.asObservable())
 - **`merge`**: Forwards all emissions from all sources — no cancellation
 - **`timeout`**: Built-in timeout operator — cleaner for simple "error after N ms" patterns
 - **`iif`**: Conditional source selection at subscription time (not race-based)
+- **`raceWith`**: Pipeable form with the same first-notification semantics — see [`raceWith`](./raceWith.md)
+- **`defaultIfEmpty`**: Guard for a contender that may complete empty, so it cannot end the race without a value
 
 ## References
 - **RxJS Official Docs**: [https://rxjs.dev/api/index/function/race](https://rxjs.dev/api/index/function/race)
@@ -232,6 +250,6 @@ race(ws1$.asObservable(), ws2$.asObservable())
 
 **Cognitive Load**: 2/5 | **Usage Frequency**: 3/5 | **Composability**: 3/5
 **Key teaching points**:
-1. First to emit `next` wins — completion before any `next` just eliminates that source; errors propagate immediately
+1. The first notification of any kind decides the race — a `next` picks the winner, while an error or an empty completion before any `next` ends the output immediately (guard possibly-empty contenders with `defaultIfEmpty`)
 2. Winning source's entire lifecycle (including completion/error) is forwarded
 3. Use for CDN fallback, redundant endpoints, timeout races — not as a substitute for `forkJoin`
