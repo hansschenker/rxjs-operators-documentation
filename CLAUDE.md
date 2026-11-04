@@ -15,7 +15,7 @@ No test framework is configured. There is no lint command.
 
 ## Architecture
 
-This is a VitePress documentation site for RxJS operators. The repo root is the VitePress project root: the site config is `.vitepress/config.mts` and the home page is the root `index.md` (generated from the sidebar config, see below). `.vitepress/.vitepress/` is an unused scaffold leftover.
+This is a VitePress documentation site for RxJS operators. The repo root is the VitePress project root: the site config is `.vitepress/config.mts` and the home page is the root `index.md` (generated from the sidebar config, see below).
 
 **Key directories:**
 - `operators-claude/` — all operator documentation, organized by category (transformation/, combination/, etc.)
