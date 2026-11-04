@@ -4,14 +4,14 @@ layout: home
 hero:
   name: RxJS Operators Documentation
   text: A formal reference for every RxJS operator
-  tagline: "201 operator pages and 76 reference guides across 15 categories. Every operator page carries its signature, functional specification, marble diagrams, behavioral contract, runnable examples and the pitfalls that bite in production."
+  tagline: "201 operator pages and 82 reference guides across 15 categories. Every operator page carries its signature, functional specification, marble diagrams, behavioral contract, runnable examples and the pitfalls that bite in production."
   actions:
     - theme: brand
       text: Browse Operators
       link: /operators-claude/transformation/map
     - theme: alt
-      text: Reference Guides
-      link: /docs/operator-trees/operator-selection-guide
+      text: Operator Trees
+      link: /docs/operator-trees/overview
     - theme: alt
       text: ← hansschenker.github.io
       link: https://hansschenker.github.io
@@ -62,9 +62,9 @@ features:
   - title: "Utility"
     details: "22 pages — tap, finalize, delay / delayWhen, repeat, repeatWhen (deprecated) …"
     link: /operators-claude/utility/tap
-  - title: "Reference Guides"
-    details: "76 guides — decision guides, architecture, testing, framework integrations, domain patterns"
-    link: /docs/operator-trees/operator-selection-guide
+  - title: "Operator Trees & Guides"
+    details: "82 pages — the operator-tree classification, decision guides, architecture, testing, framework integrations, domain patterns"
+    link: /docs/operator-trees/overview
   - title: "Authoring Standard"
     details: "The eight-policy framework every operator page follows"
     link: /SKILL
@@ -77,7 +77,7 @@ This site is a complete, formal reference for the RxJS operator set, built with 
 | Metric | Count |
 |---|---|
 | Operator pages | **201** |
-| Reference guides and pattern libraries | **76** |
+| Reference guides and pattern libraries | **82** |
 | Operator categories | **15** |
 | Documentation standard | Eight-Policy Framework v1.0 |
 | RxJS version | 7.x (RxJS 8 migration guide included) |
@@ -158,7 +158,7 @@ Pages marked **(advanced)** in the sidebar assume the core page and go straight 
 | [concat](/operators-claude/combination/concat) | Sequential stream combinator — subscribes to each source in order, only starting the next after the previous completes | [advanced](/operators-claude/combination/concat-advanced) |
 | [withLatestFrom](/operators-claude/combination/withLatestFrom) | Trigger-driven snapshot — when source emits, samples the latest value from secondary Observables | [advanced](/operators-claude/combination/withLatestFrom-advanced) |
 | [zip](/operators-claude/combination/zip) | Indexed pairing — combines values from multiple Observables by position (index), emitting a tuple when all sources have emitted their Nth value | [advanced](/operators-claude/combination/zip-advanced) |
-| [race](/operators-claude/combination/race) | First-wins selector — subscribes to all sources, forwards emissions from whichever emits first, immediately unsubscribes from all others | [advanced](/operators-claude/combination/race-advanced) |
+| [race](/operators-claude/combination/race) | First-wins selector — subscribes to all sources, mirrors whichever delivers the first notification (`next`, error, or complete), immediately … | [advanced](/operators-claude/combination/race-advanced) |
 | [Pipeable Aliases](/operators-claude/combination/pipeable-aliases) | These are the **pipeable operator forms** of the corresponding creation functions. They exist so combination operators can be used inside a … |  |
 | [combineLatestWith / mergeWith / concatWith](/operators-claude/combination/combineLatestWith-mergeWith) | RxJS 7 introduced **pipeable** forms of static combination operators. These are used inside `.pipe()` rather than as standalone functions, making … |  |
 | [concatWith](/operators-claude/combination/concatWith) | Sequential append — after the source completes, subscribes to each additional source in turn, forwarding every emission in order without overlap |  |
@@ -299,7 +299,18 @@ Pages marked **(advanced)** in the sidebar assume the core page and go straight 
 
 ---
 
-## Reference Guides
+## Operator Trees and Reference Guides
+
+The [Operator Trees](/docs/operator-trees/overview) classify the whole operator surface by behavior: each family is an invariant plus independent variant axes, and every RxJS name is a coordinate in that space. The guides below are organised by what you are trying to do.
+
+### Operator Trees — the behavioral classification
+
+[Overview](/docs/operator-trees/overview) ·
+[Legend](/docs/operator-trees/legend) ·
+[Value-based Trees](/docs/operator-trees/value-tree) ·
+[Time-based Trees](/docs/operator-trees/time-tree) ·
+[Decision Trees](/docs/operator-trees/decision-trees) ·
+[A4 Edition](/docs/operator-trees/a4-edition)
 
 ### Decision guides — start here when choosing
 

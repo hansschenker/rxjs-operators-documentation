@@ -1,7 +1,7 @@
 # RxJS Operators Documentation
 
 > **The most comprehensive RxJS operator reference ever assembled.**
-> 277 pages. All 17 operator categories. 90+ advanced deep-dives. 76 reference guides. TypeScript-first.
+> 283 pages. All 17 operator categories. 90+ advanced deep-dives. 82 reference guides and operator trees. TypeScript-first.
 
 Built with [VitePress](https://vitepress.dev) and the **Eight-Policy Framework** — a formal specification standard that ensures every operator is documented with the same depth, structure, and production focus. Every page answers not just *"what does this operator do?"* but *"what is its full behavioral contract, where does it fail, and when should I reach for something else?"*
 
@@ -28,8 +28,8 @@ This reference is built for those moments — for engineers who already know *of
 | Metric | Count |
 |---|---|
 | Operator documentation pages | **201** |
-| Reference guides & pattern libraries | **76** |
-| **Total pages** | **277** |
+| Reference guides & pattern libraries | **82** |
+| **Total pages** | **283** |
 | Operator categories covered | **17 / 17** |
 | Operators with advanced deep-dive docs | **90+** |
 | Real-world domain pattern guides | **55+** |
@@ -199,9 +199,22 @@ All 17 categories fully covered with both core docs and advanced deep-dives. See
 
 ---
 
-## Reference Library (76 guides)
+## Reference Library (82 guides)
 
 Beyond operator docs, the reference library covers production patterns organized by domain.
+
+### Operator Trees — the behavioral classification
+
+| Page | What it gives you |
+|---|---|
+| [Overview](docs/operator-trees/overview.md) | The method: root behavior = invariant + independent variant axes; fifteen root behaviors; how trees relate to the eight-policy pages |
+| [Legend](docs/operator-trees/legend.md) | How to read a tree, coordinate notation, temporal glyphs, the seven recurring axes |
+| [Value-based Trees](docs/operator-trees/value-tree.md) | Selection, transformation, accumulation, grouping, flattening, combining, sharing, resubscription, creation, interrogation … |
+| [Time-based Trees](docs/operator-trees/time-tree.md) | Throttle, audit, sample, debounce, delay, lossless rate limiting, watchdog, time on other axes |
+| [Decision Trees](docs/operator-trees/decision-trees.md) | From a requirement to coordinates to an operator, one axis question at a time |
+| [A4 Edition](docs/operator-trees/a4-edition.md) | The whole classification as printable tables |
+
+Interactive explorer with two-layer temporal diagrams: [netxpert.ch/rxjs-operator-trees](https://netxpert.ch/rxjs-operator-trees/).
 
 ### Decision Guides — Start here when you're choosing
 
@@ -429,7 +442,7 @@ Requirements: Node.js 18+
 │   ├── conditional/            # defaultIfEmpty, isEmpty, every, sequenceEqual
 │   └── connectable/            # connectable, connect
 │
-├── docs/operator-trees/        # Reference guides & pattern libraries (76 pages)
+├── docs/operator-trees/        # Operator trees + reference guides & pattern libraries (82 pages)
 │   ├── *-guide.md              # Decision guides
 │   ├── rxjs-*-patterns.md      # Domain pattern libraries
 │   └── *.md                    # Mental models, best practices, cookbooks

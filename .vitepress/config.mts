@@ -28,7 +28,7 @@ export default defineConfig({
           { text: 'Utility', link: '/operators-claude/utility/finalize' },
         ]
       },
-      { text: 'Reference', link: '/docs/operator-trees/operator-selection-guide' },
+      { text: 'Reference', link: '/docs/operator-trees/overview' },
     ],
 
     sidebar: {
@@ -353,11 +353,22 @@ export default defineConfig({
         },
       ],
 
-      '/docs/operator-trees/': [
+            '/docs/operator-trees/': [
         {
           text: 'Operator Trees',
           items: [
             { text: 'Overview', link: '/docs/operator-trees/overview' },
+            { text: 'Legend', link: '/docs/operator-trees/legend' },
+            { text: 'Value-based Trees', link: '/docs/operator-trees/value-tree' },
+            { text: 'Time-based Trees', link: '/docs/operator-trees/time-tree' },
+            { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
+            { text: 'A4 Edition', link: '/docs/operator-trees/a4-edition' },
+          ]
+        },
+        {
+          text: 'Reference Guides',
+          collapsed: true,
+          items: [
             { text: 'Flattening Strategy Guide', link: '/docs/operator-trees/flattening-strategy-guide' },
             { text: 'Subject Decision Guide', link: '/docs/operator-trees/subject-decision-guide' },
             { text: 'Error Handling Patterns', link: '/docs/operator-trees/error-handling-patterns' },
@@ -434,11 +445,6 @@ export default defineConfig({
             { text: 'Microservices Patterns', link: '/docs/operator-trees/rxjs-microservices-patterns' },
             { text: 'DevTools & Extensions', link: '/docs/operator-trees/rxjs-devtools-extensions' },
             { text: 'Marble Testing Patterns', link: '/docs/operator-trees/rxjs-testing-marble-patterns' },
-            { text: 'Decision Trees', link: '/docs/operator-trees/decision-trees' },
-            { text: 'Legend', link: '/docs/operator-trees/legend' },
-            { text: 'Time-based', link: '/docs/operator-trees/time-tree' },
-            { text: 'Value-based', link: '/docs/operator-trees/value-tree' },
-            { text: 'A4 Edition', link: '/docs/operator-trees/a4-edition' },
           ]
         }
       ],
